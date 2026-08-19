@@ -1,0 +1,29 @@
+Удаления:
+
+HitMarker
+Noclip
+Strafe
+
+Переименования:
+Bypa$$ - Helper
+
+Изменения:
+
+AirStuck - Функция Cancel Movement всегда работает. Удали  возможность ее выключения, ака что бы не было настроек AirStuck в ClickGui.
+
+Добавления:
+
+Я хочу полностью новый интерфейс. 
+
+Вот HUD:
+
+https://github.com/Amphetamined/Other/blob/main/Promt/Source/ArrayListWidget.java
+https://github.com/Amphetamined/Other/blob/main/Promt/Source/CooldownsWidget.java
+https://github.com/Amphetamined/Other/blob/main/Promt/Source/KeybindsWidget.java
+https://github.com/Amphetamined/Other/blob/main/Promt/Source/PotionsWidget.java
+https://github.com/Amphetamined/Other/blob/main/Promt/Source/StaffsWidget.java
+https://github.com/Amphetamined/Other/blob/main/Promt/Source/WatermarkWidget.java
+
+Вот иконки для HUD:
+https://github.com/Amphetamined/Other/blob/main/Promt/Source/icomoon.json
+https://github.com/Amphetamined/Other/blob/main/Promt/Source/icomoon.png
