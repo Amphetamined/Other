@@ -1,0 +1,346 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\1\Desktop\Client-main> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"
+PS C:\Users\1\Desktop\Client-main> $env:Path = "$env:JAVA_HOME\bin;$env:Path"    
+PS C:\Users\1\Desktop\Client-main> .\gradlew.bat runClient                       
+
+> Configure project :
+Fabric Loom: 1.11.8
+
+> Task :compileJava
+warning: unknown enum constant Status.MAINTAINED
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+C:\Users\1\Desktop\Client-main\src\main\java\prince\archclient\inject\entity\MixinPlayerEntity.java:27: warning: Cannot find target method "dropSelectedItem(Z)Z" for @Inject.method="dropSelectedItem(Z)Z" in net.minecraft.entity.player.PlayerEntity
+    @Inject(method = "dropSelectedItem(Z)Z", at = @At("HEAD"), cancellable = true)
+    ^
+warning: unknown enum constant Status.MAINTAINED
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.MAINTAINED
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.MAINTAINED
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\1\Desktop\Client-main\src\main\java\prince\archclient\client\features\modules\movement\speed\modes\SpeedGrim.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 warnings
+
+> Task :runClient
+[06:33:03] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.4 with Fabric Loader 0.17.2
+[06:33:04] [main/INFO] (FabricLoader) Loading 56 mods:
+        - archclient 3.0.14
+        - fabric-api 0.119.4+1.21.4
+        - fabric-api-base 0.4.54+b47eab6b04
+        - fabric-api-lookup-api-v1 1.6.86+b1caf1e904
+        - fabric-biome-api-v1 15.0.6+b1c29d8e04
+        - fabric-block-api-v1 1.0.31+7feeb73304
+        - fabric-block-view-api-v2 1.0.20+9c49cc8c04
+        - fabric-blockrenderlayer-v1 2.0.8+7feeb73304
+        - fabric-client-gametest-api-v1 4.1.1+6816ccd404
+        - fabric-client-tags-api-v1 1.1.29+20ea1e2304
+        - fabric-command-api-v1 1.2.62+f71b366f04
+        - fabric-command-api-v2 2.2.41+e496eb1504
+        - fabric-commands-v0 0.2.79+df3654b304
+        - fabric-content-registries-v0 9.1.19+25d1a67604
+        - fabric-convention-tags-v1 2.1.20+7f945d5b04
+        - fabric-convention-tags-v2 2.14.1+aebda09404
+        - fabric-crash-report-info-v1 0.3.6+7feeb73304
+        - fabric-data-attachment-api-v1 1.6.2+e99da0f704
+        - fabric-data-generation-api-v1 22.3.1+0f4e5f5504
+        - fabric-dimensions-v1 4.0.10+7feeb73304
+        - fabric-entity-events-v1 2.0.15+62245bef04
+        - fabric-events-interaction-v0 4.0.4+a4eebcf004
+        - fabric-game-rule-api-v1 1.0.63+7d48d43904
+        - fabric-gametest-api-v1 2.0.26+7feeb73304
+        - fabric-item-api-v1 11.4.0+189dd6fe04
+        - fabric-item-group-api-v1 4.2.2+fcb9601404
+        - fabric-key-binding-api-v1 1.0.57+7d48d43904
+        - fabric-keybindings-v0 0.2.55+df3654b304
+        - fabric-lifecycle-events-v1 2.5.4+bf2a60eb04
+        - fabric-loot-api-v2 3.0.38+3f89f5a504
+        - fabric-loot-api-v3 1.0.26+203e6b2304
+        - fabric-message-api-v1 6.0.26+238a33c004
+        - fabric-model-loading-api-v1 4.3.0+ae23723504
+        - fabric-networking-api-v1 4.4.0+db5e668204
+        - fabric-object-builder-api-v1 18.0.14+38b0d59804
+        - fabric-particles-v1 4.0.14+7feeb73304
+        - fabric-recipe-api-v1 8.1.1+640e77ae04
+        - fabric-registry-sync-v0 6.1.11+4a9c1ece04
+        - fabric-renderer-api-v1 5.0.3+50f0feb204
+        - fabric-renderer-indigo 2.0.3+50f0feb204
+        - fabric-rendering-data-attachment-v1 0.3.58+73761d2e04
+        - fabric-rendering-fluids-v1 3.1.19+7feeb73304
+        - fabric-rendering-v1 10.2.1+0d31b09f04
+        - fabric-resource-conditions-api-v1 5.0.13+203e6b2304
+        - fabric-resource-loader-v0 3.1.1+360374ac04
+        - fabric-screen-api-v1 2.0.38+7feeb73304
+        - fabric-screen-handler-api-v1 1.3.118+7feeb73304
+        - fabric-sound-api-v1 1.0.32+7feeb73304
+        - fabric-tag-api-v1 1.0.7+7d48d43904
+        - fabric-transfer-api-v1 5.4.9+efa825c904
+        - fabric-transitive-access-wideners-v1 6.3.2+56e78b9b04
+        - fabricloader 0.17.2
+        - java 21
+        - minecraft 1.21.4
+        - mixinextras 0.5.0
+        - satin 3.0.0-alpha.1
+[06:33:04] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/1/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.3+mixin.0.8.7/3e535042688d1265447e52ad86950b7d9678a5fa/sponge-mixin-0.16.3+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[06:33:04] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[06:33:04] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+   [06:33:06] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+> :[06:33:07] [Datafixer Bootstrap/INFO] (Minecraft) 243 Datafixer optimizations took 455 milliseconds
+<==[06:33:08] [main/ERROR] (FabricLoader/Mixin) Mixin apply for mod archclient failed archclient.mixins.json:entity.MixinPlayerEntity from mod archclient -> net.minecraft.entity.player.PlayerEntity: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException Critical injection failure: @Inject annotation on lockSlot$dropSelectedItem could not find any targets matching 'dropSelectedItem(Z)Z' in net/minecraft/entity/player/PlayerEntity. No refMap loaded. [INJECT_PREPARE Applicator Phase -> archclient.mixins.json:entity.MixinPlayerEntity from mod archclient -> Prepare Injections -> handler$zpg000$archclient$lockSlot$dropSelectedItem(ZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V -> Parse ->  -> Validate Targets]                                       
+ org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on lockSlot$dropSelectedItem could not find any targets matching 'dropSelectedItem(Z)Z' in net/minecraft/entity/player/PlayerEntity. No refMap loaded. [INJECT_PREPARE Applicator Phase -> archclient.mixins.json:entity.MixinPlayerEntity from mod archclient -> Prepare Injections -> handler$zpg000$archclient$lockSlot$dropSelectedItem(ZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V -> Parse ->  -> Validate Targets]
+        at org.spongepowered.asm.mixin.injection.selectors.TargetSelectors.validate(TargetSelectors.java:346) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:369) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:340) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:331) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo.<init>(CallbackInjectionInfo.java:48) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+        at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+        at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:196) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:664) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1399) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:731) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:315) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:246) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:352) [sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) [sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) [sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) [fabric-loader-0.17.2.jar:?]
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) [?:?]
+        at knot/net.minecraft.Bootstrap.initialize(Bootstrap.java:55) [minecraft-merged-a95fce7716-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
+        at knot/net.minecraft.client.main.Main.main(Main.java:139) [minecraft-merged-a95fce7716-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
+        at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[06:33:08] [main/ERROR] (FabricLoader/Mixin) Mixin apply for mod archclient failed archclient.mixins.json:entity.MixinPlayerEntity from mod archclient -> net.minecraft.entity.player.PlayerEntity: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException Critical injection failure: @Inject annotation on lockSlot$dropSelectedItem could not find any targets matching 'dropSelectedItem(Z)Z' in net/minecraft/entity/player/PlayerEntity. No refMap loaded. [INJECT_PREPARE Applicator Phase -> archclient.mixins.json:entity.MixinPlayerEntity from mod archclient -> Prepare Injections -> handler$zpg000$archclient$lockSlot$dropSelectedItem(ZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V -> Parse ->  -> Validate Targets]                                          
+ org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on lockSlot$dropSelectedItem could not find any targets matching 'dropSelectedItem(Z)Z' in net/minecraft/entity/player/PlayerEntity. No refMap loaded. [INJECT_PREPARE Applicator Phase -> archclient.mixins.json:entity.MixinPlayerEntity from mod archclient -> Prepare Injections -> handler$zpg000$archclient$lockSlot$dropSelectedItem(ZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V -> Parse ->  -> Validate Targets]
+        at org.spongepowered.asm.mixin.injection.selectors.TargetSelectors.validate(TargetSelectors.java:346) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:369) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:340) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:331) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo.<init>(CallbackInjectionInfo.java:48) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+        at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+        at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:196) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:664) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1399) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:731) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:315) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:246) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:352) [sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) [sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) [sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) [fabric-loader-0.17.2.jar:?]
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) [?:?]
+        at knot/net.minecraft.client.main.Main.main(Main.java:221) [minecraft-merged-a95fce7716-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
+        at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[06:33:09] [main/ERROR] (FabricLoader) Minecraft has crashed!
+ net.fabricmc.loader.impl.FormattedException: java.lang.RuntimeException: Mixin transformation of net.minecraft.entity.player.PlayerEntity failed               
+        at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:63) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:508) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+Caused by: java.lang.RuntimeException: Mixin transformation of net.minecraft.entity.player.PlayerEntity failed
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:440) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.17.2.jar:?]
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+        at knot/net.minecraft.client.main.Main.main(Main.java:221) ~[minecraft-merged-a95fce7716-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
+        at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) ~[fabric-loader-0.17.2.jar:?]
+        ... 3 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+        at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:381) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.17.2.jar:?]
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+        at knot/net.minecraft.client.main.Main.main(Main.java:221) ~[minecraft-merged-a95fce7716-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
+        at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) ~[fabric-loader-0.17.2.jar:?]
+        ... 3 more
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [archclient.mixins.json:entity.MixinPlayerEntity from mod archclient] from phase [DEFAULT] in config [archclient.mixins.json] FAILED during APPLY
+        at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:686) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:637) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:368) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.17.2.jar:?]
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+        at knot/net.minecraft.client.main.Main.main(Main.java:221) ~[minecraft-merged-a95fce7716-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
+        at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) ~[fabric-loader-0.17.2.jar:?]
+        ... 3 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on lockSlot$dropSelectedItem could not find any targets matching 'dropSelectedItem(Z)Z' in net/minecraft/entity/player/PlayerEntity. No refMap loaded. [INJECT_PREPARE Applicator Phase -> archclient.mixins.json:entity.MixinPlayerEntity from mod archclient -> Prepare Injections -> handler$zpg000$archclient$lockSlot$dropSelectedItem(ZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V -> Parse ->  -> Validate Targets]
+        at org.spongepowered.asm.mixin.injection.selectors.TargetSelectors.validate(TargetSelectors.java:346) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:369) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:340) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:331) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo.<init>(CallbackInjectionInfo.java:48) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+        at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+        at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:196) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:664) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1399) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:731) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:315) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:246) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:352) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) ~[sponge-mixin-0.16.3+mixin.0.8.7.jar:0.16.3+mixin.0.8.7]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) ~[fabric-loader-0.17.2.jar:?]
+        at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.17.2.jar:?]
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+        at knot/net.minecraft.client.main.Main.main(Main.java:221) ~[minecraft-merged-a95fce7716-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
+        at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) ~[fabric-loader-0.17.2.jar:?]
+        ... 3 more
+
+> Task :runClient FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/1/Desktop/Client-main/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':runClient'.
+> Process 'command 'C:\Users\1\.jdks\ms-21.0.12\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 16s
+7 actionable tasks: 4 executed, 3 up-to-date
+PS C:\Users\1\Desktop\Client-main> https://github.com/Amphetamined/Other/blob/main/Promt/Error
