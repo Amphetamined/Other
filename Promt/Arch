@@ -1,31 +1,543 @@
-В скором времени я буду помогать другу с его проектом, так что в промтах если есть пометка [Arch] то это мой ArchClient, а если [Svin] то это клиент друга.
+[Svin]
+
+Полностью разбери проект. Я хочу что бы сурсы были аккуратные как в моем ArchClient. Сделай хороший GitIgnore, Удали ненужные файлы которые создаются при заходе в игру по типу Logs ResoursePack и тп.
+MainMenu - singleplayer multiplayer и тп сделай с большой кнопки.
+MainMenu - AltManager ( Смена аккаунтов ) Перемести между мультиплеером и настройками.
+Удали AutoArmor
+В AutoExplosion добавь кнопку чека на ресурсы рядом.
+В AutoPotion добавь чек на зелья - сила скорость огнестокость
+В AutoSwap - Удали Щиты. Переименуй Геплы в Яблоко.
+BackTrack Удали.
+ElytraFly Удали.
+LongJump Удали.
+NoClip Удали.
+Parkour Удали.
+Phase Удали.
+PortalGodMode Удали.
+AutoBuy Удали.
+Xray Bypass Удали.
+ItemSwapFix сделай как не отдельную функцию а чекбокс в AutoSwap.
+SelfDescruct Удали.
+xCarry Удали.
+Удали тему "Необычный" "Огненный" "Прикольный"
+
+Добавление - 
+В таргетесп надо добавить новый вид таргета, я нашел этот код и модули .java на форуме.
+Файлы - 
+https://github.com/Amphetamined/Other/blob/main/Promt/MainMenu%20Svin.zip
+https://github.com/Amphetamined/Other/blob/main/Promt/Assets.zip
+
+Код который дали на той же теме - 
+TargetEsp
+package expensive.modules.impl.render;
+
+import com.google.common.eventbus.Subscribe;
+import com.mojang.blaze3d.platform.GlStateManager;
+import com.mojang.blaze3d.systems.RenderSystem;
+import expensive.events.EventDisplay;
+import expensive.events.WorldEvent;
+import expensive.modules.api.Category;
+import expensive.modules.api.Function;
+import expensive.modules.api.FunctionRegister;
+import expensive.modules.api.impl.ModeSetting;
+import expensive.modules.api.impl.SliderSetting;
+import expensive.modules.impl.combat.KillAura;
+import expensive.util.math.main.Vector4i;
+import expensive.util.math.prjections.ProjectionUtil;
+import expensive.util.visual.main.color.ColorUtils;
+import expensive.util.visual.main.display.DisplayUtils;
+import lombok.Getter;
+import net.minecraft.client.renderer.BufferBuilder;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.WorldVertexBufferUploader;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.vector.Vector2f;
+import net.minecraft.util.math.vector.Vector3d;
+import org.lwjgl.opengl.GL11;
+
+@FunctionRegister(name = "TargetESP", type = Category.Render)
+public class TargetESP extends Function {
+    private final ModeSetting type = new ModeSetting(
+            "Отображение цели",
+            "Ромб",
+            "Ромб",
+            "Кольцо",
+            "Души"
+    );
+    private final SliderSetting soulSpeed = new SliderSetting(
+            "Soul Speed",
+            1.2f,
+            0.2f,
+            6.0f,
+            0.1f
+    );
+    private final ResourceLocation SOUL =
+            new ResourceLocation("Dtekt/images/glow.png");
+    @Getter
+    public static LivingEntity target = null;
+    private final KillAura killAura;
+
+    public TargetESP(KillAura killAura) {
+        this.killAura = killAura;
+        addSettings(type, soulSpeed);
+    }
+
+    @Subscribe
+    private void onWorldEvent(WorldEvent e) {
+        if (this.type.is("Кольцо")) {
+            EntityRendererManager rm = mc.getRenderManager();
+            if (killAura.isState() && killAura.getTarget() != null) {
+                double x = killAura.getTarget().lastTickPosX + (killAura.getTarget().getPosX() - killAura.getTarget().lastTickPosX) * (double) e.getPartialTicks() - rm.info.getProjectedView().getX();
+                double y = killAura.getTarget().lastTickPosY + (killAura.getTarget().getPosY() - killAura.getTarget().lastTickPosY) * (double) e.getPartialTicks() - rm.info.getProjectedView().getY();
+                double z = killAura.getTarget().lastTickPosZ + (killAura.getTarget().getPosZ() - killAura.getTarget().lastTickPosZ) * (double) e.getPartialTicks() - rm.info.getProjectedView().getZ();
+                float height = killAura.getTarget().getHeight();
+                double duration = 1900.0;
+                double elapsed = (double) System.currentTimeMillis() % duration;
+                boolean side = elapsed > duration / 2.0;
+                double progress = elapsed / (duration / 2.0);
+                progress = side ? --progress : 1.0 - progress;
+                progress = progress < 0.5 ? 2.0 * progress * progress : 1.0 - Math.pow(-2.0 * progress + 2.0, 2.0) / 2.0;
+                double eased = (double) (height / 2.0F) * (progress > 0.5 ? 1.0 - progress : progress) * (double) (side ? -1 : 1);
+                RenderSystem.pushMatrix();
+                GL11.glDepthMask(false);
+                GL11.glEnable(2848);
+                GL11.glHint(3154, 4354);
+                RenderSystem.disableTexture();
+                RenderSystem.enableBlend();
+                RenderSystem.disableAlphaTest();
+                RenderSystem.shadeModel(7425);
+                RenderSystem.disableCull();
+                RenderSystem.lineWidth(3.5F);
+                RenderSystem.color4f(-1.0F, -1.0F, -1.0F, -1.0F);
+
+                BufferBuilder buffer = Tessellator.getInstance().getBuffer();
+                buffer.begin(8, DefaultVertexFormats.POSITION_COLOR);
+                float[] colors = null;
+
+                int i;
+                for (i = 0; i <= 360; ++i) {
+                    float r = ((HUD.getColor(0) >> 16) & 0xFF) / 255f;
+                    float g = ((HUD.getColor(0) >> 8) & 0xFF) / 255f;
+                    float b = (HUD.getColor(0) & 0xFF) / 255f;
+                    colors = new float[]{r, g, b, 0.5f};
+                    buffer.pos(x + Math.cos(Math.toRadians((double) i)) * (double) this.killAura.getTarget().getWidth() * 0.85, y + (double) height * progress, z + Math.sin(Math.toRadians((double) i)) * (double) this.killAura.getTarget().getWidth() * 0.85).color(colors[0], colors[1], colors[2], 0.5F).endVertex();
+                    buffer.pos(x + Math.cos(Math.toRadians((double) i)) * (double) this.killAura.getTarget().getWidth() * 0.85, y + (double) height * progress + eased * 1.5, z + Math.sin(Math.toRadians((double) i)) * (double) this.killAura.getTarget().getWidth() * 0.85).color(colors[0], colors[1], colors[2], 4.2F).endVertex();
+                }
+                buffer.finishDrawing();
+                WorldVertexBufferUploader.draw(buffer);
+
+                RenderSystem.color4f(-4.0F, -1.0F, -1.0F, -1.0F);
+                buffer.begin(2, DefaultVertexFormats.POSITION_COLOR);
+                for (i = 0; i <= 360; ++i) {
+                    buffer.pos(x + Math.cos(Math.toRadians((double) i)) * (double) this.killAura.getTarget().getWidth() * 0.85, y + (double) height * progress, z + Math.sin(Math.toRadians((double) i)) * (double) this.killAura.getTarget().getWidth() * 0.85).color(colors[0], colors[1], colors[2], 0.2F).endVertex();
+                }
+                buffer.finishDrawing();
+                WorldVertexBufferUploader.draw(buffer);
+
+                RenderSystem.enableCull();
+                RenderSystem.disableBlend();
+                RenderSystem.enableTexture();
+                RenderSystem.enableAlphaTest();
+                GL11.glDepthMask(true);
+                GL11.glDisable(2848);
+                GL11.glHint(3154, 4354);
+                RenderSystem.shadeModel(7424);
+                RenderSystem.popMatrix();
+            }
+        }
+
+        if (type.is("Души")) {
+            renderSouls(e);
+        }
+    }
+
+    private void renderSouls(WorldEvent e) {
+
+        if (!killAura.isState() || killAura.getTarget() == null)
+            return;
+
+        LivingEntity target = killAura.getTarget();
+
+        EntityRendererManager rm = mc.getRenderManager();
+
+        double x = target.lastTickPosX +
+                (target.getPosX() - target.lastTickPosX) * e.getPartialTicks()
+                - rm.info.getProjectedView().x;
+
+        double y = target.lastTickPosY +
+                (target.getPosY() - target.lastTickPosY) * e.getPartialTicks()
+                - rm.info.getProjectedView().y;
+
+        double z = target.lastTickPosZ +
+                (target.getPosZ() - target.lastTickPosZ) * e.getPartialTicks()
+                - rm.info.getProjectedView().z;
+
+        RenderSystem.pushMatrix();
+
+        RenderSystem.enableBlend();
+        RenderSystem.disableCull();
+        RenderSystem.depthMask(false);
+
+        RenderSystem.blendFunc(
+                GL11.GL_SRC_ALPHA,
+                GL11.GL_ONE
+        );
+
+        RenderSystem.enableTexture();
+
+        mc.getTextureManager().bindTexture(SOUL);
+
+        long time = System.currentTimeMillis();
+
+        boolean hurt = target.hurtTime > 0;
+
+        float speedMultiplier = soulSpeed.get();
+        
+        for (int s = 0; s < 5; s++) {
+
+            boolean mirrored = s >= 3;
+            int soulIndex = s % 3;
+
+            double speed = 0.2 * speedMultiplier;
+
+            double angle =
+                    (time * speed)
+                            + (soulIndex * 72);
+            
+            if (mirrored) {
+                angle = -angle;
+            }
+
+            double rad = Math.toRadians(angle);
+
+            double radius = 0.52;
+
+            double orbitX =
+                    Math.cos(rad) * radius;
+
+            double orbitZ =
+                    Math.sin(rad) * radius;
+
+            double orbitY =
+                    Math.sin(rad * 1.3) * 0.23;
+
+            orbitX += Math.sin(rad * 0.5) * 0.01;
+
+            if (mirrored) {
+                orbitY = Math.sin((rad + Math.PI) * 1.5) * 0.23;
+            }
+
+            for (int t = 0; t < 80; t++) {
+
+                double back = t * 1.1;
+
+                double ta =
+                        Math.toRadians(angle - back);
+
+                double tx =
+                        x +
+                                Math.cos(ta) * radius +
+                                Math.sin(ta * 0.5) * 0.08;
+
+                if (mirrored) {
+                    tx = x - (Math.cos(ta) * radius + Math.sin(ta * 0.5) * 0.08);
+                }
+
+                double tz =
+                        z +
+                                Math.sin(ta) * radius;
+
+                double ty =
+                        y +
+                                1.0 +
+                                Math.sin(ta * 1.3) * 0.53;
+
+                if (mirrored) {
+                    ty = y + 1.0 + Math.sin((ta + Math.PI) * 1.3) * 0.53;
+                }
+
+                GL11.glPushMatrix();
+
+                GL11.glTranslated(tx, ty, tz);
+
+                GL11.glRotatef(
+                        -mc.getRenderManager().info.getYaw(),
+                        0, 1, 0
+                );
+
+                GL11.glRotatef(
+                        mc.getRenderManager().info.getPitch(),
+                        1, 0, 0
+                );
+
+                float size =
+                        0.23f - (t * 0.00225f);
+
+                if (size < 0.005f)
+                    size = 0.045f;
+
+                int color;
+
+                if (hurt) {
+                    color = 0xFF0000;
+                } else {
+                    color = HUD.getColor(
+                            soulIndex * 72 + t * 3
+                    );
+                }
+
+                float alpha =
+                        1.0f - (t * 0.015f);
+
+                if (alpha < 0.08f)
+                    alpha = 0.08f;
+
+                drawSoulQuad(
+                        size,
+                        color,
+                        alpha
+                );
+
+                GL11.glPopMatrix();
+            }
+        }
+
+        RenderSystem.defaultBlendFunc();
+
+        RenderSystem.enableCull();
+        RenderSystem.depthMask(true);
+        RenderSystem.disableBlend();
+
+        RenderSystem.popMatrix();
+    }
+
+    private void drawSoulQuad(
+            float size,
+            int color,
+            float alpha
+    ) {
+
+        float r = ((color >> 16) & 255) / 255f;
+        float g = ((color >> 8) & 255) / 255f;
+        float b = (color & 255) / 255f;
+
+        RenderSystem.enableTexture();
+
+        GL11.glColor4f(
+                Math.min(r * 2f, 1f),
+                Math.min(g * 2f, 1f),
+                Math.min(b * 2f, 1f),
+                alpha
+        );
+
+        GL11.glBegin(GL11.GL_QUADS);
+
+        GL11.glTexCoord2f(0, 0);
+        GL11.glVertex3f(-size, -size, 0);
+
+        GL11.glTexCoord2f(0, 1);
+        GL11.glVertex3f(-size, size, 0);
+
+        GL11.glTexCoord2f(1, 1);
+        GL11.glVertex3f(size, size, 0);
+
+        GL11.glTexCoord2f(1, 0);
+        GL11.glVertex3f(size, -size, 0);
+
+        GL11.glEnd();
+    }
+
+    @Subscribe
+    private void onDisplay(EventDisplay e) {
+        if (e.getType() != EventDisplay.Type.PRE) {
+            return;
+        }
+        if (killAura.isState() && killAura.getTarget() != null) {
+            double sin = Math.sin(System.currentTimeMillis() / 1000.0);
+            float size = 115.0F;
+
+            Vector3d interpolated = killAura.getTarget().getPositon(e.getPartialTicks());
+            Vector2f pos = ProjectionUtil.project(interpolated.x, interpolated.y + killAura.getTarget().getHeight() / 2f, interpolated.z);
+            GlStateManager.pushMatrix();
+            GlStateManager.translatef(pos.x, pos.y, 0);
+            GlStateManager.rotatef((float) sin * 360, 0, 0, 1);
+            GlStateManager.translatef(-pos.x, -pos.y, 0);
+            if (type.is("Ромб")) {
+                DisplayUtils.drawImage(new ResourceLocation("Dtekt/images/target.png"), pos.x - size / 2f, pos.y - size / 2f, size, size, new Vector4i(ColorUtils.setAlpha(HUD.getColor(0, 1), 220), ColorUtils.setAlpha(HUD.getColor(90, 1), 220), ColorUtils.setAlpha(HUD.getColor(180, 1), 220), ColorUtils.setAlpha(HUD.getColor(270, 1), 220)));
+            }
+            GlStateManager.popMatrix();
+        }
+    }
+}
+
+
+
 
 [Arch]
 
-Удали кастомное MainMenu. Позже я тебе скину MainMenu которое сделано под базу моего чита.
-В Aura - Targets Добавь чек на - Голых, Без брони. Тоесть будет - Плеерс, Голые, Без брони, Мобы, Анималс.
-В ItemSwap удали SwapMode - Triple, будет только Simlpe.
-IntentoryMove - SwapMode - Basic переименуй в Default.
-MoveFix - Targeting перемести как мод в Mode ( Будут Focus, Free, Target )
-Velocity раздели на две функции.
-Первая функция - No Push ( Те самые настройки Pushing в Velocity )
-Вторая функция - Основной Velocity. 
-Velocity - KnockBack - None переименуй в Default.
-No Slow - Slot update переименуй в Sloth.
-Sprint - Оставь только Legit. Все остальное удали.
-Удали видимость ClickGUI в ClickGui.
-Насчет тем которые ты рандомно делал - Из кастомных только Sunset и Emerald. Все остальные твои темы - копия моих уже существующих тем. Сгенерируй другие цвета.
-Убери возможность удалять системные темы.
-ClickPearl - Вместо кнопки Legit сделай Mode - Legit, Rage ( Rage - Мод если не нажать Legit в текущей версии чита )
-В ElytraSwap Добавь функцию - Автоматический взлет, Автоматический фейрверк, Снимать при падении и тп.
-Auto Gapple перемести в Combat.
-No Entity Trace перемести в Combat.
-Toggle Sounds переименуй в Sounds.
-Sounds - Tech удали.
-Auto Accept добавь Только от друзей.
-Item Scroller - макс Delay = 100.
-Никнейм при функции Protect - ArchClient вместо Protected.
-Protect - Hide Friend переименуй в Friend.
-Обьясни как работает функция Recorder. Она как то взаимодействует с Aura или наоборот?
-Пусть Marcos Хранятся не в C:\Arch\Custom\Other а на C:\Arch\Custom\Other
-Сделай что бы верхняя шторка окна ( Прикреплю фото ) Была в темной теме а не белой.
+Исправь ошибку в арч клиенте - 
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\1\Desktop\Clients\Arch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"
+PS C:\Users\1\Desktop\Clients\Arch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"    
+PS C:\Users\1\Desktop\Clients\Arch> .\gradlew.bat runClient                       
+
+> Configure project :
+Fabric Loom: 1.11.8
+
+> Task :compileJava
+warning: unknown enum constant Status.MAINTAINED
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.MAINTAINED
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.MAINTAINED
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.MAINTAINED
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.MAINTAINED
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.EXPERIMENTAL
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+C:\Users\1\Desktop\Clients\Arch\src\main\java\com\archclient\client\features\modules\combat\NoPushModule.java:11: error: NoPushModule is not abstract and does not override abstract method onEvent() in Module
+public class NoPushModule extends Module {
+       ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\1\Desktop\Clients\Arch\src\main\java\com\archclient\client\features\modules\movement\speed\modes\SpeedGrim.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+100 warnings
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/1/Desktop/Clients/Arch/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  warning: unknown enum constant Status.MAINTAINED
+    reason: class file for org.apiguardian.api.API$Status not found
+  warning: unknown enum constant Status.MAINTAINED
+  warning: unknown enum constant Status.EXPERIMENTAL
+  warning: unknown enum constant Status.STABLE
+  Note: Recompile with -Xlint:deprecation for details.
+  C:\Users\1\Desktop\Clients\Arch\src\main\java\com\archclient\client\features\modules\combat\NoPushModule.java:11: error: NoPushModule is not abstract and does not override abstract method onEvent() in Module
+  public class NoPushModule extends Module {
+         ^
+  Note: C:\Users\1\Desktop\Clients\Arch\src\main\java\com\archclient\client\features\modules\movement\speed\modes\SpeedGrim.java uses unchecked or unsafe operations.
+  Note: Recompile with -Xlint:unchecked for details.
+  Note: Some input files use or override a deprecated API.
+  1 error
+  100 warnings
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 11s
+1 actionable task: 1 executed
+PS C:\Users\1\Desktop\Clients\Arch> 
