@@ -1,0 +1,311 @@
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:21:42
+java: package net.minecraft.client.entity.player does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:22:35
+java: package net.minecraft.entity.player does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:23:41
+java: package net.minecraft.inventory.container does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:24:26
+java: package net.minecraft.item does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:25:26
+java: cannot find symbol
+  symbol:   class ActionResultType
+  location: package net.minecraft.util
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:26:26
+java: cannot find symbol
+  symbol:   class Direction
+  location: package net.minecraft.util
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:27:26
+java: cannot find symbol
+  symbol:   class Hand
+  location: package net.minecraft.util
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:28:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:29:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:30:27
+java: package net.minecraft.world does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:31:27
+java: package net.minecraft.world does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:43:33
+java: cannot find symbol
+  symbol:   class BlockPos
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:43:47
+java: cannot find symbol
+  symbol:   class Direction
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:47:70
+java: cannot find symbol
+  symbol:   class ClickType
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:47:86
+java: cannot find symbol
+  symbol:   class PlayerEntity
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:47:5
+java: cannot find symbol
+  symbol:   class ItemStack
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:49:5
+java: cannot find symbol
+  symbol:   class GameType
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:51:45
+java: cannot find symbol
+  symbol:   class ClientPlayerEntity
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:51:72
+java: cannot find symbol
+  symbol:   class World
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:51:85
+java: cannot find symbol
+  symbol:   class Hand
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:51:96
+java: cannot find symbol
+  symbol:   class BlockRayTraceResult
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:51:5
+java: cannot find symbol
+  symbol:   class ActionResultType
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:53:40
+java: cannot find symbol
+  symbol:   class ClientPlayerEntity
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:53:67
+java: cannot find symbol
+  symbol:   class World
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:53:80
+java: cannot find symbol
+  symbol:   class Hand
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:53:5
+java: cannot find symbol
+  symbol:   class ActionResultType
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:55:24
+java: cannot find symbol
+  symbol:   class BlockPos
+  location: interface im.expensive.main.baritone.api.utils.IPlayerControllerC:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerController.java:55:38
+java: cannot find symbol
+  symbol:   class Direction
+  location: interface im.expensive.main.baritone.api.utils.IPlayerController
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:15:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:16:38
+java: package net.minecraft.util.math.vector does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:16:38
+java: package net.minecraft.util.math.vector does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:17:38
+java: package net.minecraft.util.math.vector does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:22:44
+java: package net.minecraft.client.renderer does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:22
+java: static import only from classes and interfaces
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:34:30
+java: cannot find symbol
+  symbol:   class Vector3d
+  location: class im.expensive.functions.impl.render.Snow
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:89:17
+java: cannot find symbol
+  symbol:   class Vector3d
+  location: class im.expensive.functions.impl.render.Snow.Particle
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\impl\render\Snow.java:90:23
+java: cannot find symbol
+  symbol:   class Vector3d
+  location: class im.expensive.functions.impl.render.Snow.Particle
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\functions\api\Function.java:12:31
+java: package net.minecraft.util.text does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:4:28
+java: cannot find symbol
+  symbol:   class MainWindow
+  location: package net.minecraft.client
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:5:28
+java: cannot find symbol
+  symbol:   class Minecraft
+  location: package net.minecraft.client
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:6:37
+java: package net.minecraft.client.renderer does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:7:37
+java: package net.minecraft.client.renderer does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:8:31
+java: package net.minecraft.util.text does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:9:31
+java: package net.minecraft.util.text does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:10:31
+java: package net.minecraft.util.text does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:16:5
+java: cannot find symbol
+  symbol:   class Minecraft
+  location: interface im.expensive.utils.client.IMinecraft
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:18:5
+java: cannot find symbol
+  symbol:   class MainWindow
+  location: interface im.expensive.utils.client.IMinecraft
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:19:5
+java: cannot find symbol
+  symbol:   class BufferBuilder
+  location: interface im.expensive.utils.client.IMinecraft
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:20:5
+java: cannot find symbol
+  symbol:   class Tessellator
+  location: interface im.expensive.utils.client.IMinecraft
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\client\IMinecraft.java:21:10
+java: cannot find symbol
+  symbol:   class ITextComponent
+  location: interface im.expensive.utils.client.IMinecraft
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\events\EventDisplay.java:3:33
+java: package com.mojang.blaze3d.matrix does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\events\EventDisplay.java:11:5
+java: cannot find symbol
+  symbol:   class MatrixStack
+  location: class im.expensive.events.EventDisplay
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\events\EventDisplay.java:15:25
+java: cannot find symbol
+  symbol:   class MatrixStack
+  location: class im.expensive.events.EventDisplay
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\pathing\goals\Goal.java:20:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\pathing\goals\Goal.java:50:30
+java: cannot find symbol
+  symbol:   class BlockPos
+  location: interface im.expensive.main.baritone.api.pathing.goals.Goal
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\pathing\goals\Goal.java:54:30
+java: cannot find symbol
+  symbol:   class BlockPos
+  location: interface im.expensive.main.baritone.api.pathing.goals.Goal
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\process\IFollowProcess.java:20:28
+java: package net.minecraft.entity does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\process\IFollowProcess.java:36:27
+java: cannot find symbol
+  symbol:   class Entity
+  location: interface im.expensive.main.baritone.api.process.IFollowProcess
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\process\IFollowProcess.java:41:10
+java: cannot find symbol
+  symbol:   class Entity
+  location: interface im.expensive.main.baritone.api.process.IFollowProcess
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\process\IFollowProcess.java:43:15
+java: cannot find symbol
+  symbol:   class Entity
+  location: interface im.expensive.main.baritone.api.process.IFollowProcess
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:3:33
+java: package com.mojang.blaze3d.matrix does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:12:38
+java: package net.minecraft.client.resources does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:13:33
+java: package net.minecraft.enchantment does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:14:26
+java: package net.minecraft.item does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:15:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:16:35
+java: package net.minecraft.util.registry does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:29:19
+java: cannot find symbol
+  symbol:   class ItemStack
+  location: class im.expensive.ui.ab.render.impl.item.EnchantmentWidget
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:33:30
+java: cannot find symbol
+  symbol:   class ItemStack
+  location: class im.expensive.ui.ab.render.impl.item.EnchantmentWidget
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:43:24
+java: cannot find symbol
+  symbol:   class MatrixStack
+  location: class im.expensive.ui.ab.render.impl.item.EnchantmentWidget
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\item\EnchantmentWidget.java:67:16
+java: cannot find symbol
+  symbol:   class Enchantment
+  location: class im.expensive.ui.ab.render.impl.item.EnchantmentWidget
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\Component.java:3:33
+java: package com.mojang.blaze3d.matrix does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\Component.java:40:33
+java: cannot find symbol
+  symbol:   class MatrixStack
+  location: class im.expensive.ui.ab.render.impl.Component
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\IComponent.java:3:33
+java: package com.mojang.blaze3d.matrix does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\ui\ab\render\impl\IComponent.java:7:17
+java: cannot find symbol
+  symbol:   class MatrixStack
+  location: interface im.expensive.ui.ab.render.impl.IComponent
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\components\SliderComponent.java:3:33
+java: package com.mojang.blaze3d.matrix does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\components\SliderComponent.java:10:33
+java: package net.minecraft.enchantment does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\components\SliderComponent.java:11:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\components\SliderComponent.java:21:12
+java: cannot find symbol
+  symbol:   class Enchantment
+  location: class im.expensive.utils.components.SliderComponent
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\components\SliderComponent.java:35:91
+java: cannot find symbol
+  symbol:   class Enchantment
+  location: class im.expensive.utils.components.SliderComponent
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\components\SliderComponent.java:56:22
+java: cannot find symbol
+  symbol:   class MatrixStack
+  location: class im.expensive.utils.components.SliderComponent
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\components\FieldComponent.java:3:33
+java: package com.mojang.blaze3d.matrix does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\utils\components\FieldComponent.java:37:22
+java: cannot find symbol
+  symbol:   class MatrixStack
+  location: class im.expensive.utils.components.FieldComponent
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\utils\BlockBreakHelper.java:22:26
+java: cannot find symbol
+  symbol:   class Hand
+  location: package net.minecraft.util
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\utils\BlockBreakHelper.java:23:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\utils\BlockBreakHelper.java:24:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\Helper.java:22:28
+java: cannot find symbol
+  symbol:   class Minecraft
+  location: package net.minecraft.client
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:21:27
+java: package net.minecraft.block does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:22:42
+java: package net.minecraft.client.entity.player does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:23:34
+java: package net.minecraft.client.world does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:24:28
+java: package net.minecraft.entity does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:25:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:26:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:27:31
+java: package net.minecraft.util.math does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:28:38
+java: package net.minecraft.util.math.vector does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:29:27
+java: package net.minecraft.world does not exist
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:41:5
+java: cannot find symbol
+  symbol:   class ClientPlayerEntity
+  location: interface im.expensive.main.baritone.api.utils.IPlayerContext
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:45:5
+java: cannot find symbol
+  symbol:   class World
+  location: interface im.expensive.main.baritone.api.utils.IPlayerContext
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:47:22
+java: cannot find symbol
+  symbol:   class Entity
+  location: interface im.expensive.main.baritone.api.utils.IPlayerContext
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:51:20
+java: cannot find symbol
+  symbol:   class Entity
+  location: interface im.expensive.main.baritone.api.utils.IPlayerContext
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\IPlayerContext.java:58:5
+java: cannot find symbol
+  symbol:   class RayTraceResult
+  location: interface im.expensive.main.baritone.api.utils.IPlayerContext
+C:\Users\1\Desktop\Clients\Svin\src\bypass\svinDLC\main\baritone\api\utils\BetterBlockPos.java:20:26
+java: cannot find symbol
+  symbol:   class Direction
+  location: package net.minecraft.util
