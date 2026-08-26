@@ -1,86 +1,393 @@
 Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-PS C:\Users\1\Desktop\loader\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"                                                    
-PS C:\Users\1\Desktop\loader\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"    
+PS C:\Users\1\Desktop\loader\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"                
+PS C:\Users\1\Desktop\loader\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"            
 PS C:\Users\1\Desktop\loader\Pouch> .\gradlew.bat packagePouchRuntime --no-daemon --stacktrace
 To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
 Daemon will be stopped at the end of the build 
 
 > Task :compilePouchBranding
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:1: error: illegal character: '\ufeff'
-я╗┐/*
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:10: error: class, interface, enum, or record expected
-package lightning.product;
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: class, interface, enum, or record expected
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:19: error: cannot find symbol
+import lightning.product.Button;
+                        ^
+  symbol:   class Button
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:20: error: cannot find symbol
+import lightning.product.MinecraftAccess;
+                        ^
+  symbol:   class MinecraftAccess
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:30: error: package lombok does not exist
+import lombok.Generated;
+             ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:293: error: cannot find symbol
+    extends Button {
+            ^
+  symbol:   class Button
+  location: class O_922_L
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:297: error: package Button does not exist
+        public n_1700_B(int x, int y, int width, int height, String icon, String title, String description, Button.n_1700_B pressedAction) {
+                                                                                                                  ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: package com.jagrosh.discordipc does not exist
 import com.jagrosh.discordipc.IPCClient;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: class, interface, enum, or record expected
+                             ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: package com.jagrosh.discordipc does not exist
 import com.jagrosh.discordipc.IPCListener;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: class, interface, enum, or record expected
+                             ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: package com.jagrosh.discordipc.entities does not exist
 import com.jagrosh.discordipc.entities.DiscordBuild;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: class, interface, enum, or record expected
+                                      ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: package com.jagrosh.discordipc.entities does not exist
 import com.jagrosh.discordipc.entities.RichPresence;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:16: error: class, interface, enum, or record expected
-import java.time.OffsetDateTime;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:17: error: class, interface, enum, or record expected
-import java.util.concurrent.Executors;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:18: error: class, interface, enum, or record expected
-import java.util.concurrent.ScheduledExecutorService;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:19: error: class, interface, enum, or record expected
-import java.util.concurrent.TimeUnit;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:20: error: class, interface, enum, or record expected
-import java.util.concurrent.atomic.AtomicBoolean;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:21: error: class, interface, enum, or record expected
-import lightning.product.G_624_v;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:22: error: class, interface, enum, or record expected
-import lightning.product.S_4088_D;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: class, interface, enum, or record expected
+                                      ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: cannot find symbol
 import lightning.product.Module;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class Module
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: cannot find symbol
 import lightning.product.ModuleCategory;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:1: error: illegal character: '\ufeff'
-я╗┐/*
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:4: error: class, interface, enum, or record expected
-package lightning.product;
+                        ^
+  symbol:   class ModuleCategory
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:27: error: cannot inherit from final Module
+extends Module {
         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:6: error: class, interface, enum, or record expected
-import java.util.regex.Pattern;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:7: error: class, interface, enum, or record expected
-import lightning.product.D_4024_W;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: class, interface, enum, or record expected
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:28: error: cannot find symbol
+    private IPCClient v_4262_N;
+            ^
+  symbol:   class IPCClient
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:41: error: package RichPresence does not exist
+    private RichPresence.Builder h_1847_R() {
+                        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: cannot find symbol
 import lightning.product.Module;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:9: error: class, interface, enum, or record expected
-import lightning.product.n_473_l;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class Module
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: cannot find symbol
 import lightning.product.ClientBootstrap;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class ClientBootstrap
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: cannot find symbol
 import lightning.product.BooleanSetting;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class BooleanSetting
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: cannot find symbol
 import lightning.product.ModuleCategory;
-^
-24 errors
+                        ^
+  symbol:   class ModuleCategory
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:15: error: cannot inherit from final Module
+extends Module {
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:21: error: cannot find symbol
+    public static BooleanSetting v_4262_N;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:22: error: cannot find symbol
+    public static BooleanSetting w_1484_f;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:23: error: cannot find symbol
+    public static BooleanSetting t_148_a;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:24: error: cannot find symbol
+    public static BooleanSetting s_956_w;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:25: error: cannot find symbol
+    public static BooleanSetting u_2550_I;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:26: error: cannot find symbol
+    public static BooleanSetting M_588_G;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:27: error: cannot find symbol
+    public static BooleanSetting P_4830_p;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:28: error: cannot find symbol
+    public static BooleanSetting h_1847_R;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:29: error: cannot find symbol
+    public static BooleanSetting Q_4569_t;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:339: error: cannot find symbol
+        @Generated
+         ^
+  symbol:   class Generated
+  location: class n_1700_B
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:344: error: cannot find symbol
+        @Generated
+         ^
+  symbol:   class Generated
+  location: class n_1700_B
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:76: error: package MinecraftAccess does not exist
+        if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:77: error: package MinecraftAccess does not exist
+            MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:79: error: package MinecraftAccess does not exist
+        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                         ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:80: error: package MinecraftAccess does not exist
+        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                          ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:107: error: incompatible types: n_1700_B cannot be converted to V_2511_L
+        this.buttons.add(button);
+                         ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:112: error: package MinecraftAccess does not exist
+        int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
+                                            ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:113: error: package MinecraftAccess.c_3005_b does not exist
+        MinecraftAccess.c_3005_b.s_956_w.n_1700_B(2.0f);
+                                ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:117: error: package MinecraftAccess does not exist
+        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                         ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:118: error: package MinecraftAccess does not exist
+        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                          ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:121: error: package MinecraftAccess does not exist
+        if (MinecraftAccess.c_3005_b.Y_1740_V != this) {
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:133: error: cannot find symbol
+            b.x = (int)(startX + (float)col * 132.0f);
+             ^
+  symbol:   variable x
+  location: variable b of type n_1700_B
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:134: error: cannot find symbol
+            b.y = (int)(startY + (float)row * 36.0f);
+             ^
+  symbol:   variable y
+  location: variable b of type n_1700_B
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:162: error: package MinecraftAccess.c_3005_b does not exist
+        MinecraftAccess.c_3005_b.s_956_w.R_4764_Y();
+                                ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:237: error: package MinecraftAccess does not exist
+        if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:238: error: package MinecraftAccess does not exist
+            MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:248: error: package MinecraftAccess does not exist
+        int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
+                                            ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:252: error: package MinecraftAccess does not exist
+        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                         ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:253: error: package MinecraftAccess does not exist
+        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                          ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:303: error: method does not override or implement a method from a supertype
+        @Override
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:305: error: cannot find symbol
+            float buttonX = this.x;
+                                ^
+  symbol: variable x
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:306: error: cannot find symbol
+            float buttonY = this.y;
+                                ^
+  symbol: variable y
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:320: error: cannot find symbol
+            l_3370_o.G_564_y[15].n_1700_B(matrixStack, this.getMessage().getString(), (double)(buttonX + l_3370_o.t_148_a[18].n_1700_B(this.n_1700_B) + 12.0f), (double)(buttonY + l_3370_o.G_564_y[16].h_1847_R() + 4.0f), titleColor);
+                                                           ^
+  symbol: method getMessage()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:328: error: method does not override or implement a method from a supertype
+        @Override
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                ^
+  symbol: variable x
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                   ^
+  symbol: variable x
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                                                         ^
+  symbol: variable y
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                                                                                            ^
+  symbol: variable y
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
+            if (isWithinBounds && this.active && this.visible) {
+                                      ^
+  symbol: variable active
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
+            if (isWithinBounds && this.active && this.visible) {
+                                                     ^
+  symbol: variable visible
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:333: error: cannot find symbol
+                this.onClick(mouseX, mouseY);
+                    ^
+  symbol: method onClick(double,double)
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:38: error: cannot find symbol
+        super("DiscordRPC", ModuleCategory.P_1922_E);
+                            ^
+  symbol:   variable ModuleCategory
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
+        RichPresence.Builder builder = new RichPresence.Builder();
+                    ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
+        RichPresence.Builder builder = new RichPresence.Builder();
+                                                       ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:57: error: cannot find symbol
+                this.v_4262_N = new IPCClient(1434360448957939885L);
+                                    ^
+  symbol:   class IPCClient
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:58: error: cannot find symbol
+                this.v_4262_N.setListener(new IPCListener(){
+                                              ^
+  symbol:   class IPCListener
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:60: error: cannot find symbol
+                    public void onReady(IPCClient client) {
+                                        ^
+  symbol: class IPCClient
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:70: error: cannot find symbol
+                this.v_4262_N.connect(new DiscordBuild[0]);
+                                          ^
+  symbol:   class DiscordBuild
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:130: error: cannot find symbol
+        if (this.s_956_w || !this.w_1484_f()) {
+                                 ^
+  symbol: method w_1484_f()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:137: error: cannot find symbol
+            if (!this.w_1484_f() || this.v_4262_N != null || this.t_148_a.get()) {
+                     ^
+  symbol: method w_1484_f()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:166: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:168: error: cannot find symbol
+        super.onEnable();
+             ^
+  symbol: method onEnable()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:174: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:176: error: cannot find symbol
+        super.onDisable();
+             ^
+  symbol: method onDisable()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:36: error: cannot find symbol
+        super("NameProtect", ModuleCategory.P_1922_E);
+                             ^
+  symbol:   variable ModuleCategory
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:50: error: cannot find symbol
+        if (module == null || !module.w_1484_f() || !stripBrackets) {
+                                     ^
+  symbol:   method w_1484_f()
+  location: variable module of type NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:169: error: cannot find symbol
+        if (np == null || !np.w_1484_f() || cleanedVisible == null) {
+                             ^
+  symbol:   method w_1484_f()
+  location: variable np of type NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
+        String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
+                                          ^
+  symbol:   variable c_3005_b
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
+        String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
+                                                                                  ^
+  symbol:   variable c_3005_b
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
+        if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
+                                                 ^
+  symbol:   variable ClientBootstrap
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
+        if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
+                                                                                                                         ^
+  symbol:   variable ClientBootstrap
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:200: error: cannot find symbol
+        String username = NameProtect.c_3005_b.w_1484_f.R_4764_Y();
+                                     ^
+  symbol:   variable c_3005_b
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:205: error: cannot find symbol
+            for (n_473_l.n_1700_B friend : ClientBootstrap.Y_601_j().v_4262_N().P_4830_p()) {
+                                           ^
+  symbol:   variable ClientBootstrap
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:299: error: cannot find symbol
+        v_4262_N = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0434\u0440\u0443\u0437\u0435\u0439", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:300: error: cannot find symbol
+        w_1484_f = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043a\u043b\u0430\u043d", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:301: error: cannot find symbol
+        t_148_a = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0430\u043d\u0433", false);
+                      ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:302: error: cannot find symbol
+        s_956_w = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0433\u0440\u0438\u0444", false);
+                      ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:303: error: cannot find symbol
+        u_2550_I = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c IP", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:304: error: cannot find symbol
+        M_588_G = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0431\u0430\u043b\u0430\u043d\u0441", false);
+                      ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:305: error: cannot find symbol
+        P_4830_p = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0438\u043b\u043b\u0438\u043a\u0438", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:306: error: cannot find symbol
+        h_1847_R = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u043e\u043c\u0430\u0448\u043a\u0438", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:307: error: cannot find symbol
+        Q_4569_t = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043f\u0440\u0435\u0444\u0438\u043a\u0441\u044b \u0432 \u043d\u0435\u0439\u043c\u0442\u0435\u0433\u0430\u0445", true);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+91 errors
 
 > Task :compilePouchBranding FAILED
 
@@ -91,79 +398,386 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compilePouchBranding'.
 > Compilation failed; see the compiler output below.
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:10: error: class, interface, enum, or record expected
-  package lightning.product;
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:320: error: cannot find symbol
+              l_3370_o.G_564_y[15].n_1700_B(matrixStack, this.getMessage().getString(), (double)(buttonX + l_3370_o.t_148_a[18].n_1700_B(this.n_1700_B) + 12.0f), (double)(buttonY + l_3370_o.G_564_y[16].h_1847_R() + 4.0f), titleColor);
+                                                             ^
+    symbol: method getMessage()
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:333: error: cannot find symbol
+                  this.onClick(mouseX, mouseY);
+                      ^
+    symbol: method onClick(double,double)
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:130: error: cannot find symbol
+          if (this.s_956_w || !this.w_1484_f()) {
+                                   ^
+    symbol: method w_1484_f()
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:137: error: cannot find symbol
+              if (!this.w_1484_f() || this.v_4262_N != null || this.t_148_a.get()) {
+                       ^
+    symbol: method w_1484_f()
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:168: error: cannot find symbol
+          super.onEnable();
+               ^
+    symbol: method onEnable()
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:176: error: cannot find symbol
+          super.onDisable();
+               ^
+    symbol: method onDisable()
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:107: error: incompatible types: n_1700_B cannot be converted to V_2511_L
+          this.buttons.add(button);
+                           ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:27: error: cannot inherit from final Module
+  extends Module {
           ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: class, interface, enum, or record expected
-  import com.jagrosh.discordipc.IPCClient;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: class, interface, enum, or record expected
-  import com.jagrosh.discordipc.IPCListener;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: class, interface, enum, or record expected
-  import com.jagrosh.discordipc.entities.DiscordBuild;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: class, interface, enum, or record expected
-  import com.jagrosh.discordipc.entities.RichPresence;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:16: error: class, interface, enum, or record expected
-  import java.time.OffsetDateTime;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:17: error: class, interface, enum, or record expected
-  import java.util.concurrent.Executors;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:18: error: class, interface, enum, or record expected
-  import java.util.concurrent.ScheduledExecutorService;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:19: error: class, interface, enum, or record expected
-  import java.util.concurrent.TimeUnit;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:20: error: class, interface, enum, or record expected
-  import java.util.concurrent.atomic.AtomicBoolean;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:21: error: class, interface, enum, or record expected
-  import lightning.product.G_624_v;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:22: error: class, interface, enum, or record expected
-  import lightning.product.S_4088_D;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: class, interface, enum, or record expected
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:15: error: cannot inherit from final Module
+  extends Module {
+          ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:19: error: cannot find symbol
+  import lightning.product.Button;
+                          ^
+    symbol:   class Button
+    location: package lightning.product
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:20: error: cannot find symbol
+  import lightning.product.MinecraftAccess;
+                          ^
+    symbol:   class MinecraftAccess
+    location: package lightning.product
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:293: error: cannot find symbol
+      extends Button {
+              ^
+    symbol:   class Button
+    location: class O_922_L
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: cannot find symbol
   import lightning.product.Module;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: class, interface, enum, or record expected
+                          ^
+    symbol:   class Module
+    location: package lightning.product
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: cannot find symbol
   import lightning.product.ModuleCategory;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:4: error: class, interface, enum, or record expected
-  package lightning.product;
-          ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:6: error: class, interface, enum, or record expected
-  import java.util.regex.Pattern;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:7: error: class, interface, enum, or record expected
-  import lightning.product.D_4024_W;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: class, interface, enum, or record expected
+                          ^
+    symbol:   class ModuleCategory
+    location: package lightning.product
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:28: error: cannot find symbol
+      private IPCClient v_4262_N;
+              ^
+    symbol:   class IPCClient
+    location: class DiscordRPC
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: cannot find symbol
   import lightning.product.Module;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:9: error: class, interface, enum, or record expected
-  import lightning.product.n_473_l;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: class, interface, enum, or record expected
+                          ^
+    symbol:   class Module
+    location: package lightning.product
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: cannot find symbol
   import lightning.product.ClientBootstrap;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: class, interface, enum, or record expected
+                          ^
+    symbol:   class ClientBootstrap
+    location: package lightning.product
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: cannot find symbol
   import lightning.product.BooleanSetting;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: class, interface, enum, or record expected
+                          ^
+    symbol:   class BooleanSetting
+    location: package lightning.product
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: cannot find symbol
   import lightning.product.ModuleCategory;
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:1: error: illegal character: '\ufeff'
-  я╗┐/*
-  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:1: error: illegal character: '\ufeff'
-  я╗┐/*
-  ^
-  24 errors
+                          ^
+    symbol:   class ModuleCategory
+    location: package lightning.product
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:21: error: cannot find symbol
+      public static BooleanSetting v_4262_N;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:22: error: cannot find symbol
+      public static BooleanSetting w_1484_f;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:23: error: cannot find symbol
+      public static BooleanSetting t_148_a;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:24: error: cannot find symbol
+      public static BooleanSetting s_956_w;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:25: error: cannot find symbol
+      public static BooleanSetting u_2550_I;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:26: error: cannot find symbol
+      public static BooleanSetting M_588_G;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:27: error: cannot find symbol
+      public static BooleanSetting P_4830_p;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:28: error: cannot find symbol
+      public static BooleanSetting h_1847_R;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:29: error: cannot find symbol
+      public static BooleanSetting Q_4569_t;
+                    ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:339: error: cannot find symbol
+          @Generated
+           ^
+    symbol:   class Generated
+    location: class n_1700_B
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:344: error: cannot find symbol
+          @Generated
+           ^
+    symbol:   class Generated
+    location: class n_1700_B
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:133: error: cannot find symbol
+              b.x = (int)(startX + (float)col * 132.0f);
+               ^
+    symbol:   variable x
+    location: variable b of type n_1700_B
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:134: error: cannot find symbol
+              b.y = (int)(startY + (float)row * 36.0f);
+               ^
+    symbol:   variable y
+    location: variable b of type n_1700_B
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:38: error: cannot find symbol
+          super("DiscordRPC", ModuleCategory.P_1922_E);
+                              ^
+    symbol:   variable ModuleCategory
+    location: class DiscordRPC
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:57: error: cannot find symbol
+                  this.v_4262_N = new IPCClient(1434360448957939885L);
+                                      ^
+    symbol:   class IPCClient
+    location: class DiscordRPC
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:58: error: cannot find symbol
+                  this.v_4262_N.setListener(new IPCListener(){
+                                                ^
+    symbol:   class IPCListener
+    location: class DiscordRPC
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:70: error: cannot find symbol
+                  this.v_4262_N.connect(new DiscordBuild[0]);
+                                            ^
+    symbol:   class DiscordBuild
+    location: class DiscordRPC
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:36: error: cannot find symbol
+          super("NameProtect", ModuleCategory.P_1922_E);
+                               ^
+    symbol:   variable ModuleCategory
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
+          String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
+                                            ^
+    symbol:   variable c_3005_b
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
+          String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
+                                                                                    ^
+    symbol:   variable c_3005_b
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
+          if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
+                                                   ^
+    symbol:   variable ClientBootstrap
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
+          if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
+                                                                                                                           ^
+    symbol:   variable ClientBootstrap
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:200: error: cannot find symbol
+          String username = NameProtect.c_3005_b.w_1484_f.R_4764_Y();
+                                       ^
+    symbol:   variable c_3005_b
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:205: error: cannot find symbol
+              for (n_473_l.n_1700_B friend : ClientBootstrap.Y_601_j().v_4262_N().P_4830_p()) {
+                                             ^
+    symbol:   variable ClientBootstrap
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:299: error: cannot find symbol
+          v_4262_N = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0434\u0440\u0443\u0437\u0435\u0439", false);
+                         ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:300: error: cannot find symbol
+          w_1484_f = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043a\u043b\u0430\u043d", false);
+                         ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:301: error: cannot find symbol
+          t_148_a = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0430\u043d\u0433", false);
+                        ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:302: error: cannot find symbol
+          s_956_w = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0433\u0440\u0438\u0444", false);
+                        ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:303: error: cannot find symbol
+          u_2550_I = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c IP", false);
+                         ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:304: error: cannot find symbol
+          M_588_G = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0431\u0430\u043b\u0430\u043d\u0441", false);
+                        ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:305: error: cannot find symbol
+          P_4830_p = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0438\u043b\u043b\u0438\u043a\u0438", false);
+                         ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:306: error: cannot find symbol
+          h_1847_R = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u043e\u043c\u0430\u0448\u043a\u0438", false);
+                         ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:307: error: cannot find symbol
+          Q_4569_t = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043f\u0440\u0435\u0444\u0438\u043a\u0441\u044b \u0432 \u043d\u0435\u0439\u043c\u0442\u0435\u0433\u0430\u0445", true);
+                         ^
+    symbol:   class BooleanSetting
+    location: class NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:303: error: method does not override or implement a method from a supertype
+          @Override
+          ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:328: error: method does not override or implement a method from a supertype
+          @Override
+          ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:166: error: method does not override or implement a method from a supertype
+      @Override
+      ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:174: error: method does not override or implement a method from a supertype
+      @Override
+      ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:305: error: cannot find symbol
+              float buttonX = this.x;
+                                  ^
+    symbol: variable x
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:306: error: cannot find symbol
+              float buttonY = this.y;
+                                  ^
+    symbol: variable y
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+              boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                  ^
+    symbol: variable x
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+              boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                     ^
+    symbol: variable x
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+              boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                                                           ^
+    symbol: variable y
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+              boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                                                                                              ^
+    symbol: variable y
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
+              if (isWithinBounds && this.active && this.visible) {
+                                        ^
+    symbol: variable active
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
+              if (isWithinBounds && this.active && this.visible) {
+                                                       ^
+    symbol: variable visible
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:60: error: cannot find symbol
+                      public void onReady(IPCClient client) {
+                                          ^
+    symbol: class IPCClient
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:50: error: cannot find symbol
+          if (module == null || !module.w_1484_f() || !stripBrackets) {
+                                       ^
+    symbol:   method w_1484_f()
+    location: variable module of type NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:169: error: cannot find symbol
+          if (np == null || !np.w_1484_f() || cleanedVisible == null) {
+                               ^
+    symbol:   method w_1484_f()
+    location: variable np of type NameProtect
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:30: error: package lombok does not exist
+  import lombok.Generated;
+               ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:297: error: package Button does not exist
+          public n_1700_B(int x, int y, int width, int height, String icon, String title, String description, Button.n_1700_B pressedAction) {
+                                                                                                                    ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: package com.jagrosh.discordipc does not exist
+  import com.jagrosh.discordipc.IPCClient;
+                               ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: package com.jagrosh.discordipc does not exist
+  import com.jagrosh.discordipc.IPCListener;
+                               ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: package com.jagrosh.discordipc.entities does not exist
+  import com.jagrosh.discordipc.entities.DiscordBuild;
+                                        ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: package com.jagrosh.discordipc.entities does not exist
+  import com.jagrosh.discordipc.entities.RichPresence;
+                                        ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:41: error: package RichPresence does not exist
+      private RichPresence.Builder h_1847_R() {
+                          ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:76: error: package MinecraftAccess does not exist
+          if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
+                             ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:77: error: package MinecraftAccess does not exist
+              MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
+                             ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:79: error: package MinecraftAccess does not exist
+          int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                           ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:80: error: package MinecraftAccess does not exist
+          int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                            ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:112: error: package MinecraftAccess does not exist
+          int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
+                                              ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:113: error: package MinecraftAccess.c_3005_b does not exist
+          MinecraftAccess.c_3005_b.s_956_w.n_1700_B(2.0f);
+                                  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:117: error: package MinecraftAccess does not exist
+          int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                           ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:118: error: package MinecraftAccess does not exist
+          int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                            ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:121: error: package MinecraftAccess does not exist
+          if (MinecraftAccess.c_3005_b.Y_1740_V != this) {
+                             ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:162: error: package MinecraftAccess.c_3005_b does not exist
+          MinecraftAccess.c_3005_b.s_956_w.R_4764_Y();
+                                  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:237: error: package MinecraftAccess does not exist
+          if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
+                             ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:238: error: package MinecraftAccess does not exist
+              MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
+                             ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:248: error: package MinecraftAccess does not exist
+          int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
+                                              ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:252: error: package MinecraftAccess does not exist
+          int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                           ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:253: error: package MinecraftAccess does not exist
+          int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                            ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
+          RichPresence.Builder builder = new RichPresence.Builder();
+                      ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
+          RichPresence.Builder builder = new RichPresence.Builder();
+                                                         ^
+  91 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
@@ -233,79 +847,386 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compile
         at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
         at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:10: error: class, interface, enum, or record expected
-package lightning.product;
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:320: error: cannot find symbol
+            l_3370_o.G_564_y[15].n_1700_B(matrixStack, this.getMessage().getString(), (double)(buttonX + l_3370_o.t_148_a[18].n_1700_B(this.n_1700_B) + 12.0f), (double)(buttonY + l_3370_o.G_564_y[16].h_1847_R() + 4.0f), titleColor);
+                                                           ^
+  symbol: method getMessage()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:333: error: cannot find symbol
+                this.onClick(mouseX, mouseY);
+                    ^
+  symbol: method onClick(double,double)
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:130: error: cannot find symbol
+        if (this.s_956_w || !this.w_1484_f()) {
+                                 ^
+  symbol: method w_1484_f()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:137: error: cannot find symbol
+            if (!this.w_1484_f() || this.v_4262_N != null || this.t_148_a.get()) {
+                     ^
+  symbol: method w_1484_f()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:168: error: cannot find symbol
+        super.onEnable();
+             ^
+  symbol: method onEnable()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:176: error: cannot find symbol
+        super.onDisable();
+             ^
+  symbol: method onDisable()
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:107: error: incompatible types: n_1700_B cannot be converted to V_2511_L
+        this.buttons.add(button);
+                         ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:27: error: cannot inherit from final Module
+extends Module {
         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: class, interface, enum, or record expected
-import com.jagrosh.discordipc.IPCClient;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: class, interface, enum, or record expected
-import com.jagrosh.discordipc.IPCListener;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: class, interface, enum, or record expected
-import com.jagrosh.discordipc.entities.DiscordBuild;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: class, interface, enum, or record expected
-import com.jagrosh.discordipc.entities.RichPresence;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:16: error: class, interface, enum, or record expected
-import java.time.OffsetDateTime;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:17: error: class, interface, enum, or record expected
-import java.util.concurrent.Executors;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:18: error: class, interface, enum, or record expected
-import java.util.concurrent.ScheduledExecutorService;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:19: error: class, interface, enum, or record expected
-import java.util.concurrent.TimeUnit;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:20: error: class, interface, enum, or record expected
-import java.util.concurrent.atomic.AtomicBoolean;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:21: error: class, interface, enum, or record expected
-import lightning.product.G_624_v;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:22: error: class, interface, enum, or record expected
-import lightning.product.S_4088_D;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: class, interface, enum, or record expected
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:15: error: cannot inherit from final Module
+extends Module {
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:19: error: cannot find symbol
+import lightning.product.Button;
+                        ^
+  symbol:   class Button
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:20: error: cannot find symbol
+import lightning.product.MinecraftAccess;
+                        ^
+  symbol:   class MinecraftAccess
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:293: error: cannot find symbol
+    extends Button {
+            ^
+  symbol:   class Button
+  location: class O_922_L
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: cannot find symbol
 import lightning.product.Module;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class Module
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: cannot find symbol
 import lightning.product.ModuleCategory;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:4: error: class, interface, enum, or record expected
-package lightning.product;
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:6: error: class, interface, enum, or record expected
-import java.util.regex.Pattern;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:7: error: class, interface, enum, or record expected
-import lightning.product.D_4024_W;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class ModuleCategory
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:28: error: cannot find symbol
+    private IPCClient v_4262_N;
+            ^
+  symbol:   class IPCClient
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: cannot find symbol
 import lightning.product.Module;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:9: error: class, interface, enum, or record expected
-import lightning.product.n_473_l;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class Module
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: cannot find symbol
 import lightning.product.ClientBootstrap;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class ClientBootstrap
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: cannot find symbol
 import lightning.product.BooleanSetting;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: class, interface, enum, or record expected
+                        ^
+  symbol:   class BooleanSetting
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: cannot find symbol
 import lightning.product.ModuleCategory;
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:1: error: illegal character: '\ufeff'
-я╗┐/*
-^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:1: error: illegal character: '\ufeff'
-я╗┐/*
-^
-24 errors
+                        ^
+  symbol:   class ModuleCategory
+  location: package lightning.product
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:21: error: cannot find symbol
+    public static BooleanSetting v_4262_N;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:22: error: cannot find symbol
+    public static BooleanSetting w_1484_f;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:23: error: cannot find symbol
+    public static BooleanSetting t_148_a;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:24: error: cannot find symbol
+    public static BooleanSetting s_956_w;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:25: error: cannot find symbol
+    public static BooleanSetting u_2550_I;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:26: error: cannot find symbol
+    public static BooleanSetting M_588_G;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:27: error: cannot find symbol
+    public static BooleanSetting P_4830_p;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:28: error: cannot find symbol
+    public static BooleanSetting h_1847_R;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:29: error: cannot find symbol
+    public static BooleanSetting Q_4569_t;
+                  ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:339: error: cannot find symbol
+        @Generated
+         ^
+  symbol:   class Generated
+  location: class n_1700_B
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:344: error: cannot find symbol
+        @Generated
+         ^
+  symbol:   class Generated
+  location: class n_1700_B
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:133: error: cannot find symbol
+            b.x = (int)(startX + (float)col * 132.0f);
+             ^
+  symbol:   variable x
+  location: variable b of type n_1700_B
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:134: error: cannot find symbol
+            b.y = (int)(startY + (float)row * 36.0f);
+             ^
+  symbol:   variable y
+  location: variable b of type n_1700_B
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:38: error: cannot find symbol
+        super("DiscordRPC", ModuleCategory.P_1922_E);
+                            ^
+  symbol:   variable ModuleCategory
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:57: error: cannot find symbol
+                this.v_4262_N = new IPCClient(1434360448957939885L);
+                                    ^
+  symbol:   class IPCClient
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:58: error: cannot find symbol
+                this.v_4262_N.setListener(new IPCListener(){
+                                              ^
+  symbol:   class IPCListener
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:70: error: cannot find symbol
+                this.v_4262_N.connect(new DiscordBuild[0]);
+                                          ^
+  symbol:   class DiscordBuild
+  location: class DiscordRPC
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:36: error: cannot find symbol
+        super("NameProtect", ModuleCategory.P_1922_E);
+                             ^
+  symbol:   variable ModuleCategory
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
+        String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
+                                          ^
+  symbol:   variable c_3005_b
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
+        String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
+                                                                                  ^
+  symbol:   variable c_3005_b
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
+        if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
+                                                 ^
+  symbol:   variable ClientBootstrap
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
+        if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
+                                                                                                                         ^
+  symbol:   variable ClientBootstrap
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:200: error: cannot find symbol
+        String username = NameProtect.c_3005_b.w_1484_f.R_4764_Y();
+                                     ^
+  symbol:   variable c_3005_b
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:205: error: cannot find symbol
+            for (n_473_l.n_1700_B friend : ClientBootstrap.Y_601_j().v_4262_N().P_4830_p()) {
+                                           ^
+  symbol:   variable ClientBootstrap
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:299: error: cannot find symbol
+        v_4262_N = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0434\u0440\u0443\u0437\u0435\u0439", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:300: error: cannot find symbol
+        w_1484_f = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043a\u043b\u0430\u043d", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:301: error: cannot find symbol
+        t_148_a = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0430\u043d\u0433", false);
+                      ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:302: error: cannot find symbol
+        s_956_w = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0433\u0440\u0438\u0444", false);
+                      ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:303: error: cannot find symbol
+        u_2550_I = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c IP", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:304: error: cannot find symbol
+        M_588_G = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0431\u0430\u043b\u0430\u043d\u0441", false);
+                      ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:305: error: cannot find symbol
+        P_4830_p = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0438\u043b\u043b\u0438\u043a\u0438", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:306: error: cannot find symbol
+        h_1847_R = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u043e\u043c\u0430\u0448\u043a\u0438", false);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:307: error: cannot find symbol
+        Q_4569_t = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043f\u0440\u0435\u0444\u0438\u043a\u0441\u044b \u0432 \u043d\u0435\u0439\u043c\u0442\u0435\u0433\u0430\u0445", true);
+                       ^
+  symbol:   class BooleanSetting
+  location: class NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:303: error: method does not override or implement a method from a supertype
+        @Override
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:328: error: method does not override or implement a method from a supertype
+        @Override
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:166: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:174: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:305: error: cannot find symbol
+            float buttonX = this.x;
+                                ^
+  symbol: variable x
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:306: error: cannot find symbol
+            float buttonY = this.y;
+                                ^
+  symbol: variable y
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                ^
+  symbol: variable x
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                   ^
+  symbol: variable x
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                                                         ^
+  symbol: variable y
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
+            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
+                                                                                                                                                                            ^
+  symbol: variable y
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
+            if (isWithinBounds && this.active && this.visible) {
+                                      ^
+  symbol: variable active
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
+            if (isWithinBounds && this.active && this.visible) {
+                                                     ^
+  symbol: variable visible
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:60: error: cannot find symbol
+                    public void onReady(IPCClient client) {
+                                        ^
+  symbol: class IPCClient
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:50: error: cannot find symbol
+        if (module == null || !module.w_1484_f() || !stripBrackets) {
+                                     ^
+  symbol:   method w_1484_f()
+  location: variable module of type NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:169: error: cannot find symbol
+        if (np == null || !np.w_1484_f() || cleanedVisible == null) {
+                             ^
+  symbol:   method w_1484_f()
+  location: variable np of type NameProtect
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:30: error: package lombok does not exist
+import lombok.Generated;
+             ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:297: error: package Button does not exist
+        public n_1700_B(int x, int y, int width, int height, String icon, String title, String description, Button.n_1700_B pressedAction) {
+                                                                                                                  ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: package com.jagrosh.discordipc does not exist
+import com.jagrosh.discordipc.IPCClient;
+                             ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: package com.jagrosh.discordipc does not exist
+import com.jagrosh.discordipc.IPCListener;
+                             ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: package com.jagrosh.discordipc.entities does not exist
+import com.jagrosh.discordipc.entities.DiscordBuild;
+                                      ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: package com.jagrosh.discordipc.entities does not exist
+import com.jagrosh.discordipc.entities.RichPresence;
+                                      ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:41: error: package RichPresence does not exist
+    private RichPresence.Builder h_1847_R() {
+                        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:76: error: package MinecraftAccess does not exist
+        if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:77: error: package MinecraftAccess does not exist
+            MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:79: error: package MinecraftAccess does not exist
+        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                         ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:80: error: package MinecraftAccess does not exist
+        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                          ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:112: error: package MinecraftAccess does not exist
+        int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
+                                            ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:113: error: package MinecraftAccess.c_3005_b does not exist
+        MinecraftAccess.c_3005_b.s_956_w.n_1700_B(2.0f);
+                                ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:117: error: package MinecraftAccess does not exist
+        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                         ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:118: error: package MinecraftAccess does not exist
+        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                          ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:121: error: package MinecraftAccess does not exist
+        if (MinecraftAccess.c_3005_b.Y_1740_V != this) {
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:162: error: package MinecraftAccess.c_3005_b does not exist
+        MinecraftAccess.c_3005_b.s_956_w.R_4764_Y();
+                                ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:237: error: package MinecraftAccess does not exist
+        if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:238: error: package MinecraftAccess does not exist
+            MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
+                           ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:248: error: package MinecraftAccess does not exist
+        int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
+                                            ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:252: error: package MinecraftAccess does not exist
+        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
+                                         ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:253: error: package MinecraftAccess does not exist
+        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
+                                          ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
+        RichPresence.Builder builder = new RichPresence.Builder();
+                    ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
+        RichPresence.Builder builder = new RichPresence.Builder();
+                                                       ^
+91 errors
         at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:89)
         at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
         at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
@@ -487,6 +1408,6 @@ C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java
         at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 
 
-BUILD FAILED in 13s
+BUILD FAILED in 21s
 1 actionable task: 1 executed
 PS C:\Users\1\Desktop\loader\Pouch> 
