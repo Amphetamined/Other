@@ -1408,6 +1408,5 @@ C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:
         at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 
 
-BUILD FAILED in 21s
+BUILD FAILED in 17s
 1 actionable task: 1 executed
-PS C:\Users\1\Desktop\loader\Pouch> 
