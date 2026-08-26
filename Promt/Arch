@@ -1,1090 +1,492 @@
 Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-PS C:\Users\1\Desktop\loader\Delta> $env:Path = "$env:JAVA_HOME\bin;$env:Path"    
-PS C:\Users\1\Desktop\loader\Delta> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"
-PS C:\Users\1\Desktop\loader\Delta> .\gradlew.bat runClient                       
+PS C:\Users\1\Desktop\loader\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"                                                    
+PS C:\Users\1\Desktop\loader\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"    
+PS C:\Users\1\Desktop\loader\Pouch> .\gradlew.bat packagePouchRuntime --no-daemon --stacktrace
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
 
-Welcome to Gradle 9.7.0!
+> Task :compilePouchBranding
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:1: error: illegal character: '\ufeff'
+я╗┐/*
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:10: error: class, interface, enum, or record expected
+package lightning.product;
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: class, interface, enum, or record expected
+import com.jagrosh.discordipc.IPCClient;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: class, interface, enum, or record expected
+import com.jagrosh.discordipc.IPCListener;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: class, interface, enum, or record expected
+import com.jagrosh.discordipc.entities.DiscordBuild;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: class, interface, enum, or record expected
+import com.jagrosh.discordipc.entities.RichPresence;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:16: error: class, interface, enum, or record expected
+import java.time.OffsetDateTime;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:17: error: class, interface, enum, or record expected
+import java.util.concurrent.Executors;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:18: error: class, interface, enum, or record expected
+import java.util.concurrent.ScheduledExecutorService;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:19: error: class, interface, enum, or record expected
+import java.util.concurrent.TimeUnit;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:20: error: class, interface, enum, or record expected
+import java.util.concurrent.atomic.AtomicBoolean;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:21: error: class, interface, enum, or record expected
+import lightning.product.G_624_v;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:22: error: class, interface, enum, or record expected
+import lightning.product.S_4088_D;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: class, interface, enum, or record expected
+import lightning.product.Module;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: class, interface, enum, or record expected
+import lightning.product.ModuleCategory;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:1: error: illegal character: '\ufeff'
+я╗┐/*
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:4: error: class, interface, enum, or record expected
+package lightning.product;
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:6: error: class, interface, enum, or record expected
+import java.util.regex.Pattern;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:7: error: class, interface, enum, or record expected
+import lightning.product.D_4024_W;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: class, interface, enum, or record expected
+import lightning.product.Module;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:9: error: class, interface, enum, or record expected
+import lightning.product.n_473_l;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: class, interface, enum, or record expected
+import lightning.product.ClientBootstrap;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: class, interface, enum, or record expected
+import lightning.product.BooleanSetting;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: class, interface, enum, or record expected
+import lightning.product.ModuleCategory;
+^
+24 errors
 
-Here are the highlights of this release:
- - Isolated Projects graduates to incubating
- - Broader Configuration Cache compatibility
- - More source locations in problem reports
+> Task :compilePouchBranding FAILED
 
-For more details see https://docs.gradle.org/9.7.0/release-notes.html
-
-Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
-
-> Configure project :
-Fabric Loom: 1.17.20
-
-> Task :compileJava
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\render\Draw2DProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\render\Draw2DProcessor.java:19: error: cannot find symbol
-public class Draw2DProcessor extends BaseProcessor implements Interface {
-                                     ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\render\Draw3DProcessor.java:5: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\render\Draw3DProcessor.java:20: error: cannot find symbol
-public class Draw3DProcessor extends BaseProcessor implements Interface {
-                                     ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:107: error: cannot find symbol
-    private final AttributeProcessor aB;
-                  ^
-  symbol:   class AttributeProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:108: error: cannot find symbol
-    private final EnchantmentProcessor aC;
-                  ^
-  symbol:   class EnchantmentProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:109: error: cannot find symbol
-    private final DescriptionProcessor aD;
-                  ^
-  symbol:   class DescriptionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:110: error: cannot find symbol
-    private final NBTProcessor aE;
-                  ^
-  symbol:   class NBTProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:111: error: cannot find symbol
-    private final PotionProcessor aF;
-                  ^
-  symbol:   class PotionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:120: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, PotionProcessor potionProcessor) {
-                                                ^
-  symbol:   class PotionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:124: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor) {
-                                                ^
-  symbol:   class AttributeProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:128: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, Object profile) {
-                                                ^
-  symbol:   class AttributeProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:132: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, DescriptionProcessor descriptionProcessor) {
-                                                ^
-  symbol:   class DescriptionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:136: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor) {
-                                                ^
-  symbol:   class EnchantmentProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:136: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor) {
-                                                                                           ^
-  symbol:   class DescriptionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:140: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, EnchantmentProcessor enchantmentProcessor) {
-                                                ^
-  symbol:   class EnchantmentProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:144: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, PotionProcessor potionProcessor, Object profile) {
-                                                ^
-  symbol:   class PotionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                ^
-  symbol:   class AttributeProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                                                       ^
-  symbol:   class EnchantmentProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                                                                                                  ^
-  symbol:   class DescriptionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                                                                                                                                             ^
-  symbol:   class NBTProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-    AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                                                                                                                                                                        ^
-  symbol:   class PotionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:178: error: cannot find symbol
-    public AttributeProcessor e() {
-           ^
-  symbol:   class AttributeProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:183: error: cannot find symbol
-    public EnchantmentProcessor f() {
-           ^
-  symbol:   class EnchantmentProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:188: error: cannot find symbol
-    public DescriptionProcessor g() {
-           ^
-  symbol:   class DescriptionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:193: error: cannot find symbol
-    public NBTProcessor h() {
-           ^
-  symbol:   class NBTProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:198: error: cannot find symbol
-    public PotionProcessor i() {
-           ^
-  symbol:   class PotionProcessor
-  location: class AutoBuyEntry
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:3: error: package aethereal.config does not exist
-import aethereal.config.*;
-                ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.ConfigProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyProcessor.java:12: error: cannot find symbol
-public class AutoBuyProcessor extends ConfigProcessor<AutoBuyEntry> {
-                                      ^
-  symbol: class ConfigProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuySection.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuySection.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\TextField.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\TextField.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\BatchProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\BatchProcessor.java:20: error: cannot find symbol
-public class BatchProcessor extends BaseProcessor {
-                                    ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorProcessor.java:17: error: cannot find symbol
-public class CollectorProcessor extends ConfigProcessor<Collector_2.b> {
-                                        ^
-  symbol: class ConfigProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:3: error: package aethereal.config does not exist
-import aethereal.config.DescriptionProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:4: error: package aethereal.config does not exist
-import aethereal.config.EnchantmentProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:5: error: package aethereal.config does not exist
-import aethereal.config.PotionProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorProcessor.java:81: error: cannot find symbol
-    private void a(JSONObject obj, String key, List<? extends Condition> conditions) {
-                                                              ^
-  symbol:   class Condition
-  location: class CollectorProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorProcessor.java:102: error: cannot find symbol
-    private void b(JSONObject obj, String key, List<? extends Condition> conditions) {
-                                                              ^
-  symbol:   class Condition
-  location: class CollectorProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:347: error: cannot find symbol
-        private DescriptionProcessor a;
-                ^
-  symbol:   class DescriptionProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:348: error: cannot find symbol
-        private EnchantmentProcessor b;
-                ^
-  symbol:   class EnchantmentProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:349: error: cannot find symbol
-        private PotionProcessor c;
-                ^
-  symbol:   class PotionProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:371: error: cannot find symbol
-        public DescriptionProcessor e() {
-               ^
-  symbol:   class DescriptionProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:376: error: cannot find symbol
-        public EnchantmentProcessor f() {
-               ^
-  symbol:   class EnchantmentProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:381: error: cannot find symbol
-        public PotionProcessor g() {
-               ^
-  symbol:   class PotionProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:434: error: cannot find symbol
-        public b a(EnchantmentProcessor processor) {
-                   ^
-  symbol:   class EnchantmentProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:439: error: cannot find symbol
-        public b a(DescriptionProcessor processor) {
-                   ^
-  symbol:   class DescriptionProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:444: error: cannot find symbol
-        public b a(PotionProcessor processor) {
-                   ^
-  symbol:   class PotionProcessor
-  location: class b
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.*;
-                ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorSection.java:3: error: package aethereal.config does not exist
-import aethereal.config.Condition;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorSection.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorSection.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorSection.java:26: error: cannot find symbol
-    private Condition e;
-            ^
-  symbol:   class Condition
-  location: class CollectorSection
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\BindCommand.java:3: error: package aethereal.config does not exist
-import aethereal.config.ModuleProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\CommandProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\CommandProcessor.java:24: error: cannot find symbol
-public class CommandProcessor extends BaseProcessor {
-                                      ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\WayCommand.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\ConfigCommand.java:3: error: package aethereal.config does not exist
-import aethereal.config.ModuleProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:8: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:9: error: package aethereal.config does not exist
-import aethereal.config.ModuleProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:10: error: package aethereal.config does not exist
-import aethereal.config.ResourcePacksProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:11: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\GUIPanel.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\GUIPanel.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\GUIPanel.java:156: error: cannot find symbol
-    private void a(MatrixStack matrices, ThemeProcessor theme, float header) {
-                                         ^
-  symbol:   class ThemeProcessor
-  location: class GUIPanel
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:43: error: cannot find symbol
-    private final List<BaseProcessor> c;
-                       ^
-  symbol:   class BaseProcessor
-  location: class Processor_2
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\macro\MacrosProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.ConfigProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\macro\MacrosProcessor.java:15: error: cannot find symbol
-public class MacrosProcessor extends ConfigProcessor<MacrosConstructor> {
-                                     ^
-  symbol: class ConfigProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\friend\FriendProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.ConfigProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\friend\FriendProcessor.java:13: error: cannot find symbol
-public class FriendProcessor extends ConfigProcessor<FriendConstructor> {
-                                     ^
-  symbol: class ConfigProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\staff\StaffProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.ConfigProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\staff\StaffProcessor.java:11: error: cannot find symbol
-public class StaffProcessor extends ConfigProcessor<StaffConstructor> {
-                                    ^
-  symbol: class ConfigProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\discord\DiscordProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\discord\DiscordProcessor.java:10: error: cannot find symbol
-public class DiscordProcessor extends BaseProcessor {
-                                      ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\network\AccountProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.ConfigProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\network\AccountProcessor.java:11: error: cannot find symbol
-public class AccountProcessor extends ConfigProcessor<AccountConstructor> {
-                                      ^
-  symbol: class ConfigProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\handler\RotationProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\handler\RotationProcessor.java:22: error: cannot find symbol
-public class RotationProcessor extends BaseProcessor implements Interface {
-                                       ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\notification\NotificationProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\notification\NotificationProcessor.java:16: error: cannot find symbol
-public class NotificationProcessor extends BaseProcessor implements Interface {
-                                           ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:54: error: cannot find symbol
-    private final ResourcePacksProcessor n;
-                  ^
-  symbol:   class ResourcePacksProcessor
-  location: class Processor_2
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:55: error: cannot find symbol
-    private final ThemeProcessor o;
-                  ^
-  symbol:   class ThemeProcessor
-  location: class Processor_2
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\cosmetic\CosmeticsProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\cosmetic\CosmeticsProcessor.java:35: error: cannot find symbol
-public class CosmeticsProcessor extends BaseProcessor {
-                                        ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\DragProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.ConfigProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\DragProcessor.java:5: error: package aethereal.config does not exist
-import aethereal.config.ConverterUtil;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\DragProcessor.java:25: error: cannot find symbol
-public class DragProcessor extends ConfigProcessor<DragInfo> implements Interface {
-                                   ^
-  symbol: class ConfigProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:60: error: cannot find symbol
-    private final ModuleProcessor t;
-                  ^
-  symbol:   class ModuleProcessor
-  location: class Processor_2
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\handler\HandlerProcessor.java:4: error: package aethereal.config does not exist
-import aethereal.config.BaseProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\handler\HandlerProcessor.java:14: error: cannot find symbol
-public class HandlerProcessor extends BaseProcessor {
-                                      ^
-  symbol: class BaseProcessor
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:106: error: cannot find symbol
-    public List<BaseProcessor> c() {
-                ^
-  symbol:   class BaseProcessor
-  location: class Processor_2
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:161: error: cannot find symbol
-    public ResourcePacksProcessor n() {
-           ^
-  symbol:   class ResourcePacksProcessor
-  location: class Processor_2
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:166: error: cannot find symbol
-    public ThemeProcessor o() {
-           ^
-  symbol:   class ThemeProcessor
-  location: class Processor_2
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:191: error: cannot find symbol
-    public ModuleProcessor t() {
-           ^
-  symbol:   class ModuleProcessor
-  location: class Processor_2
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\combat\AuraHandler.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\Widget.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\Widget.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\RadialScreen.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Communication.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Communication.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\AssistantScreen.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\AssistantScreen.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\ServerAssistant.java:3: error: package aethereal.config does not exist
-import aethereal.config.DescriptionProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\ServerAssistant.java:4: error: package aethereal.config does not exist
-import aethereal.config.EnchantmentProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\player\UseTracker.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\BlockESP.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\EntityBox.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\HandsShader.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\Interface_2.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\Predictions.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\BindElement.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\BindElement.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\BooleanElement.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\BooleanElement.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ButtonElement.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ButtonElement.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ColorElement.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ColorElement.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ModeElement.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ModeElement.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\MultiModeElement.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\MultiModeElement.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\SliderElement.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\SliderElement.java:5: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\AltScreen.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\MainScreen.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\StationScreen.java:6: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\StationScreen.java:7: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\EnvironmentWidget.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\EnvironmentWidget.java:4: error: package aethereal.config does not exist
-import aethereal.config.ThemeProcessor;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\HotkeysWidget.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\NotificationWidget.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\PotionWidget.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\StaffWidget.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\TargetWidget.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\WatermarkWidget.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\util\ChatUtil.java:3: error: package aethereal.config does not exist
-import aethereal.config.ThemeInfo;
-                       ^
-140 errors
-
-> Task :compileJava FAILED
-
-[Incubating] Problems report is available at: file:///C:/Users/1/Desktop/loader/Delta/build/reports/problems/problems-report.html
+[Incubating] Problems report is available at: file:///C:/Users/1/Desktop/loader/Pouch/build/reports/problems/problems-report.html
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':compileJava' (registered by plugin class 'org.gradle.api.plugins.JavaBasePlugin').
+Execution failed for task ':compilePouchBranding'.
 > Compilation failed; see the compiler output below.
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:107: error: cannot find symbol
-      private final AttributeProcessor aB;
-                    ^
-    symbol:   class AttributeProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:108: error: cannot find symbol
-      private final EnchantmentProcessor aC;
-                    ^
-    symbol:   class EnchantmentProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:109: error: cannot find symbol
-      private final DescriptionProcessor aD;
-                    ^
-    symbol:   class DescriptionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:110: error: cannot find symbol
-      private final NBTProcessor aE;
-                    ^
-    symbol:   class NBTProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:111: error: cannot find symbol
-      private final PotionProcessor aF;
-                    ^
-    symbol:   class PotionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:120: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, PotionProcessor potionProcessor) {
-                                                  ^
-    symbol:   class PotionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:124: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor) {
-                                                  ^
-    symbol:   class AttributeProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:128: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, Object profile) {
-                                                  ^
-    symbol:   class AttributeProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:132: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, DescriptionProcessor descriptionProcessor) {
-                                                  ^
-    symbol:   class DescriptionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:136: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor) {
-                                                  ^
-    symbol:   class EnchantmentProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:136: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor) {
-                                                                                             ^
-    symbol:   class DescriptionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:140: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, EnchantmentProcessor enchantmentProcessor) {
-                                                  ^
-    symbol:   class EnchantmentProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:144: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, PotionProcessor potionProcessor, Object profile) {
-                                                  ^
-    symbol:   class PotionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                  ^
-    symbol:   class AttributeProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                                                         ^
-    symbol:   class EnchantmentProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                                                                                                    ^
-    symbol:   class DescriptionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                                                                                                                                               ^
-    symbol:   class NBTProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:148: error: cannot find symbol
-      AutoBuyEntry(String displayName, Item item, AttributeProcessor attributeProcessor, EnchantmentProcessor enchantmentProcessor, DescriptionProcessor descriptionProcessor, NBTProcessor nbtProcessor, PotionProcessor potionProcessor, Object profile) {
-                                                                                                                                                                                                          ^
-    symbol:   class PotionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:178: error: cannot find symbol
-      public AttributeProcessor e() {
-             ^
-    symbol:   class AttributeProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:183: error: cannot find symbol
-      public EnchantmentProcessor f() {
-             ^
-    symbol:   class EnchantmentProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:188: error: cannot find symbol
-      public DescriptionProcessor g() {
-             ^
-    symbol:   class DescriptionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:193: error: cannot find symbol
-      public NBTProcessor h() {
-             ^
-    symbol:   class NBTProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:198: error: cannot find symbol
-      public PotionProcessor i() {
-             ^
-    symbol:   class PotionProcessor
-    location: class AutoBuyEntry
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorProcessor.java:81: error: cannot find symbol
-      private void a(JSONObject obj, String key, List<? extends Condition> conditions) {
-                                                                ^
-    symbol:   class Condition
-    location: class CollectorProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorProcessor.java:102: error: cannot find symbol
-      private void b(JSONObject obj, String key, List<? extends Condition> conditions) {
-                                                                ^
-    symbol:   class Condition
-    location: class CollectorProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:347: error: cannot find symbol
-          private DescriptionProcessor a;
-                  ^
-    symbol:   class DescriptionProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:348: error: cannot find symbol
-          private EnchantmentProcessor b;
-                  ^
-    symbol:   class EnchantmentProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:349: error: cannot find symbol
-          private PotionProcessor c;
-                  ^
-    symbol:   class PotionProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:371: error: cannot find symbol
-          public DescriptionProcessor e() {
-                 ^
-    symbol:   class DescriptionProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:376: error: cannot find symbol
-          public EnchantmentProcessor f() {
-                 ^
-    symbol:   class EnchantmentProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:381: error: cannot find symbol
-          public PotionProcessor g() {
-                 ^
-    symbol:   class PotionProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:434: error: cannot find symbol
-          public b a(EnchantmentProcessor processor) {
-                     ^
-    symbol:   class EnchantmentProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:439: error: cannot find symbol
-          public b a(DescriptionProcessor processor) {
-                     ^
-    symbol:   class DescriptionProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:444: error: cannot find symbol
-          public b a(PotionProcessor processor) {
-                     ^
-    symbol:   class PotionProcessor
-    location: class b
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorSection.java:26: error: cannot find symbol
-      private Condition e;
-              ^
-    symbol:   class Condition
-    location: class CollectorSection
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\GUIPanel.java:156: error: cannot find symbol
-      private void a(MatrixStack matrices, ThemeProcessor theme, float header) {
-                                           ^
-    symbol:   class ThemeProcessor
-    location: class GUIPanel
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:43: error: cannot find symbol
-      private final List<BaseProcessor> c;
-                         ^
-    symbol:   class BaseProcessor
-    location: class Processor_2
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:54: error: cannot find symbol
-      private final ResourcePacksProcessor n;
-                    ^
-    symbol:   class ResourcePacksProcessor
-    location: class Processor_2
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:55: error: cannot find symbol
-      private final ThemeProcessor o;
-                    ^
-    symbol:   class ThemeProcessor
-    location: class Processor_2
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:60: error: cannot find symbol
-      private final ModuleProcessor t;
-                    ^
-    symbol:   class ModuleProcessor
-    location: class Processor_2
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:106: error: cannot find symbol
-      public List<BaseProcessor> c() {
-                  ^
-    symbol:   class BaseProcessor
-    location: class Processor_2
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:161: error: cannot find symbol
-      public ResourcePacksProcessor n() {
-             ^
-    symbol:   class ResourcePacksProcessor
-    location: class Processor_2
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:166: error: cannot find symbol
-      public ThemeProcessor o() {
-             ^
-    symbol:   class ThemeProcessor
-    location: class Processor_2
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:191: error: cannot find symbol
-      public ModuleProcessor t() {
-             ^
-    symbol:   class ModuleProcessor
-    location: class Processor_2
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\render\Draw2DProcessor.java:19: error: cannot find symbol
-  public class Draw2DProcessor extends BaseProcessor implements Interface {
-                                       ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\render\Draw3DProcessor.java:20: error: cannot find symbol
-  public class Draw3DProcessor extends BaseProcessor implements Interface {
-                                       ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyProcessor.java:12: error: cannot find symbol
-  public class AutoBuyProcessor extends ConfigProcessor<AutoBuyEntry> {
-                                        ^
-    symbol: class ConfigProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\BatchProcessor.java:20: error: cannot find symbol
-  public class BatchProcessor extends BaseProcessor {
-                                      ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorProcessor.java:17: error: cannot find symbol
-  public class CollectorProcessor extends ConfigProcessor<Collector_2.b> {
-                                          ^
-    symbol: class ConfigProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\CommandProcessor.java:24: error: cannot find symbol
-  public class CommandProcessor extends BaseProcessor {
-                                        ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\macro\MacrosProcessor.java:15: error: cannot find symbol
-  public class MacrosProcessor extends ConfigProcessor<MacrosConstructor> {
-                                       ^
-    symbol: class ConfigProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\friend\FriendProcessor.java:13: error: cannot find symbol
-  public class FriendProcessor extends ConfigProcessor<FriendConstructor> {
-                                       ^
-    symbol: class ConfigProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\staff\StaffProcessor.java:11: error: cannot find symbol
-  public class StaffProcessor extends ConfigProcessor<StaffConstructor> {
-                                      ^
-    symbol: class ConfigProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\discord\DiscordProcessor.java:10: error: cannot find symbol
-  public class DiscordProcessor extends BaseProcessor {
-                                        ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\network\AccountProcessor.java:11: error: cannot find symbol
-  public class AccountProcessor extends ConfigProcessor<AccountConstructor> {
-                                        ^
-    symbol: class ConfigProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\handler\RotationProcessor.java:22: error: cannot find symbol
-  public class RotationProcessor extends BaseProcessor implements Interface {
-                                         ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\notification\NotificationProcessor.java:16: error: cannot find symbol
-  public class NotificationProcessor extends BaseProcessor implements Interface {
-                                             ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\cosmetic\CosmeticsProcessor.java:35: error: cannot find symbol
-  public class CosmeticsProcessor extends BaseProcessor {
-                                          ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\DragProcessor.java:25: error: cannot find symbol
-  public class DragProcessor extends ConfigProcessor<DragInfo> implements Interface {
-                                     ^
-    symbol: class ConfigProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\handler\HandlerProcessor.java:14: error: cannot find symbol
-  public class HandlerProcessor extends BaseProcessor {
-                                        ^
-    symbol: class BaseProcessor
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\render\Draw2DProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\render\Draw3DProcessor.java:5: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyEntry.java:3: error: package aethereal.config does not exist
-  import aethereal.config.*;
-                  ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuyProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ConfigProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuySection.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\AutoBuySection.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\TextField.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\TextField.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\BatchProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:3: error: package aethereal.config does not exist
-  import aethereal.config.DescriptionProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:4: error: package aethereal.config does not exist
-  import aethereal.config.EnchantmentProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Collector_2.java:5: error: package aethereal.config does not exist
-  import aethereal.config.PotionProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.*;
-                  ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorSection.java:3: error: package aethereal.config does not exist
-  import aethereal.config.Condition;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorSection.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\autobuy\CollectorSection.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\BindCommand.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ModuleProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\CommandProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\WayCommand.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\command\ConfigCommand.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ModuleProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:8: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:9: error: package aethereal.config does not exist
-  import aethereal.config.ModuleProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:10: error: package aethereal.config does not exist
-  import aethereal.config.ResourcePacksProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\core\Processor_2.java:11: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\GUIPanel.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\GUIPanel.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\macro\MacrosProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ConfigProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\friend\FriendProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ConfigProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\staff\StaffProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ConfigProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\discord\DiscordProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\network\AccountProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ConfigProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\handler\RotationProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\notification\NotificationProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\cosmetic\CosmeticsProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\DragProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ConfigProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\DragProcessor.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ConverterUtil;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\handler\HandlerProcessor.java:4: error: package aethereal.config does not exist
-  import aethereal.config.BaseProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\combat\AuraHandler.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\Widget.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\Widget.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\RadialScreen.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Communication.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\Communication.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\AssistantScreen.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\AssistantScreen.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\ServerAssistant.java:3: error: package aethereal.config does not exist
-  import aethereal.config.DescriptionProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\misc\ServerAssistant.java:4: error: package aethereal.config does not exist
-  import aethereal.config.EnchantmentProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\player\UseTracker.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\BlockESP.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\EntityBox.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\HandsShader.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\Interface_2.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\module\render\Predictions.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\BindElement.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\BindElement.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\BooleanElement.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\BooleanElement.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ButtonElement.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ButtonElement.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ColorElement.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ColorElement.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ModeElement.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\ModeElement.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\MultiModeElement.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\MultiModeElement.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\SliderElement.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\element\SliderElement.java:5: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\AltScreen.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\MainScreen.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\StationScreen.java:6: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\screen\StationScreen.java:7: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\EnvironmentWidget.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\EnvironmentWidget.java:4: error: package aethereal.config does not exist
-  import aethereal.config.ThemeProcessor;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\HotkeysWidget.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\NotificationWidget.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\PotionWidget.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\StaffWidget.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\TargetWidget.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\ui\widget\WatermarkWidget.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  C:\Users\1\Desktop\loader\Delta\src\main\java\aethereal\util\ChatUtil.java:3: error: package aethereal.config does not exist
-  import aethereal.config.ThemeInfo;
-                         ^
-  140 errors
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:10: error: class, interface, enum, or record expected
+  package lightning.product;
+          ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: class, interface, enum, or record expected
+  import com.jagrosh.discordipc.IPCClient;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: class, interface, enum, or record expected
+  import com.jagrosh.discordipc.IPCListener;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: class, interface, enum, or record expected
+  import com.jagrosh.discordipc.entities.DiscordBuild;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: class, interface, enum, or record expected
+  import com.jagrosh.discordipc.entities.RichPresence;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:16: error: class, interface, enum, or record expected
+  import java.time.OffsetDateTime;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:17: error: class, interface, enum, or record expected
+  import java.util.concurrent.Executors;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:18: error: class, interface, enum, or record expected
+  import java.util.concurrent.ScheduledExecutorService;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:19: error: class, interface, enum, or record expected
+  import java.util.concurrent.TimeUnit;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:20: error: class, interface, enum, or record expected
+  import java.util.concurrent.atomic.AtomicBoolean;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:21: error: class, interface, enum, or record expected
+  import lightning.product.G_624_v;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:22: error: class, interface, enum, or record expected
+  import lightning.product.S_4088_D;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: class, interface, enum, or record expected
+  import lightning.product.Module;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: class, interface, enum, or record expected
+  import lightning.product.ModuleCategory;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:4: error: class, interface, enum, or record expected
+  package lightning.product;
+          ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:6: error: class, interface, enum, or record expected
+  import java.util.regex.Pattern;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:7: error: class, interface, enum, or record expected
+  import lightning.product.D_4024_W;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: class, interface, enum, or record expected
+  import lightning.product.Module;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:9: error: class, interface, enum, or record expected
+  import lightning.product.n_473_l;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: class, interface, enum, or record expected
+  import lightning.product.ClientBootstrap;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: class, interface, enum, or record expected
+  import lightning.product.BooleanSetting;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: class, interface, enum, or record expected
+  import lightning.product.ModuleCategory;
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:1: error: illegal character: '\ufeff'
+  я╗┐/*
+  ^
+  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:1: error: illegal character: '\ufeff'
+  я╗┐/*
+  ^
+  24 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
-> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Run with --scan to get full insights.
 
-BUILD FAILED in 25s
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compilePouchBranding'.
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+        at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+        at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+        at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+        at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+        at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+        at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+        at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+        at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+        at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+        at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+        at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+        at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+        at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+        at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+        at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+        at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+        at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+        at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+        at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+        at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+        at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+        at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+        at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+        at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:10: error: class, interface, enum, or record expected
+package lightning.product;
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: class, interface, enum, or record expected
+import com.jagrosh.discordipc.IPCClient;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: class, interface, enum, or record expected
+import com.jagrosh.discordipc.IPCListener;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: class, interface, enum, or record expected
+import com.jagrosh.discordipc.entities.DiscordBuild;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: class, interface, enum, or record expected
+import com.jagrosh.discordipc.entities.RichPresence;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:16: error: class, interface, enum, or record expected
+import java.time.OffsetDateTime;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:17: error: class, interface, enum, or record expected
+import java.util.concurrent.Executors;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:18: error: class, interface, enum, or record expected
+import java.util.concurrent.ScheduledExecutorService;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:19: error: class, interface, enum, or record expected
+import java.util.concurrent.TimeUnit;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:20: error: class, interface, enum, or record expected
+import java.util.concurrent.atomic.AtomicBoolean;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:21: error: class, interface, enum, or record expected
+import lightning.product.G_624_v;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:22: error: class, interface, enum, or record expected
+import lightning.product.S_4088_D;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: class, interface, enum, or record expected
+import lightning.product.Module;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: class, interface, enum, or record expected
+import lightning.product.ModuleCategory;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:4: error: class, interface, enum, or record expected
+package lightning.product;
+        ^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:6: error: class, interface, enum, or record expected
+import java.util.regex.Pattern;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:7: error: class, interface, enum, or record expected
+import lightning.product.D_4024_W;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: class, interface, enum, or record expected
+import lightning.product.Module;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:9: error: class, interface, enum, or record expected
+import lightning.product.n_473_l;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: class, interface, enum, or record expected
+import lightning.product.ClientBootstrap;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: class, interface, enum, or record expected
+import lightning.product.BooleanSetting;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: class, interface, enum, or record expected
+import lightning.product.ModuleCategory;
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:1: error: illegal character: '\ufeff'
+я╗┐/*
+^
+C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:1: error: illegal character: '\ufeff'
+я╗┐/*
+^
+24 errors
+        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:89)
+        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+        at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+        at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
+        at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+        at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:52)
+        at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:38)
+        at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
+        at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
+        at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
+        at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:206)
+        at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
+        at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilerFactory.lambda$createRebuildAllCompiler$0(IncrementalCompilerFactory.java:55)
+        at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:70)
+        at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:44)
+        at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:66)
+        at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:52)
+        at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:64)
+        at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:48)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+        at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:48)
+        at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:224)
+        at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:165)
+        at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:150)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+        at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+        at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
+        at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+        at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
+        at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+        at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
+        at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+        at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+        at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+        at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+        at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+        at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+        at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+        at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+        at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+        at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+        at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+        at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+        at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+        at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+        at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+        at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+        at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+        at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+        at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+        at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+        at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+        at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+        at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+        at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+        at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+        at org.gradle.internal.Either$Right.fold(Either.java:175)
+        at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+        at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+        at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+        at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+        at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+        at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+        at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+        at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+        at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+        at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+        at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+        at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+        at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+        at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+        at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+        at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+        at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+        at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+        at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+        at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+        at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+        at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+        at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+        at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+        at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+        at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+        at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+        at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+        at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+        at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+        at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+        at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+        at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+        at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+        at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+        at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+        at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+        at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+        at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+        at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+        at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+        at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+        at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+        at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+        at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+        at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+        at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+        at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+        at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+        at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+        at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+        at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+        at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+        at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+        at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+        at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+        at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+        at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+        at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+        at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+        at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+        at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+        at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+        at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+        at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+        at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+
+
+BUILD FAILED in 13s
 1 actionable task: 1 executed
-PS C:\Users\1\Desktop\loader\Delta> 
+PS C:\Users\1\Desktop\loader\Pouch> 
