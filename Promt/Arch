@@ -1,1412 +1,387 @@
 Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-PS C:\Users\1\Desktop\loader\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"                
-PS C:\Users\1\Desktop\loader\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"            
-PS C:\Users\1\Desktop\loader\Pouch> .\gradlew.bat packagePouchRuntime --no-daemon --stacktrace
-To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
-Daemon will be stopped at the end of the build 
+PS C:\Users\1\Desktop\Новая папка\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"
+PS C:\Users\1\Desktop\Новая папка\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"    
+PS C:\Users\1\Desktop\Новая папка\Pouch> .\gradlew.bat runClient                       
 
-> Task :compilePouchBranding
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:19: error: cannot find symbol
-import lightning.product.Button;
-                        ^
-  symbol:   class Button
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:20: error: cannot find symbol
-import lightning.product.MinecraftAccess;
-                        ^
-  symbol:   class MinecraftAccess
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:30: error: package lombok does not exist
-import lombok.Generated;
-             ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:293: error: cannot find symbol
-    extends Button {
-            ^
-  symbol:   class Button
-  location: class O_922_L
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:297: error: package Button does not exist
-        public n_1700_B(int x, int y, int width, int height, String icon, String title, String description, Button.n_1700_B pressedAction) {
-                                                                                                                  ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: package com.jagrosh.discordipc does not exist
-import com.jagrosh.discordipc.IPCClient;
-                             ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: package com.jagrosh.discordipc does not exist
-import com.jagrosh.discordipc.IPCListener;
-                             ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: package com.jagrosh.discordipc.entities does not exist
-import com.jagrosh.discordipc.entities.DiscordBuild;
-                                      ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: package com.jagrosh.discordipc.entities does not exist
-import com.jagrosh.discordipc.entities.RichPresence;
-                                      ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: cannot find symbol
-import lightning.product.Module;
-                        ^
-  symbol:   class Module
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: cannot find symbol
-import lightning.product.ModuleCategory;
-                        ^
-  symbol:   class ModuleCategory
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:27: error: cannot inherit from final Module
-extends Module {
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:28: error: cannot find symbol
-    private IPCClient v_4262_N;
-            ^
-  symbol:   class IPCClient
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:41: error: package RichPresence does not exist
-    private RichPresence.Builder h_1847_R() {
-                        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: cannot find symbol
-import lightning.product.Module;
-                        ^
-  symbol:   class Module
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: cannot find symbol
-import lightning.product.ClientBootstrap;
-                        ^
-  symbol:   class ClientBootstrap
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: cannot find symbol
-import lightning.product.BooleanSetting;
-                        ^
-  symbol:   class BooleanSetting
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: cannot find symbol
-import lightning.product.ModuleCategory;
-                        ^
-  symbol:   class ModuleCategory
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:15: error: cannot inherit from final Module
-extends Module {
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:21: error: cannot find symbol
-    public static BooleanSetting v_4262_N;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:22: error: cannot find symbol
-    public static BooleanSetting w_1484_f;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:23: error: cannot find symbol
-    public static BooleanSetting t_148_a;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:24: error: cannot find symbol
-    public static BooleanSetting s_956_w;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:25: error: cannot find symbol
-    public static BooleanSetting u_2550_I;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:26: error: cannot find symbol
-    public static BooleanSetting M_588_G;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:27: error: cannot find symbol
-    public static BooleanSetting P_4830_p;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:28: error: cannot find symbol
-    public static BooleanSetting h_1847_R;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:29: error: cannot find symbol
-    public static BooleanSetting Q_4569_t;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:339: error: cannot find symbol
-        @Generated
-         ^
-  symbol:   class Generated
-  location: class n_1700_B
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:344: error: cannot find symbol
-        @Generated
-         ^
-  symbol:   class Generated
-  location: class n_1700_B
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:76: error: package MinecraftAccess does not exist
-        if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:77: error: package MinecraftAccess does not exist
-            MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:79: error: package MinecraftAccess does not exist
-        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:80: error: package MinecraftAccess does not exist
-        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                          ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:107: error: incompatible types: n_1700_B cannot be converted to V_2511_L
-        this.buttons.add(button);
-                         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:112: error: package MinecraftAccess does not exist
-        int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
-                                            ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:113: error: package MinecraftAccess.c_3005_b does not exist
-        MinecraftAccess.c_3005_b.s_956_w.n_1700_B(2.0f);
-                                ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:117: error: package MinecraftAccess does not exist
-        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:118: error: package MinecraftAccess does not exist
-        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                          ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:121: error: package MinecraftAccess does not exist
-        if (MinecraftAccess.c_3005_b.Y_1740_V != this) {
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:133: error: cannot find symbol
-            b.x = (int)(startX + (float)col * 132.0f);
-             ^
-  symbol:   variable x
-  location: variable b of type n_1700_B
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:134: error: cannot find symbol
-            b.y = (int)(startY + (float)row * 36.0f);
-             ^
-  symbol:   variable y
-  location: variable b of type n_1700_B
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:162: error: package MinecraftAccess.c_3005_b does not exist
-        MinecraftAccess.c_3005_b.s_956_w.R_4764_Y();
-                                ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:237: error: package MinecraftAccess does not exist
-        if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:238: error: package MinecraftAccess does not exist
-            MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:248: error: package MinecraftAccess does not exist
-        int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
-                                            ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:252: error: package MinecraftAccess does not exist
-        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:253: error: package MinecraftAccess does not exist
-        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                          ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:303: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:305: error: cannot find symbol
-            float buttonX = this.x;
-                                ^
-  symbol: variable x
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:306: error: cannot find symbol
-            float buttonY = this.y;
-                                ^
-  symbol: variable y
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:320: error: cannot find symbol
-            l_3370_o.G_564_y[15].n_1700_B(matrixStack, this.getMessage().getString(), (double)(buttonX + l_3370_o.t_148_a[18].n_1700_B(this.n_1700_B) + 12.0f), (double)(buttonY + l_3370_o.G_564_y[16].h_1847_R() + 4.0f), titleColor);
-                                                           ^
-  symbol: method getMessage()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:328: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                ^
-  symbol: variable x
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                   ^
-  symbol: variable x
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                                                         ^
-  symbol: variable y
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                                                                                            ^
-  symbol: variable y
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
-            if (isWithinBounds && this.active && this.visible) {
-                                      ^
-  symbol: variable active
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
-            if (isWithinBounds && this.active && this.visible) {
-                                                     ^
-  symbol: variable visible
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:333: error: cannot find symbol
-                this.onClick(mouseX, mouseY);
-                    ^
-  symbol: method onClick(double,double)
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:38: error: cannot find symbol
-        super("DiscordRPC", ModuleCategory.P_1922_E);
-                            ^
-  symbol:   variable ModuleCategory
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
-        RichPresence.Builder builder = new RichPresence.Builder();
-                    ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
-        RichPresence.Builder builder = new RichPresence.Builder();
-                                                       ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:57: error: cannot find symbol
-                this.v_4262_N = new IPCClient(1434360448957939885L);
-                                    ^
-  symbol:   class IPCClient
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:58: error: cannot find symbol
-                this.v_4262_N.setListener(new IPCListener(){
-                                              ^
-  symbol:   class IPCListener
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:60: error: cannot find symbol
-                    public void onReady(IPCClient client) {
-                                        ^
-  symbol: class IPCClient
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:70: error: cannot find symbol
-                this.v_4262_N.connect(new DiscordBuild[0]);
-                                          ^
-  symbol:   class DiscordBuild
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:130: error: cannot find symbol
-        if (this.s_956_w || !this.w_1484_f()) {
-                                 ^
-  symbol: method w_1484_f()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:137: error: cannot find symbol
-            if (!this.w_1484_f() || this.v_4262_N != null || this.t_148_a.get()) {
-                     ^
-  symbol: method w_1484_f()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:166: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:168: error: cannot find symbol
-        super.onEnable();
-             ^
-  symbol: method onEnable()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:174: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:176: error: cannot find symbol
-        super.onDisable();
-             ^
-  symbol: method onDisable()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:36: error: cannot find symbol
-        super("NameProtect", ModuleCategory.P_1922_E);
-                             ^
-  symbol:   variable ModuleCategory
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:50: error: cannot find symbol
-        if (module == null || !module.w_1484_f() || !stripBrackets) {
-                                     ^
-  symbol:   method w_1484_f()
-  location: variable module of type NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:169: error: cannot find symbol
-        if (np == null || !np.w_1484_f() || cleanedVisible == null) {
-                             ^
-  symbol:   method w_1484_f()
-  location: variable np of type NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
-        String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
-                                          ^
-  symbol:   variable c_3005_b
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
-        String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
-                                                                                  ^
-  symbol:   variable c_3005_b
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
-        if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
-                                                 ^
-  symbol:   variable ClientBootstrap
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
-        if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
-                                                                                                                         ^
-  symbol:   variable ClientBootstrap
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:200: error: cannot find symbol
-        String username = NameProtect.c_3005_b.w_1484_f.R_4764_Y();
-                                     ^
-  symbol:   variable c_3005_b
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:205: error: cannot find symbol
-            for (n_473_l.n_1700_B friend : ClientBootstrap.Y_601_j().v_4262_N().P_4830_p()) {
-                                           ^
-  symbol:   variable ClientBootstrap
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:299: error: cannot find symbol
-        v_4262_N = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0434\u0440\u0443\u0437\u0435\u0439", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:300: error: cannot find symbol
-        w_1484_f = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043a\u043b\u0430\u043d", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:301: error: cannot find symbol
-        t_148_a = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0430\u043d\u0433", false);
-                      ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:302: error: cannot find symbol
-        s_956_w = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0433\u0440\u0438\u0444", false);
-                      ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:303: error: cannot find symbol
-        u_2550_I = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c IP", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:304: error: cannot find symbol
-        M_588_G = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0431\u0430\u043b\u0430\u043d\u0441", false);
-                      ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:305: error: cannot find symbol
-        P_4830_p = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0438\u043b\u043b\u0438\u043a\u0438", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:306: error: cannot find symbol
-        h_1847_R = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u043e\u043c\u0430\u0448\u043a\u0438", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:307: error: cannot find symbol
-        Q_4569_t = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043f\u0440\u0435\u0444\u0438\u043a\u0441\u044b \u0432 \u043d\u0435\u0439\u043c\u0442\u0435\u0433\u0430\u0445", true);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-91 errors
+> Task :runClient
+я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜: Vanilla client jar was not found at 
+C:\Users\1\AppData\Roaming\.minecraft\libraries\v1\objects\37fd3c903861eeff3bc24b71eed48f828b5269c8\client.jar
+java.exe : OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will lik
+ely be removed in a future release.
+C:\Users\1\Desktop\я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜\Pouch\run-client.ps1:278 я┐╜я┐╜я┐╜я┐╜:9
++         & $Java @JavaArgs @args 2>&1 | Tee-Object -FilePath $LogFile
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (OpenJDK 64-Bit ...future release.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+ Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initializ
+ation logging.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+я┐╜я┐╜я┐╜. 27, 2026 10:28:50 AM lightning.product.t_4864_b n_1700_B
+SEVERE: Failed to initialize ONNX Runtime environment
+ai.onnxruntime.OrtException: ONNX Runtime is not bundled in this recovered source project
+        at ai.onnxruntime.OrtEnvironment.getEnvironment(OrtEnvironment.java:5)
+        at lightning.product.t_4864_b.n_1700_B(lightningproduct:27)
+        at lightning.product.E_2115_e.n_1700_B(lightningproduct:18)
+        at lightning.product.r_3979_X.Q_2552_b(lightningproduct:1591)
+        at lightning.product.r_3979_X.<init>(lightningproduct:289)
+        at lightning.product.c_902_l.n_1700_B(lightningproduct:52)
+        at lightning.product.o_148_s.C_2741_M(lightningproduct:130)
+        at lightning.product.o_148_s.Y_259_p(lightningproduct:81)
+        at lightning.product.o_148_s.<init>(lightningproduct:74)
+        at lightning.product.c_1404_X.<init>(lightningproduct:435)
+        at net.minecraft.client.main.Main.main(lightningproduct:176)
+        at mcp.client.Start.main(lightningproduct:13)
+10:28:51.050 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/aztec.png : java.io.FileNotFoundException: minecraft:textures/painting/aztec.png
+10:28:51.051 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/pointer.png : java.io.FileNotFoundException: minecraft:textures/painting/pointer.png
+10:28:51.052 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/donkey_kong.png : java.io.FileNotFoundException: minecraft:textures/painting/donkey_kong.png
+10:28:51.052 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/skeleton.png : java.io.FileNotFoundException: minecraft:textures/painting/skeleton.png
+10:28:51.052 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/courbet.png : java.io.FileNotFoundException: minecraft:textures/painting/courbet.png
+10:28:51.052 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/skull_and_roses.png : java.io.FileNotFoundException: minecraft:textures/painting/skull_and_roses.png
+10:28:51.053 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/burning_skull.png : java.io.FileNotFoundException: minecraft:textures/painting/burning_skull.png
+10:28:51.053 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/sea.png : java.io.FileNotFoundException: minecraft:textures/painting/sea.png
+10:28:51.053 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/wither.png : java.io.FileNotFoundException: minecraft:textures/painting/wither.png
+10:28:51.054 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/aztec2.png : java.io.FileNotFoundException: minecraft:textures/painting/aztec2.png
+10:28:51.054 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/pool.png : java.io.FileNotFoundException: minecraft:textures/painting/pool.png
+10:28:51.054 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/match.png : java.io.FileNotFoundException: minecraft:textures/painting/match.png
+10:28:51.055 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/pigscene.png : java.io.FileNotFoundException: minecraft:textures/painting/pigscene.png
+10:28:51.055 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/void.png : java.io.FileNotFoundException: minecraft:textures/painting/void.png
+10:28:51.055 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/wasteland.png : java.io.FileNotFoundException: minecraft:textures/painting/wasteland.png
+10:28:51.056 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/fighters.png : java.io.FileNotFoundException: minecraft:textures/painting/fighters.png
+10:28:51.057 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/creebet.png : java.io.FileNotFoundException: minecraft:textures/painting/creebet.png
+10:28:51.057 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/bomb.png : java.io.FileNotFoundException: minecraft:textures/painting/bomb.png
+10:28:51.057 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/wanderer.png : java.io.FileNotFoundException: minecraft:textures/painting/wanderer.png
+10:28:51.058 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/sunset.png : java.io.FileNotFoundException: minecraft:textures/painting/sunset.png
+10:28:51.058 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/back.png : java.io.FileNotFoundException: minecraft:textures/painting/back.png
+10:28:51.058 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/bust.png : java.io.FileNotFoundException: minecraft:textures/painting/bust.png
+10:28:51.058 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/kebab.png : java.io.FileNotFoundException: minecraft:textures/painting/kebab.png
+10:28:51.058 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/alban.png : java.io.FileNotFoundException: minecraft:textures/painting/alban.png
+10:28:51.059 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/graham.png : java.io.FileNotFoundException: minecraft:textures/painting/graham.png
+10:28:51.059 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/stage.png : java.io.FileNotFoundException: minecraft:textures/painting/stage.png
+10:28:51.059 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/painting/plant.png : java.io.FileNotFoundException: minecraft:textures/painting/plant.png
+10:28:51.191 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/mining_fatigue.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/mining_fatigue.png
+10:28:51.191 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/hunger.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/hunger.png
+10:28:51.192 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/poison.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/poison.png
+10:28:51.192 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/dolphins_grace.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/dolphins_grace.png
+10:28:51.192 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/haste.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/haste.png
+10:28:51.192 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/fire_resistance.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/fire_resistance.png
+10:28:51.192 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/unluck.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/unluck.png
+10:28:51.192 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/slow_falling.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/slow_falling.png
+10:28:51.192 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/health_boost.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/health_boost.png
+10:28:51.192 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/nausea.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/nausea.png
+10:28:51.192 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/absorption.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/absorption.png
+10:28:51.192 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/glowing.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/glowing.png
+10:28:51.194 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/blindness.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/blindness.png
+10:28:51.194 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/resistance.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/resistance.png
+10:28:51.194 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/weakness.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/weakness.png
+10:28:51.194 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/instant_damage.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/instant_damage.png
+10:28:51.194 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/speed.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/speed.png
+10:28:51.195 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/regeneration.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/regeneration.png
+10:28:51.195 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/conduit_power.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/conduit_power.png
+10:28:51.195 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/wither.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/wither.png
+10:28:51.195 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/saturation.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/saturation.png
+10:28:51.197 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/night_vision.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/night_vision.png
+10:28:51.197 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/slowness.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/slowness.png
+10:28:51.197 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/instant_health.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/instant_health.png
+10:28:51.197 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/invisibility.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/invisibility.png
+10:28:51.198 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/jump_boost.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/jump_boost.png
+10:28:51.198 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/water_breathing.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/water_breathing.png
+10:28:51.198 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/hero_of_the_village.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/hero_of_the_village.png
+10:28:51.198 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/levitation.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/levitation.png
+10:28:51.198 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/luck.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/luck.png
+10:28:51.198 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/strength.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/strength.png
+10:28:51.199 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/mob_effect/bad_omen.png : java.io.FileNotFoundException: minecraft:textures/mob_effect/bad_omen.png
+10:28:51.617 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/item/empty_armor_slot_helmet.png : java.io.FileNotFoundException: minecraft:textures/item/empty_armor_slot_helmet.png
+10:28:51.617 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/conduit/cage.png : java.io.FileNotFoundException: minecraft:textures/entity/conduit/cage.png
+10:28:51.617 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner_base.png : java.io.FileNotFoundException: minecraft:textures/entity/banner_base.png
+10:28:51.617 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield_base.png : java.io.FileNotFoundException: minecraft:textures/entity/shield_base.png
+10:28:51.617 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/conduit/wind.png : java.io.FileNotFoundException: minecraft:textures/entity/conduit/wind.png
+10:28:51.617 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/item/empty_armor_slot_shield.png : java.io.FileNotFoundException: minecraft:textures/item/empty_armor_slot_shield.png
+10:28:51.617 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/grass_block_side.png : java.io.FileNotFoundException: minecraft:textures/block/grass_block_side.png
+10:28:51.617 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/enchanting_table_book.png : java.io.FileNotFoundException: minecraft:textures/entity/enchanting_table_book.png
+10:28:51.617 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/conduit/wind_vertical.png : java.io.FileNotFoundException: minecraft:textures/entity/conduit/wind_vertical.png
+10:28:51.617 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/fire_1.png : java.io.FileNotFoundException: minecraft:textures/block/fire_1.png
+10:28:51.617 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/fire_0.png : java.io.FileNotFoundException: minecraft:textures/block/fire_0.png
+10:28:51.617 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_3.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_3.png
+10:28:51.617 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield_base_nopattern.png : java.io.FileNotFoundException: minecraft:textures/entity/shield_base_nopattern.png
+10:28:51.618 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/item/empty_armor_slot_boots.png : java.io.FileNotFoundException: minecraft:textures/item/empty_armor_slot_boots.png
+10:28:51.618 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_2.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_2.png
+10:28:51.618 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_1.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_1.png
+10:28:51.618 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/item/empty_armor_slot_leggings.png : java.io.FileNotFoundException: minecraft:textures/item/empty_armor_slot_leggings.png
+10:28:51.618 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_0.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_0.png
+10:28:51.618 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bell/bell_body.png : java.io.FileNotFoundException: minecraft:textures/entity/bell/bell_body.png
+10:28:51.618 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_9.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_9.png
+10:28:51.618 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_4.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_4.png
+10:28:51.618 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/conduit/open_eye.png : java.io.FileNotFoundException: minecraft:textures/entity/conduit/open_eye.png
+10:28:51.618 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/snow.png : java.io.FileNotFoundException: minecraft:textures/block/snow.png
+10:28:51.619 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_8.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_8.png
+10:28:51.619 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/water_flow.png : java.io.FileNotFoundException: minecraft:textures/block/water_flow.png
+10:28:51.618 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_7.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_7.png
+10:28:51.619 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_5.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_5.png
+10:28:51.619 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/destroy_stage_6.png : java.io.FileNotFoundException: minecraft:textures/block/destroy_stage_6.png
+10:28:51.619 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/grass_path_side.png : java.io.FileNotFoundException: minecraft:textures/block/grass_path_side.png
+10:28:51.619 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/lava_flow.png : java.io.FileNotFoundException: minecraft:textures/block/lava_flow.png
+10:28:51.619 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/conduit/base.png : java.io.FileNotFoundException: minecraft:textures/entity/conduit/base.png
+10:28:51.619 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/grass_path_top.png : java.io.FileNotFoundException: minecraft:textures/block/grass_path_top.png
+10:28:51.619 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/item/empty_armor_slot_chestplate.png : java.io.FileNotFoundException: minecraft:textures/item/empty_armor_slot_chestplate.png
+10:28:51.619 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/podzol_top.png : java.io.FileNotFoundException: minecraft:textures/block/podzol_top.png
+10:28:51.619 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/grass_block_top.png : java.io.FileNotFoundException: minecraft:textures/block/grass_block_top.png
+10:28:51.619 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/conduit/closed_eye.png : java.io.FileNotFoundException: minecraft:textures/entity/conduit/closed_eye.png
+10:28:51.619 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/water_overlay.png : java.io.FileNotFoundException: minecraft:textures/block/water_overlay.png
+10:28:51.619 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/block/mycelium_top.png : java.io.FileNotFoundException: minecraft:textures/block/mycelium_top.png
+10:28:51.623 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/signs/dark_oak.png : java.io.FileNotFoundException: minecraft:textures/entity/signs/dark_oak.png
+10:28:51.623 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/signs/jungle.png : java.io.FileNotFoundException: minecraft:textures/entity/signs/jungle.png
+10:28:51.623 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/signs/acacia.png : java.io.FileNotFoundException: minecraft:textures/entity/signs/acacia.png
+10:28:51.623 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/signs/warped.png : java.io.FileNotFoundException: minecraft:textures/entity/signs/warped.png
+10:28:51.623 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/signs/crimson.png : java.io.FileNotFoundException: minecraft:textures/entity/signs/crimson.png
+10:28:51.624 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/signs/birch.png : java.io.FileNotFoundException: minecraft:textures/entity/signs/birch.png
+10:28:51.624 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/signs/oak.png : java.io.FileNotFoundException: minecraft:textures/entity/signs/oak.png
+10:28:51.624 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/signs/spruce.png : java.io.FileNotFoundException: minecraft:textures/entity/signs/spruce.png
+10:28:51.631 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/skull.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/skull.png
+10:28:51.631 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/straight_cross.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/straight_cross.png
+10:28:51.631 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/square_top_left.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/square_top_left.png
+10:28:51.631 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/triangle_top.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/triangle_top.png
+10:28:51.631 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/flower.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/flower.png
+10:28:51.632 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/cross.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/cross.png
+10:28:51.632 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/diagonal_up_right.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/diagonal_up_right.png
+10:28:51.632 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/square_bottom_left.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/square_bottom_left.png
+10:28:51.632 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/globe.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/globe.png
+10:28:51.632 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/stripe_top.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/stripe_top.png
+10:28:51.632 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/diagonal_right.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/diagonal_right.png
+10:28:51.632 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/stripe_downleft.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/stripe_downleft.png
+10:28:51.632 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/small_stripes.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/small_stripes.png
+10:28:51.632 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/triangles_bottom.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/triangles_bottom.png
+10:28:51.632 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/piglin.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/piglin.png
+10:28:51.632 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/stripe_bottom.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/stripe_bottom.png
+10:28:51.632 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/mojang.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/mojang.png
+10:28:51.632 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/diagonal_left.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/diagonal_left.png
+10:28:51.632 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/gradient.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/gradient.png
+10:28:51.632 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/half_vertical.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/half_vertical.png
+10:28:51.632 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/rhombus.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/rhombus.png
+10:28:51.632 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/creeper.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/creeper.png
+10:28:51.632 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/half_horizontal.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/half_horizontal.png
+10:28:51.632 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/stripe_left.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/stripe_left.png
+10:28:51.633 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/gradient_up.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/gradient_up.png
+10:28:51.633 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/diagonal_up_left.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/diagonal_up_left.png
+10:28:51.633 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/square_bottom_right.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/square_bottom_right.png
+10:28:51.633 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/half_vertical_right.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/half_vertical_right.png
+10:28:51.633 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/stripe_center.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/stripe_center.png
+10:28:51.633 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/half_horizontal_bottom.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/half_horizontal_bottom.png
+10:28:51.633 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/stripe_middle.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/stripe_middle.png
+10:28:51.633 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/stripe_right.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/stripe_right.png
+10:28:51.633 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/triangles_top.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/triangles_top.png
+10:28:51.633 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/bricks.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/bricks.png
+10:28:51.633 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/border.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/border.png
+10:28:51.633 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/triangle_bottom.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/triangle_bottom.png
+10:28:51.633 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/circle.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/circle.png
+10:28:51.633 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/square_top_right.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/square_top_right.png
+10:28:51.633 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/curly_border.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/curly_border.png
+10:28:51.633 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/base.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/base.png
+10:28:51.633 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shield/stripe_downright.png : java.io.FileNotFoundException: minecraft:textures/entity/shield/stripe_downright.png
+10:28:51.641 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/square_bottom_left.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/square_bottom_left.png
+10:28:51.641 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/diagonal_right.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/diagonal_right.png
+10:28:51.641 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/diagonal_up_left.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/diagonal_up_left.png
+10:28:51.641 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/stripe_downright.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/stripe_downright.png
+10:28:51.641 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/triangles_top.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/triangles_top.png
+10:28:51.641 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/rhombus.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/rhombus.png
+10:28:51.641 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/diagonal_left.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/diagonal_left.png
+10:28:51.641 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/gradient.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/gradient.png
+10:28:51.641 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/triangles_bottom.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/triangles_bottom.png
+10:28:51.641 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/globe.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/globe.png
+10:28:51.641 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/mojang.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/mojang.png
+10:28:51.641 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/half_horizontal_bottom.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/half_horizontal_bottom.png
+10:28:51.642 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/cross.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/cross.png
+10:28:51.642 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/square_top_right.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/square_top_right.png
+10:28:51.642 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/skull.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/skull.png
+10:28:51.642 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/stripe_right.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/stripe_right.png
+10:28:51.642 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/flower.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/flower.png
+10:28:51.642 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/curly_border.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/curly_border.png
+10:28:51.642 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/piglin.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/piglin.png
+10:28:51.642 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/creeper.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/creeper.png
+10:28:51.642 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/small_stripes.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/small_stripes.png
+10:28:51.642 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/triangle_bottom.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/triangle_bottom.png
+10:28:51.642 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/stripe_left.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/stripe_left.png
+10:28:51.642 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/stripe_center.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/stripe_center.png
+10:28:51.642 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/diagonal_up_right.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/diagonal_up_right.png
+10:28:51.642 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/half_horizontal.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/half_horizontal.png
+10:28:51.642 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/stripe_top.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/stripe_top.png
+10:28:51.643 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/stripe_bottom.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/stripe_bottom.png
+10:28:51.643 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/square_bottom_right.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/square_bottom_right.png
+10:28:51.643 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/stripe_middle.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/stripe_middle.png
+10:28:51.643 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/straight_cross.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/straight_cross.png
+10:28:51.643 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/square_top_left.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/square_top_left.png
+10:28:51.643 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/bricks.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/bricks.png
+10:28:51.643 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/circle.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/circle.png
+10:28:51.643 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/base.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/base.png
+10:28:51.643 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/half_vertical.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/half_vertical.png
+10:28:51.643 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/border.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/border.png
+10:28:51.643 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/half_vertical_right.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/half_vertical_right.png
+10:28:51.643 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/stripe_downleft.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/stripe_downleft.png
+10:28:51.643 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/gradient_up.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/gradient_up.png
+10:28:51.643 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/banner/triangle_top.png : java.io.FileNotFoundException: minecraft:textures/entity/banner/triangle_top.png
+10:28:51.645 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/trapped_right.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/trapped_right.png
+10:28:51.645 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/christmas_left.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/christmas_left.png
+10:28:51.645 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/christmas.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/christmas.png
+10:28:51.645 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/trapped_left.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/trapped_left.png
+10:28:51.645 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/trapped.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/trapped.png
+10:28:51.645 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/normal_right.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/normal_right.png
+10:28:51.645 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/ender.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/ender.png
+10:28:51.645 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/christmas_right.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/christmas_right.png
+10:28:51.645 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/normal_left.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/normal_left.png
+10:28:51.645 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/chest/normal.png : java.io.FileNotFoundException: minecraft:textures/entity/chest/normal.png
+10:28:51.649 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_green.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_green.png
+10:28:51.649 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_light_gray.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_light_gray.png
+10:28:51.649 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_lime.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_lime.png
+10:28:51.649 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_cyan.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_cyan.png
+10:28:51.650 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker.png
+10:28:51.650 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_pink.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_pink.png
+10:28:51.650 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_brown.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_brown.png
+10:28:51.650 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_blue.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_blue.png
+10:28:51.650 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_purple.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_purple.png
+10:28:51.650 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_white.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_white.png
+10:28:51.650 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_black.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_black.png
+10:28:51.650 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_gray.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_gray.png
+10:28:51.650 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_magenta.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_magenta.png
+10:28:51.656 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_light_blue.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_light_blue.png
+10:28:51.656 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_orange.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_orange.png
+10:28:51.656 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_red.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_red.png
+10:28:51.656 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/shulker/shulker_yellow.png : java.io.FileNotFoundException: minecraft:textures/entity/shulker/shulker_yellow.png
+10:28:51.660 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/light_blue.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/light_blue.png
+10:28:51.660 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/black.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/black.png
+10:28:51.660 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/blue.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/blue.png
+10:28:51.660 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/pink.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/pink.png
+10:28:51.660 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/lime.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/lime.png
+10:28:51.660 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/yellow.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/yellow.png
+10:28:51.660 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/light_gray.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/light_gray.png
+10:28:51.660 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/brown.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/brown.png
+10:28:51.660 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/cyan.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/cyan.png
+10:28:51.660 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/orange.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/orange.png
+10:28:51.660 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/gray.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/gray.png
+10:28:51.705 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/green.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/green.png
+10:28:51.705 [Worker-Main-6] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/purple.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/purple.png
+10:28:51.660 [Worker-Main-9] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/white.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/white.png
+10:28:51.660 [Worker-Main-8] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/magenta.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/magenta.png
+10:28:51.660 [Worker-Main-10] ERROR lightning.product.L_3848_p - Using missing texture, unable to load minecraft:textures/entity/bed/red.png : java.io.FileNotFoundException: minecraft:textures/entity/bed/red.png
+10:28:55.756 [Render thread] FATAL lightning.product.c_1404_X - Reported exception thrown!
+lightning.product.n_3702_H: Rendering overlay
+        at lightning.product.M_660_m.n_1700_B(lightningproduct:907) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.c_1404_X.P_1922_E(lightningproduct:1018) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.c_1404_X.R_4764_Y(lightningproduct:564) [1_16_5_decrypted.jar:?]
+        at net.minecraft.client.main.Main.main(lightningproduct:225) [1_16_5_decrypted.jar:?]
+        at mcp.client.Start.main(lightningproduct:13) [1_16_5_decrypted.jar:?]
+Caused by: java.lang.IllegalStateException: Failed to load grass color texture
+        at lightning.product.N_1104_T.n_1700_B(lightningproduct:24) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.N_1104_T.prepare(lightningproduct:9) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.m_844_C.lambda$reload$0(lightningproduct:15) ~[1_16_5_decrypted.jar:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
+Caused by: java.io.FileNotFoundException: minecraft:textures/colormap/grass.png
+        at lightning.product.h_3939_r.n_1700_B(lightningproduct:72) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.b_653_U.n_1700_B(lightningproduct:68) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.c_3818_C.n_1700_B(lightningproduct:17) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.N_1104_T.n_1700_B(lightningproduct:20) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.N_1104_T.prepare(lightningproduct:9) ~[1_16_5_decrypted.jar:?]
+        at lightning.product.m_844_C.lambda$reload$0(lightningproduct:15) ~[1_16_5_decrypted.jar:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
 
-> Task :compilePouchBranding FAILED
+Time: 27.08.2026, 10:28
+Description: Rendering overlay
 
-[Incubating] Problems report is available at: file:///C:/Users/1/Desktop/loader/Pouch/build/reports/problems/problems-report.html
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':compilePouchBranding'.
-> Compilation failed; see the compiler output below.
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:320: error: cannot find symbol
-              l_3370_o.G_564_y[15].n_1700_B(matrixStack, this.getMessage().getString(), (double)(buttonX + l_3370_o.t_148_a[18].n_1700_B(this.n_1700_B) + 12.0f), (double)(buttonY + l_3370_o.G_564_y[16].h_1847_R() + 4.0f), titleColor);
-                                                             ^
-    symbol: method getMessage()
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:333: error: cannot find symbol
-                  this.onClick(mouseX, mouseY);
-                      ^
-    symbol: method onClick(double,double)
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:130: error: cannot find symbol
-          if (this.s_956_w || !this.w_1484_f()) {
-                                   ^
-    symbol: method w_1484_f()
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:137: error: cannot find symbol
-              if (!this.w_1484_f() || this.v_4262_N != null || this.t_148_a.get()) {
-                       ^
-    symbol: method w_1484_f()
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:168: error: cannot find symbol
-          super.onEnable();
-               ^
-    symbol: method onEnable()
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:176: error: cannot find symbol
-          super.onDisable();
-               ^
-    symbol: method onDisable()
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:107: error: incompatible types: n_1700_B cannot be converted to V_2511_L
-          this.buttons.add(button);
-                           ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:27: error: cannot inherit from final Module
-  extends Module {
-          ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:15: error: cannot inherit from final Module
-  extends Module {
-          ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:19: error: cannot find symbol
-  import lightning.product.Button;
-                          ^
-    symbol:   class Button
-    location: package lightning.product
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:20: error: cannot find symbol
-  import lightning.product.MinecraftAccess;
-                          ^
-    symbol:   class MinecraftAccess
-    location: package lightning.product
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:293: error: cannot find symbol
-      extends Button {
-              ^
-    symbol:   class Button
-    location: class O_922_L
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: cannot find symbol
-  import lightning.product.Module;
-                          ^
-    symbol:   class Module
-    location: package lightning.product
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: cannot find symbol
-  import lightning.product.ModuleCategory;
-                          ^
-    symbol:   class ModuleCategory
-    location: package lightning.product
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:28: error: cannot find symbol
-      private IPCClient v_4262_N;
-              ^
-    symbol:   class IPCClient
-    location: class DiscordRPC
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: cannot find symbol
-  import lightning.product.Module;
-                          ^
-    symbol:   class Module
-    location: package lightning.product
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: cannot find symbol
-  import lightning.product.ClientBootstrap;
-                          ^
-    symbol:   class ClientBootstrap
-    location: package lightning.product
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: cannot find symbol
-  import lightning.product.BooleanSetting;
-                          ^
-    symbol:   class BooleanSetting
-    location: package lightning.product
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: cannot find symbol
-  import lightning.product.ModuleCategory;
-                          ^
-    symbol:   class ModuleCategory
-    location: package lightning.product
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:21: error: cannot find symbol
-      public static BooleanSetting v_4262_N;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:22: error: cannot find symbol
-      public static BooleanSetting w_1484_f;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:23: error: cannot find symbol
-      public static BooleanSetting t_148_a;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:24: error: cannot find symbol
-      public static BooleanSetting s_956_w;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:25: error: cannot find symbol
-      public static BooleanSetting u_2550_I;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:26: error: cannot find symbol
-      public static BooleanSetting M_588_G;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:27: error: cannot find symbol
-      public static BooleanSetting P_4830_p;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:28: error: cannot find symbol
-      public static BooleanSetting h_1847_R;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:29: error: cannot find symbol
-      public static BooleanSetting Q_4569_t;
-                    ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:339: error: cannot find symbol
-          @Generated
-           ^
-    symbol:   class Generated
-    location: class n_1700_B
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:344: error: cannot find symbol
-          @Generated
-           ^
-    symbol:   class Generated
-    location: class n_1700_B
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:133: error: cannot find symbol
-              b.x = (int)(startX + (float)col * 132.0f);
-               ^
-    symbol:   variable x
-    location: variable b of type n_1700_B
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:134: error: cannot find symbol
-              b.y = (int)(startY + (float)row * 36.0f);
-               ^
-    symbol:   variable y
-    location: variable b of type n_1700_B
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:38: error: cannot find symbol
-          super("DiscordRPC", ModuleCategory.P_1922_E);
-                              ^
-    symbol:   variable ModuleCategory
-    location: class DiscordRPC
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:57: error: cannot find symbol
-                  this.v_4262_N = new IPCClient(1434360448957939885L);
-                                      ^
-    symbol:   class IPCClient
-    location: class DiscordRPC
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:58: error: cannot find symbol
-                  this.v_4262_N.setListener(new IPCListener(){
-                                                ^
-    symbol:   class IPCListener
-    location: class DiscordRPC
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:70: error: cannot find symbol
-                  this.v_4262_N.connect(new DiscordBuild[0]);
-                                            ^
-    symbol:   class DiscordBuild
-    location: class DiscordRPC
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:36: error: cannot find symbol
-          super("NameProtect", ModuleCategory.P_1922_E);
-                               ^
-    symbol:   variable ModuleCategory
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
-          String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
-                                            ^
-    symbol:   variable c_3005_b
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
-          String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
-                                                                                    ^
-    symbol:   variable c_3005_b
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
-          if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
-                                                   ^
-    symbol:   variable ClientBootstrap
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
-          if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
-                                                                                                                           ^
-    symbol:   variable ClientBootstrap
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:200: error: cannot find symbol
-          String username = NameProtect.c_3005_b.w_1484_f.R_4764_Y();
-                                       ^
-    symbol:   variable c_3005_b
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:205: error: cannot find symbol
-              for (n_473_l.n_1700_B friend : ClientBootstrap.Y_601_j().v_4262_N().P_4830_p()) {
-                                             ^
-    symbol:   variable ClientBootstrap
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:299: error: cannot find symbol
-          v_4262_N = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0434\u0440\u0443\u0437\u0435\u0439", false);
-                         ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:300: error: cannot find symbol
-          w_1484_f = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043a\u043b\u0430\u043d", false);
-                         ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:301: error: cannot find symbol
-          t_148_a = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0430\u043d\u0433", false);
-                        ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:302: error: cannot find symbol
-          s_956_w = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0433\u0440\u0438\u0444", false);
-                        ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:303: error: cannot find symbol
-          u_2550_I = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c IP", false);
-                         ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:304: error: cannot find symbol
-          M_588_G = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0431\u0430\u043b\u0430\u043d\u0441", false);
-                        ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:305: error: cannot find symbol
-          P_4830_p = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0438\u043b\u043b\u0438\u043a\u0438", false);
-                         ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:306: error: cannot find symbol
-          h_1847_R = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u043e\u043c\u0430\u0448\u043a\u0438", false);
-                         ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:307: error: cannot find symbol
-          Q_4569_t = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043f\u0440\u0435\u0444\u0438\u043a\u0441\u044b \u0432 \u043d\u0435\u0439\u043c\u0442\u0435\u0433\u0430\u0445", true);
-                         ^
-    symbol:   class BooleanSetting
-    location: class NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:303: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:328: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:166: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:174: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:305: error: cannot find symbol
-              float buttonX = this.x;
-                                  ^
-    symbol: variable x
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:306: error: cannot find symbol
-              float buttonY = this.y;
-                                  ^
-    symbol: variable y
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-              boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                  ^
-    symbol: variable x
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-              boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                     ^
-    symbol: variable x
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-              boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                                                           ^
-    symbol: variable y
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-              boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                                                                                              ^
-    symbol: variable y
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
-              if (isWithinBounds && this.active && this.visible) {
-                                        ^
-    symbol: variable active
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
-              if (isWithinBounds && this.active && this.visible) {
-                                                       ^
-    symbol: variable visible
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:60: error: cannot find symbol
-                      public void onReady(IPCClient client) {
-                                          ^
-    symbol: class IPCClient
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:50: error: cannot find symbol
-          if (module == null || !module.w_1484_f() || !stripBrackets) {
-                                       ^
-    symbol:   method w_1484_f()
-    location: variable module of type NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:169: error: cannot find symbol
-          if (np == null || !np.w_1484_f() || cleanedVisible == null) {
-                               ^
-    symbol:   method w_1484_f()
-    location: variable np of type NameProtect
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:30: error: package lombok does not exist
-  import lombok.Generated;
-               ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:297: error: package Button does not exist
-          public n_1700_B(int x, int y, int width, int height, String icon, String title, String description, Button.n_1700_B pressedAction) {
-                                                                                                                    ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: package com.jagrosh.discordipc does not exist
-  import com.jagrosh.discordipc.IPCClient;
-                               ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: package com.jagrosh.discordipc does not exist
-  import com.jagrosh.discordipc.IPCListener;
-                               ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: package com.jagrosh.discordipc.entities does not exist
-  import com.jagrosh.discordipc.entities.DiscordBuild;
-                                        ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: package com.jagrosh.discordipc.entities does not exist
-  import com.jagrosh.discordipc.entities.RichPresence;
-                                        ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:41: error: package RichPresence does not exist
-      private RichPresence.Builder h_1847_R() {
-                          ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:76: error: package MinecraftAccess does not exist
-          if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
-                             ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:77: error: package MinecraftAccess does not exist
-              MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
-                             ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:79: error: package MinecraftAccess does not exist
-          int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                           ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:80: error: package MinecraftAccess does not exist
-          int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                            ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:112: error: package MinecraftAccess does not exist
-          int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
-                                              ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:113: error: package MinecraftAccess.c_3005_b does not exist
-          MinecraftAccess.c_3005_b.s_956_w.n_1700_B(2.0f);
-                                  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:117: error: package MinecraftAccess does not exist
-          int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                           ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:118: error: package MinecraftAccess does not exist
-          int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                            ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:121: error: package MinecraftAccess does not exist
-          if (MinecraftAccess.c_3005_b.Y_1740_V != this) {
-                             ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:162: error: package MinecraftAccess.c_3005_b does not exist
-          MinecraftAccess.c_3005_b.s_956_w.R_4764_Y();
-                                  ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:237: error: package MinecraftAccess does not exist
-          if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
-                             ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:238: error: package MinecraftAccess does not exist
-              MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
-                             ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:248: error: package MinecraftAccess does not exist
-          int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
-                                              ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:252: error: package MinecraftAccess does not exist
-          int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                           ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:253: error: package MinecraftAccess does not exist
-          int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                            ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
-          RichPresence.Builder builder = new RichPresence.Builder();
-                      ^
-  C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
-          RichPresence.Builder builder = new RichPresence.Builder();
-                                                         ^
-  91 errors
-
-* Try:
-> Check your code and dependencies to fix the compilation error(s)
-> Run with --scan to get full insights.
-
-* Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compilePouchBranding'.
-        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
-        at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
-        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
-        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
-        at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
-        at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
-        at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
-        at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
-        at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
-        at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
-        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
-        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
-        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
-        at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
-        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
-        at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
-        at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
-        at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
-        at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
-        at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
-        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
-        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
-        at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
-        at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
-        at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
-        at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-        at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
-        at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
-        at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
-        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
-        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-        at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
-        at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
-        at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
-        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-        at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
-        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:320: error: cannot find symbol
-            l_3370_o.G_564_y[15].n_1700_B(matrixStack, this.getMessage().getString(), (double)(buttonX + l_3370_o.t_148_a[18].n_1700_B(this.n_1700_B) + 12.0f), (double)(buttonY + l_3370_o.G_564_y[16].h_1847_R() + 4.0f), titleColor);
-                                                           ^
-  symbol: method getMessage()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:333: error: cannot find symbol
-                this.onClick(mouseX, mouseY);
-                    ^
-  symbol: method onClick(double,double)
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:130: error: cannot find symbol
-        if (this.s_956_w || !this.w_1484_f()) {
-                                 ^
-  symbol: method w_1484_f()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:137: error: cannot find symbol
-            if (!this.w_1484_f() || this.v_4262_N != null || this.t_148_a.get()) {
-                     ^
-  symbol: method w_1484_f()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:168: error: cannot find symbol
-        super.onEnable();
-             ^
-  symbol: method onEnable()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:176: error: cannot find symbol
-        super.onDisable();
-             ^
-  symbol: method onDisable()
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:107: error: incompatible types: n_1700_B cannot be converted to V_2511_L
-        this.buttons.add(button);
-                         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:27: error: cannot inherit from final Module
-extends Module {
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:15: error: cannot inherit from final Module
-extends Module {
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:19: error: cannot find symbol
-import lightning.product.Button;
-                        ^
-  symbol:   class Button
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:20: error: cannot find symbol
-import lightning.product.MinecraftAccess;
-                        ^
-  symbol:   class MinecraftAccess
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:293: error: cannot find symbol
-    extends Button {
-            ^
-  symbol:   class Button
-  location: class O_922_L
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:23: error: cannot find symbol
-import lightning.product.Module;
-                        ^
-  symbol:   class Module
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:24: error: cannot find symbol
-import lightning.product.ModuleCategory;
-                        ^
-  symbol:   class ModuleCategory
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:28: error: cannot find symbol
-    private IPCClient v_4262_N;
-            ^
-  symbol:   class IPCClient
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:8: error: cannot find symbol
-import lightning.product.Module;
-                        ^
-  symbol:   class Module
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:10: error: cannot find symbol
-import lightning.product.ClientBootstrap;
-                        ^
-  symbol:   class ClientBootstrap
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:11: error: cannot find symbol
-import lightning.product.BooleanSetting;
-                        ^
-  symbol:   class BooleanSetting
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:12: error: cannot find symbol
-import lightning.product.ModuleCategory;
-                        ^
-  symbol:   class ModuleCategory
-  location: package lightning.product
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:21: error: cannot find symbol
-    public static BooleanSetting v_4262_N;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:22: error: cannot find symbol
-    public static BooleanSetting w_1484_f;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:23: error: cannot find symbol
-    public static BooleanSetting t_148_a;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:24: error: cannot find symbol
-    public static BooleanSetting s_956_w;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:25: error: cannot find symbol
-    public static BooleanSetting u_2550_I;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:26: error: cannot find symbol
-    public static BooleanSetting M_588_G;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:27: error: cannot find symbol
-    public static BooleanSetting P_4830_p;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:28: error: cannot find symbol
-    public static BooleanSetting h_1847_R;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:29: error: cannot find symbol
-    public static BooleanSetting Q_4569_t;
-                  ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:339: error: cannot find symbol
-        @Generated
-         ^
-  symbol:   class Generated
-  location: class n_1700_B
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:344: error: cannot find symbol
-        @Generated
-         ^
-  symbol:   class Generated
-  location: class n_1700_B
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:133: error: cannot find symbol
-            b.x = (int)(startX + (float)col * 132.0f);
-             ^
-  symbol:   variable x
-  location: variable b of type n_1700_B
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:134: error: cannot find symbol
-            b.y = (int)(startY + (float)row * 36.0f);
-             ^
-  symbol:   variable y
-  location: variable b of type n_1700_B
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:38: error: cannot find symbol
-        super("DiscordRPC", ModuleCategory.P_1922_E);
-                            ^
-  symbol:   variable ModuleCategory
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:57: error: cannot find symbol
-                this.v_4262_N = new IPCClient(1434360448957939885L);
-                                    ^
-  symbol:   class IPCClient
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:58: error: cannot find symbol
-                this.v_4262_N.setListener(new IPCListener(){
-                                              ^
-  symbol:   class IPCListener
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:70: error: cannot find symbol
-                this.v_4262_N.connect(new DiscordBuild[0]);
-                                          ^
-  symbol:   class DiscordBuild
-  location: class DiscordRPC
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:36: error: cannot find symbol
-        super("NameProtect", ModuleCategory.P_1922_E);
-                             ^
-  symbol:   variable ModuleCategory
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
-        String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
-                                          ^
-  symbol:   variable c_3005_b
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:175: error: cannot find symbol
-        String string = self = NameProtect.c_3005_b.w_1484_f != null ? NameProtect.c_3005_b.w_1484_f.R_4764_Y() : null;
-                                                                                  ^
-  symbol:   variable c_3005_b
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
-        if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
-                                                 ^
-  symbol:   variable ClientBootstrap
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:182: error: cannot find symbol
-        if (v_4262_N.t_148_a().booleanValue() && ClientBootstrap.Y_601_j().v_4262_N().R_4764_Y(gameProfileName) && (fe = ClientBootstrap.Y_601_j().v_4262_N().G_564_y(gameProfileName)) != null) {
-                                                                                                                         ^
-  symbol:   variable ClientBootstrap
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:200: error: cannot find symbol
-        String username = NameProtect.c_3005_b.w_1484_f.R_4764_Y();
-                                     ^
-  symbol:   variable c_3005_b
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:205: error: cannot find symbol
-            for (n_473_l.n_1700_B friend : ClientBootstrap.Y_601_j().v_4262_N().P_4830_p()) {
-                                           ^
-  symbol:   variable ClientBootstrap
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:299: error: cannot find symbol
-        v_4262_N = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0434\u0440\u0443\u0437\u0435\u0439", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:300: error: cannot find symbol
-        w_1484_f = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043a\u043b\u0430\u043d", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:301: error: cannot find symbol
-        t_148_a = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0430\u043d\u0433", false);
-                      ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:302: error: cannot find symbol
-        s_956_w = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0433\u0440\u0438\u0444", false);
-                      ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:303: error: cannot find symbol
-        u_2550_I = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c IP", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:304: error: cannot find symbol
-        M_588_G = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0431\u0430\u043b\u0430\u043d\u0441", false);
-                      ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:305: error: cannot find symbol
-        P_4830_p = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u0438\u043b\u043b\u0438\u043a\u0438", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:306: error: cannot find symbol
-        h_1847_R = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u043e\u043c\u0430\u0448\u043a\u0438", false);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:307: error: cannot find symbol
-        Q_4569_t = new BooleanSetting("\u0421\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043f\u0440\u0435\u0444\u0438\u043a\u0441\u044b \u0432 \u043d\u0435\u0439\u043c\u0442\u0435\u0433\u0430\u0445", true);
-                       ^
-  symbol:   class BooleanSetting
-  location: class NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:303: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:328: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:166: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:174: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:305: error: cannot find symbol
-            float buttonX = this.x;
-                                ^
-  symbol: variable x
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:306: error: cannot find symbol
-            float buttonY = this.y;
-                                ^
-  symbol: variable y
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                ^
-  symbol: variable x
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                   ^
-  symbol: variable x
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                                                         ^
-  symbol: variable y
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:331: error: cannot find symbol
-            boolean bl = isWithinBounds = mouseX >= (double)this.x && mouseX < (double)((float)this.x + 128.0f) && mouseY >= (double)this.y && mouseY < (double)((float)this.y + 32.0f);
-                                                                                                                                                                            ^
-  symbol: variable y
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
-            if (isWithinBounds && this.active && this.visible) {
-                                      ^
-  symbol: variable active
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:332: error: cannot find symbol
-            if (isWithinBounds && this.active && this.visible) {
-                                                     ^
-  symbol: variable visible
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:60: error: cannot find symbol
-                    public void onReady(IPCClient client) {
-                                        ^
-  symbol: class IPCClient
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:50: error: cannot find symbol
-        if (module == null || !module.w_1484_f() || !stripBrackets) {
-                                     ^
-  symbol:   method w_1484_f()
-  location: variable module of type NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\NameProtect.java:169: error: cannot find symbol
-        if (np == null || !np.w_1484_f() || cleanedVisible == null) {
-                             ^
-  symbol:   method w_1484_f()
-  location: variable np of type NameProtect
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:30: error: package lombok does not exist
-import lombok.Generated;
-             ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:297: error: package Button does not exist
-        public n_1700_B(int x, int y, int width, int height, String icon, String title, String description, Button.n_1700_B pressedAction) {
-                                                                                                                  ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:12: error: package com.jagrosh.discordipc does not exist
-import com.jagrosh.discordipc.IPCClient;
-                             ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:13: error: package com.jagrosh.discordipc does not exist
-import com.jagrosh.discordipc.IPCListener;
-                             ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:14: error: package com.jagrosh.discordipc.entities does not exist
-import com.jagrosh.discordipc.entities.DiscordBuild;
-                                      ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:15: error: package com.jagrosh.discordipc.entities does not exist
-import com.jagrosh.discordipc.entities.RichPresence;
-                                      ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:41: error: package RichPresence does not exist
-    private RichPresence.Builder h_1847_R() {
-                        ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:76: error: package MinecraftAccess does not exist
-        if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:77: error: package MinecraftAccess does not exist
-            MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:79: error: package MinecraftAccess does not exist
-        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:80: error: package MinecraftAccess does not exist
-        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                          ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:112: error: package MinecraftAccess does not exist
-        int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
-                                            ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:113: error: package MinecraftAccess.c_3005_b does not exist
-        MinecraftAccess.c_3005_b.s_956_w.n_1700_B(2.0f);
-                                ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:117: error: package MinecraftAccess does not exist
-        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:118: error: package MinecraftAccess does not exist
-        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                          ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:121: error: package MinecraftAccess does not exist
-        if (MinecraftAccess.c_3005_b.Y_1740_V != this) {
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:162: error: package MinecraftAccess.c_3005_b does not exist
-        MinecraftAccess.c_3005_b.s_956_w.R_4764_Y();
-                                ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:237: error: package MinecraftAccess does not exist
-        if (MinecraftAccess.c_3005_b.RealmsServerPing() != null) {
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:238: error: package MinecraftAccess does not exist
-            MinecraftAccess.c_3005_b.RealmsServerPing().n_1700_B(Y_1740_V);
-                           ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:248: error: package MinecraftAccess does not exist
-        int baseScale = (int)MinecraftAccess.c_3005_b.RealmsServerPing().w_1457_N();
-                                            ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:252: error: package MinecraftAccess does not exist
-        int windowWidth = MinecraftAccess.c_3005_b.RealmsServerPing().Q_4569_t();
-                                         ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\O_922_L.java:253: error: package MinecraftAccess does not exist
-        int windowHeight = MinecraftAccess.c_3005_b.RealmsServerPing().M_182_A();
-                                          ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
-        RichPresence.Builder builder = new RichPresence.Builder();
-                    ^
-C:\Users\1\Desktop\loader\Pouch\src\main\java\lightning\product\DiscordRPC.java:42: error: package RichPresence does not exist
-        RichPresence.Builder builder = new RichPresence.Builder();
-                                                       ^
-91 errors
-        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:89)
-        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
-        at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
-        at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
-        at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
-        at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:52)
-        at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:38)
-        at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
-        at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
-        at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
-        at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:206)
-        at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
-        at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilerFactory.lambda$createRebuildAllCompiler$0(IncrementalCompilerFactory.java:55)
-        at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:70)
-        at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:44)
-        at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:66)
-        at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:52)
-        at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:64)
-        at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:48)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-        at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:48)
-        at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:224)
-        at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:165)
-        at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:150)
-        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-        at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
-        at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
-        at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
-        at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
-        at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
-        at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-        at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
-        at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
-        at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
-        at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
-        at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
-        at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
-        at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
-        at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-        at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
-        at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
-        at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
-        at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
-        at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
-        at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
-        at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
-        at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
-        at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
-        at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
-        at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
-        at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
-        at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
-        at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
-        at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
-        at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
-        at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
-        at org.gradle.internal.Either$Right.fold(Either.java:175)
-        at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
-        at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
-        at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
-        at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
-        at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
-        at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
-        at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
-        at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
-        at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
-        at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
-        at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
-        at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
-        at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
-        at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
-        at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
-        at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
-        at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
-        at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
-        at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
-        at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
-        at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
-        at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
-        at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
-        at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
-        at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
-        at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
-        at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
-        at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
-        at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
-        at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
-        at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
-        at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
-        at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
-        at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
-        at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
-        at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
-        at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
-        at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
-        at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
-        at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
-        at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
-        at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
-        at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
-        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
-        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
-        at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
-        at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
-        at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
-        at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
-        at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
-        at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
-        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
-        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
-        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-        at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
-        at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
-        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
-        at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
-        at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
-        at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
-        at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
-        at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
-        at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
-        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
-        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-        at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
-        at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
-        at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
-        at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
-        at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-        at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
-        at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
-        at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
-        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
-        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-        at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
-        at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
-        at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
-        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-        at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
-        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+java.lang.IllegalStateException: Failed to load grass color texture
+        at lightning.product.N_1104_T.n_1700_B(lightningproduct:24)
+        at lightning.product.N_1104_T.prepare(lightningproduct:9)
+        at lightning.product.m_844_C.lambda$reload$0(lightningproduct:15)
+        at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+        at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.io.FileNotFoundException: minecraft:textures/colormap/grass.png
+        at lightning.product.h_3939_r.n_1700_B(lightningproduct:72)
+        at lightning.product.b_653_U.n_1700_B(lightningproduct:68)
+        at lightning.product.c_3818_C.n_1700_B(lightningproduct:17)
+        at lightning.product.N_1104_T.n_1700_B(lightningproduct:20)
+        ... 9 more
 
 
-BUILD FAILED in 17s
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+        at lightning.product.N_1104_T.n_1700_B(lightningproduct:24)
+        at lightning.product.N_1104_T.prepare(lightningproduct:9)
+        at lightning.product.m_844_C.lambda$reload$0(lightningproduct:15)
+        at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+        at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+
+-- Overlay render details --
+Details:
+        Overlay name: lightning.product.u_2877_K
+Stacktrace:
+        at lightning.product.M_660_m.n_1700_B(lightningproduct:903)
+        at lightning.product.c_1404_X.P_1922_E(lightningproduct:1018)
+        at lightning.product.c_1404_X.R_4764_Y(lightningproduct:564)
+        at net.minecraft.client.main.Main.main(lightningproduct:225)
+        at mcp.client.Start.main(lightningproduct:13)
+
+-- System Details --
+Details:
+        Minecraft Version: 1.16.5
+        Minecraft Version ID: 465b00159cf3411a926f041a29cb3901
+        Operating System: Windows 11 (amd64) version 10.0
+        Java Version: 21.0.12, Microsoft
+        Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
+        Memory: 2619157312 bytes (2497 MB) / 5842665472 bytes (5572 MB) up to 8573157376 bytes (8176 MB)
+        CPUs: 6
+        JVM Flags: 1 total; -Xverify:none
+        Launched Version: mcp
+        Backend library: LWJGL version 3.2.2 build 10
+        Backend API: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.86, NVIDIA Corporation
+        GL Caps: Using framebuffer using OpenGL 3.0
+        Using VBOs: Yes
+        Is Modded: Definitely; Client brand changed to 'Fabric'
+        Type: Client (map_client.txt)
+        Graphics mode: fancy
+        Resource Packs: 
+        Current Language: English (US)
+        CPU: 6x Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz
+        OptiFine Version: OptiFine_1.16.5_HD_U_G8
+        OptiFine Build: ~~NULL~~
+        Render Distance Chunks: 8
+        Mipmaps: 4
+        Anisotropic Filtering: 1
+        Antialiasing: 0
+        Multitexture: false
+        Shaders: null
+        OpenGlVersion: 4.6.0 NVIDIA 591.86
+        OpenGlRenderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
+        OpenGlVendor: NVIDIA Corporation
+        CpuCount: 6
+#@!@# Game crashed! Crash report saved to: #@!@# C:\Users\1\Desktop\я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜\Pouch\run\.\crash-reports\crash-2026-08-27_10.28.55-client.txt
+runClient exited with code -1. Check run logs.
+
+BUILD SUCCESSFUL in 29s
 1 actionable task: 1 executed
+PS C:\Users\1\Desktop\Новая папка\Pouch> 
