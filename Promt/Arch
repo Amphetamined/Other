@@ -1,176 +1,21 @@
-Windows PowerShell
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-PS C:\Users\1\Desktop\1\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"
-PS C:\Users\1\Desktop\1\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"    
-PS C:\Users\1\Desktop\1\Pouch> .\gradlew.bat runClient                       
-
-> Task :runClient
-я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜: Library was not found: org\joml\joml\1.10.5\joml-1.10.5.jar
-я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜: Library was not found: org\tlauncher\tl_skin_cape_1.16.5\1.37d\tl_skin_cape_1.16.5-1.37d.jar
-я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜: Minecraft 1.16 asset index was not found at 
-C:\Users\1\AppData\Roaming\.minecraft\assets\indexes\1.16.json
-java.exe : OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will lik
-ely be removed in a future release.
-C:\Users\1\Desktop\1\Pouch\run-client.ps1:344 я┐╜я┐╜я┐╜я┐╜:9
-+         & $Java @JavaArgs @args 2>&1 | Tee-Object -FilePath $LogFile
-+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (OpenJDK 64-Bit ...future release.:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-[11:01:56] [main/INFO]: [OptiFine] (Reflector) Field not found: World.tileEntitiesToBeRemoved
-[11:01:56] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.eventbus.api.Event$Result
-[11:01:56] [main/INFO]: [OptiFine] (Reflector) Method not present: net.minecraftforge.common.extensions.IForgeBlockState.hasTileEntity
-[11:01:56] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.extensions.IForgeEntity
-[11:01:56] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.CrashReportExtender
-[11:01:56] [main/INFO]: [OptiFine] (Reflector) Method not present: lightning.product.N_1709_M.createOptional
-[11:01:59] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
-[11:01:59] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[11:02:00] [main/INFO]: Setting user: Player283
-[11:02:00] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.settings.KeyConflictContext
-[11:02:00] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
-[11:02:00] [main/INFO]: Backend library: LWJGL version 3.2.2 build 10
-[11:02:01] [main/INFO]: [OptiFine] (Reflector) Method not present: net.minecraftforge.fml.loading.progress.EarlyProgressVisualization.handOffWindow
-[11:02:01] [main/INFO]: [STDERR]: [LWJGL] [ThreadLocalUtil] Unsupported JNI version detected, this may result in a crash. Please inform LWJGL developers.
-[11:02:01] [main/INFO]: [OptiFine] 
-[11:02:01] [main/INFO]: [OptiFine] OptiFine_1.16.5_HD_U_G8
-[11:02:01] [main/INFO]: [OptiFine] (Reflector) Class not present: optifine.OptiFineResourceLocator
-[11:02:01] [main/INFO]: [OptiFine] Build: null
-[11:02:01] [main/INFO]: [OptiFine] OS: Windows 11 (amd64) version 10.0
-[11:02:01] [main/INFO]: [OptiFine] Java: 21.0.12, Microsoft
-[11:02:01] [main/INFO]: [OptiFine] VM: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
-[11:02:01] [main/INFO]: [OptiFine] LWJGL: 3.3.0 Win32 WGL EGL OSMesa VisualC DLL
-[11:02:01] [main/INFO]: [OptiFine] OpenGL: NVIDIA GeForce RTX 3060/PCIe/SSE2, version 4.6.0 NVIDIA 591.86, NVIDIA Corporation
-[11:02:01] [main/INFO]: [OptiFine] OpenGL Version: 4.6.0
-[11:02:01] [main/INFO]: [OptiFine] Maximum texture size: 32768x32768
-[11:02:01] [VersionCheck/INFO]: [OptiFine] Checking for new version
-[11:02:01] [main/INFO]: [Shaders] OpenGL Version: 4.6.0 NVIDIA 591.86
-[11:02:01] [main/INFO]: [Shaders] Vendor:  NVIDIA Corporation
-[11:02:01] [main/INFO]: [Shaders] Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
-[11:02:01] [main/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
-[11:02:01] [main/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
-[11:02:01] [main/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
-[11:02:01] [main/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
-[11:02:01] [main/INFO]: [Shaders] Load shaders configuration.
-[11:02:01] [main/INFO]: [Shaders] Save shaders configuration.
-[11:02:01] [main/INFO]: [Shaders] No shaderpack loaded.
-[11:02:01] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.Loader
-[11:02:01] [main/WARN]: [OptiFine] java.lang.ClassNotFoundException: sun.misc.SharedSecrets
-[11:02:01] [main/WARN]: [OptiFine] java.lang.ClassNotFoundException: jdk.internal.misc.SharedSecrets
-[11:02:01] [main/WARN]: [OptiFine] java.lang.ClassNotFoundException: sun.misc.VM
-[11:02:01] [main/WARN]: [OptiFine] java.lang.reflect.InaccessibleObjectException: Unable to make public static long jdk.internal.misc.VM.maxDirectMemory() accessible: module java.base does not "exports jdk.internal.misc" to unnamed module @11438d26
-[11:02:01] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ItemModelMesherForge
-[11:02:02] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.pipeline.ForgeBlockModelRenderer
-[11:02:02] [main/INFO]: Narrator library for x64 successfully loaded
-[11:02:02] [VersionCheck/INFO]: [OptiFine] Version found: G7
-[11:02:04] [main/INFO]: [voicechat] Compatibility version 20
-[11:02:04] [main/WARN]: Failed to load service CommonCompatibilityManager with ServiceLoader
-[11:02:04] [main/INFO]: [voicechat] Loading plugins
-[11:02:04] [main/INFO]: [voicechat] Loaded 0 plugin(s)
-[11:02:04] [main/INFO]: [voicechat] Initializing plugins
-[11:02:04] [main/INFO]: [voicechat] Initialized 0 plugin(s)
-[11:02:04] [main/INFO]: [voicechat] Successfully migrated config voicechat-client.toml
-[11:02:04] [main/WARN]: Failed to load service ClientCompatibilityManager with ServiceLoader
-[11:02:04] [main/INFO]: [voicechat] Loading Opus
-[11:02:04] [main/WARN]: [voicechat] Failed to load native Opus implementation
-java.lang.NoSuchMethodError: 'void de.maxhenkel.opus4j.OpusEncoder.<init>(int, int, de.maxhenkel.opus4j.OpusEncoder$Application)'
-        at mods.voicechat.plugins.impl.opus.NativeOpusEncoderImpl.<init>(lightningproduct:11) ~[1_16_5_decrypted.jar:?]
-        at mods.voicechat.plugins.impl.opus.OpusManager.lambda$opusNativeCheck$0(lightningproduct:24) ~[1_16_5_decrypted.jar:?]
-        at mods.voicechat.voice.common.Utils.lambda$createSafe$1(lightningproduct:301) ~[1_16_5_decrypted.jar:?]
-        at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[11:02:04] [main/WARN]: [voicechat] Failed to load native Opus encoder - Falling back to Java Opus implementation
-[11:02:04] [main/INFO]: [STDERR]: Failed to load config from themes: C:\Pouch\themes
-я┐╜я┐╜я┐╜. 27, 2026 11:02:04 AM lightning.product.t_4864_b n_1700_B
-SEVERE: Failed to initialize ONNX Runtime environment
-ai.onnxruntime.OrtException: ONNX Runtime is not bundled in this recovered source project
-        at ai.onnxruntime.OrtEnvironment.getEnvironment(OrtEnvironment.java:5)
-        at lightning.product.t_4864_b.n_1700_B(lightningproduct:27)
-        at lightning.product.E_2115_e.n_1700_B(lightningproduct:18)
-        at lightning.product.r_3979_X.Q_2552_b(lightningproduct:1591)
-        at lightning.product.r_3979_X.<init>(lightningproduct:289)
-        at lightning.product.c_902_l.n_1700_B(lightningproduct:52)
-        at lightning.product.o_148_s.C_2741_M(lightningproduct:130)
-        at lightning.product.o_148_s.Y_259_p(lightningproduct:81)
-        at lightning.product.o_148_s.<init>(lightningproduct:74)
-        at lightning.product.c_1404_X.<init>(lightningproduct:435)
-        at net.minecraft.client.main.Main.main(lightningproduct:176)
-        at mcp.client.Start.main(lightningproduct:13)
-[11:02:04] [main/INFO]: [CHAT] [Baritone] Baritone settings file not found, resetting.
----- Minecraft Crash Report ----
-// Why did you do that?
-
-Time: 27.08.2026, 11:02
-Description: Initializing game
-
-java.lang.NoClassDefFoundError: org/joml/Vector2f
-        at lightning.product.g_392_a.<init>(lightningproduct:25)
-        at lightning.product.c_902_l.n_1700_B(lightningproduct:170)
-        at lightning.product.o_148_s.C_2741_M(lightningproduct:130)
-        at lightning.product.o_148_s.Y_259_p(lightningproduct:81)
-        at lightning.product.o_148_s.<init>(lightningproduct:74)
-        at lightning.product.c_1404_X.<init>(lightningproduct:435)
-        at net.minecraft.client.main.Main.main(lightningproduct:176)
-        at mcp.client.Start.main(lightningproduct:13)
-Caused by: java.lang.ClassNotFoundException: org.joml.Vector2f
-        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-        at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-        ... 8 more
-
-
-A detailed walkthrough of the error, its code path and all known details is as follows:
----------------------------------------------------------------------------------------
-
--- Head --
-Thread: Render thread
-Stacktrace:
-        at lightning.product.g_392_a.<init>(lightningproduct:25)
-        at lightning.product.c_902_l.n_1700_B(lightningproduct:170)
-        at lightning.product.o_148_s.C_2741_M(lightningproduct:130)
-        at lightning.product.o_148_s.Y_259_p(lightningproduct:81)
-        at lightning.product.o_148_s.<init>(lightningproduct:74)
-        at lightning.product.c_1404_X.<init>(lightningproduct:435)
-
--- Initialization --
-Details:
-Stacktrace:
-        at net.minecraft.client.main.Main.main(lightningproduct:176)
-        at mcp.client.Start.main(lightningproduct:13)
-
--- System Details --
-Details:
-        Minecraft Version: 1.16.5
-        Minecraft Version ID: 1.16.5
-        Operating System: Windows 11 (amd64) version 10.0
-        Java Version: 21.0.12, Microsoft
-        Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
-        Memory: 929648904 bytes (886 MB) / 5217714176 bytes (4976 MB) up to 8573157376 bytes (8176 MB)
-        CPUs: 6
-        JVM Flags: 1 total; -Xverify:none
-        Launched Version: mcp
-        Backend library: LWJGL version 3.2.2 build 10
-        Backend API: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.86, NVIDIA Corporation
-        GL Caps: Using framebuffer using OpenGL 3.0
-        Using VBOs: Yes
-        Is Modded: Definitely; Client brand changed to 'Fabric'
-        Type: Client (map_client.txt)
-        CPU: 6x Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz
-        OptiFine Version: OptiFine_1.16.5_HD_U_G8
-        OptiFine Build: ~~NULL~~
-        Render Distance Chunks: 8
-        Mipmaps: 4
-        Anisotropic Filtering: 1
-        Antialiasing: 0
-        Multitexture: false
-        Shaders: null
-        OpenGlVersion: 4.6.0 NVIDIA 591.86
-        OpenGlRenderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
-        OpenGlVendor: NVIDIA Corporation
-        CpuCount: 6
-#@!@# Game crashed! Crash report saved to: #@!@# C:\Users\1\Desktop\1\Pouch\run\.\crash-reports\crash-2026-08-27_11.02.05-client.txt
-runClient exited with code -1. Check run logs.
-
-BUILD SUCCESSFUL in 9m 55s
-1 actionable task: 1 executed
-PS C:\Users\1\Desktop\1\Pouch> 
-
+Кароче, сделай что бы делалось следующие для пауча - 
+С архива папку jdk-21 распакуй в папку по данному пути - C:\Program Files\Java
+С архива папку .minecraft распакуй в папку по данному пути C:\Users\Ваше название пользователя\AppData\Roaming
+Eще раз полностью убери ВЕСЬ мусор в сурсов пауча, скинешь сурсы и я забилжу и релизну джарку его.
+Насчет дельты - удали ее нахуй
+Насчет лоадера - пока качается чит лоадер не должен закрыватся на "Игра запустится автоматически", пусть отображает реальноое состояние загрузки клиента.
+Вместо большой главной надписи ( Где раньше было NL) Сделай надпись AL.
+Убери иконки софтов
+Имя пользователя - Имя юзера пк
+Кнопку Site переименуй в Author 
+Пусть кнопка комьюнити будет выводить надпись Coming soon... ( В скором я создам дск что бы ссылка была на него ) 
+Пусть кнопка Updates переименуется в Update и будет проверять актуальна ли версия клиентов
+Все изменения с кнопками и текстами и тп сделай в стиле лоадера.
+Убери кнопку где есть выбор релиз бета найтли и тп.
+Сделай что бы окно не было поверх всех остальных всегда.
+Ренейм всего проекта - было NL, ссылки на neverlose.cc и тп, будет ArchLoader.
+Убери надпись Arch вверху Available Clients. Нужно сделать вместо нее как раз ту надпись Авиалабле клиентс.
+Пусть .archloader-launch.ps1 и prepare-assets.ps1 лежат в програмдата\арч
+Почему папка катлавана хранится в C:\ArchLoader\Catlavan\Caltavan ? Почему не в C:\ArchLoader\Catlavan\
+Почему блять cheats.json открыта пользователю? Типо ее надо пиздец как прятать, желательно переименовывать в рандом хуйню и сувать в рандом папку далеко в пк.
+Расскажи как я могу тебе скинуть архив 500мб если гитхаб принимает только до 25мб и ты принимаешь только до 200 в чате
