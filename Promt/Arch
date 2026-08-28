@@ -1,1 +1,41 @@
-Релизнул джарку, лежит в https://github.com/Amphetamined/ArchLoader/releases/tag/Release под именем пауч джар, теперь кароче расскажи как забилдить лоадер я забыл, а так же обнови манифест и дай мне
+PS C:\Users\1\Desktop\ArchLoader\Pouch> Get-FileHash "build\libs\Pouch.jar" -Algorithm SHA256
+
+Algorithm       Hash                                                                   Path                                                                                                                                       
+---------       ----                                                                   ----                                                                                                                                       
+SHA256          BDDA066F492F0A22E121D90479DA589545E616FA56C0FEECB5B180E3DE9D3813       C:\Users\1\Desktop\ArchLoader\Pouch\build\libs\Pouch.jar                                                                                   
+
+
+PS C:\Users\1\Desktop\ArchLoader\Pouch> cd "C:\Users\1\Desktop\ArchLoader\Pouch"
+PS C:\Users\1\Desktop\ArchLoader\Pouch> 
+PS C:\Users\1\Desktop\ArchLoader\Pouch> Remove-Item ".\build\libs\*" -Force -ErrorAction SilentlyContinue
+PS C:\Users\1\Desktop\ArchLoader\Pouch> 
+PS C:\Users\1\Desktop\ArchLoader\Pouch> .\gradlew.bat clean packagePouchRuntime
+
+> Task :packagePouchRuntime
+Created C:\Users\1\Desktop\ArchLoader\Pouch\build\libs\pouch-client-1.16.5-recovered.jar
+
+BUILD SUCCESSFUL in 9s
+2 actionable tasks: 2 executed
+PS C:\Users\1\Desktop\ArchLoader\Pouch> Get-FileHash ".\build\libs\pouch-client-1.16.5-recovered.jar" -Algorithm SHA256
+
+Algorithm       Hash                                                                   Path                                                                                                                                       
+---------       ----                                                                   ----                                                                                                                                       
+SHA256          BDDA066F492F0A22E121D90479DA589545E616FA56C0FEECB5B180E3DE9D3813       C:\Users\1\Desktop\ArchLoader\Pouch\build\libs\pouch-client-1.16.5-recovered.jar                                                           
+
+
+PS C:\Users\1\Desktop\ArchLoader\Pouch> Copy-Item ".\build\libs\pouch-client-1.16.5-recovered.jar" ".\build\libs\Pouch.jar"
+PS C:\Users\1\Desktop\ArchLoader\Pouch> Get-FileHash ".\build\libs\Pouch.jar" -Algorithm SHA256
+
+Algorithm       Hash                                                                   Path                                                                                                                                       
+---------       ----                                                                   ----                                                                                                                                       
+SHA256          BDDA066F492F0A22E121D90479DA589545E616FA56C0FEECB5B180E3DE9D3813       C:\Users\1\Desktop\ArchLoader\Pouch\build\libs\Pouch.jar                                                                                   
+
+
+PS C:\Users\1\Desktop\ArchLoader\Pouch> Select-String -Path ".\build\libs\Pouch.jar" -Pattern "pouchclient.fun","t.me/pouchclient"
+PS C:\Users\1\Desktop\ArchLoader\Pouch> jar tf ".\build\libs\Pouch.jar" | Select-Object -First 5
+META-INF/MANIFEST.MF
+assets/maseffects/particles/death_skull.json
+assets/maseffects/particles/death_spark.json
+assets/maseffects/particles/pearl_trail.json
+assets/maseffects/particles/revive.json
+PS C:\Users\1\Desktop\ArchLoader\Pouch> 
