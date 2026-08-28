@@ -1,14 +1,66 @@
-Вместо AL пусть будет <3
-Coming Soon поменяется местами с Update
-Почему Update открывает https://raw.githubusercontent.com/Amphetamined/ArchLoader/main/manifest.json в браузере? Информация и обновления должны происходить в лоадере.
-На месте где были ветки Release Beta Nightly осталась какая-то уебанская стрелочка возле Load, убери ее.
-Сделай что бы из меню информации клиента ( Где Load и тп ) Можно было вернутся в основное меню с помощью ESC.
-Под надписью Available clients напиши Release Lifetime.
-Напиши новый Manifest что бы не было дельты той.
-Учти что я сейчас переименую все в гитхабе под себя
-Гитхаб Release изменения - 
-ArchOther.zip - PouchAsset.zip
-Catlavan-assets-1.16.5.zip - CatlavanAssets.zip
-Catlavan-runtime.zip - Catlavan.zip
-Pouch.jar остался без изменений
-Так же ответь, какие файлы в чате ты видишь ? Есть ли там папки .buda .cache и тп? Типо в твоем хранилище.
+Ты прислал сообщение
+
+
+
+"Ссылка /edit/ не показывает содержимое без авторизации GitHub, но через Raw видно, что там всё ещё записана старая сборка:
+text
+
+-- NL: Inter (default)
+
+и старый исходник с:
+text
+
+getenv
+warning C4996
+error C2220
+
+Ты собираешь не последний архив. Исправление с _CRT_SECURE_NO_WARNINGS находится в последнем архиве:
+
+Сделай так:
+
+    Удали или переименуй старую папку:
+
+text
+
+C:\Users\1\Desktop\ArchLoader\NL
+
+    Распакуй новый архив.
+
+    Найди файл через PowerShell:
+
+powershell
+
+Get-ChildItem C:\Users\1\Desktop\ArchLoader -Filter CMakeLists.txt -Recurse
+
+    Перейди именно в папку, где одновременно есть:
+
+text
+
+CMakeLists.txt
+src
+vendor
+res
+
+    Собери:
+
+powershell
+
+cd "C:\Users\1\Desktop\ArchLoader\NL"
+cmake -S . -B build-final -G "Visual Studio 18 2026" -A x64 -T v145 -DNL_BUILD_APP=ON -DNL_BUILD_TESTS=OFF
+cmake --build build-final --config Release
+
+В правильной версии сообщение будет:
+text
+
+-- ArchLoader: Inter (default)
+
+а не:
+text
+
+-- NL: Inter (default)
+"
+
+
+
+
+Если ты в нем что то изменял в файлах - откати
