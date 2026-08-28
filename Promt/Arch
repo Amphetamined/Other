@@ -1,66 +1,56 @@
-Ты прислал сообщение
-
-
-
-"Ссылка /edit/ не показывает содержимое без авторизации GitHub, но через Raw видно, что там всё ещё записана старая сборка:
-text
-
+Во первых - 
+*********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.9.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+PS C:\Program Files\Microsoft Visual Studio\18\Community> cd "C:\Users\1\Desktop\ArchLoader\NL"
+PS C:\Users\1\Desktop\ArchLoader\NL> cmake -S . -B build-final -G "Visual Studio 18 2026" -A x64 -T v145 -DNL_BUILD_APP=ON -DNL_BUILD_TESTS=OFF
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- The CXX compiler identification is MSVC 19.51.36256.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- NL: Inter (default)
+-- Configuring done (3.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/1/Desktop/ArchLoader/NL/build-final
+PS C:\Users\1\Desktop\ArchLoader\NL> cmake --build build-final --config Release
+Версия MSBuild 18.9.1+a81b43525 для .NET Framework
 
-и старый исходник с:
-text
-
-getenv
-warning C4996
-error C2220
-
-Ты собираешь не последний архив. Исправление с _CRT_SECURE_NO_WARNINGS находится в последнем архиве:
-
-Сделай так:
-
-    Удали или переименуй старую папку:
-
-text
-
-C:\Users\1\Desktop\ArchLoader\NL
-
-    Распакуй новый архив.
-
-    Найди файл через PowerShell:
-
-powershell
-
-Get-ChildItem C:\Users\1\Desktop\ArchLoader -Filter CMakeLists.txt -Recurse
-
-    Перейди именно в папку, где одновременно есть:
-
-text
-
-CMakeLists.txt
-src
-vendor
-res
-
-    Собери:
-
-powershell
-
-cd "C:\Users\1\Desktop\ArchLoader\NL"
-cmake -S . -B build-final -G "Visual Studio 18 2026" -A x64 -T v145 -DNL_BUILD_APP=ON -DNL_BUILD_TESTS=OFF
-cmake --build build-final --config Release
-
-В правильной версии сообщение будет:
-text
-
--- ArchLoader: Inter (default)
-
-а не:
-text
-
--- NL: Inter (default)
-"
+  1>Checking Build System
+  Building Custom Rule C:/Users/1/Desktop/ArchLoader/NL/CMakeLists.txt
+  main.cpp
+  App.cpp
+  AppWindow.cpp
+  AppDevice.cpp
+  AppFrame.cpp
+  Log.cpp
+  ArchLoaderRuntime.cpp
+  Paths.cpp
+  Cheats.cpp
+  Texture.cpp
+  FontsFree.cpp
+  Embedded.cpp
+  Dashboard.cpp
+  GameModal.cpp
+  Textures.cpp
+C:\Users\1\Desktop\ArchLoader\NL\src\ui\Dashboard.cpp(245,33): error C2220: следующее предупреждение рассматривается ка
+к ошибка [C:\Users\1\Desktop\ArchLoader\NL\build-final\ArchLoader.vcxproj]
+C:\Users\1\Desktop\ArchLoader\NL\src\ui\Dashboard.cpp(245,33): warning C4996: 'getenv': This function or variable may b
+e unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for de
+tails. [C:\Users\1\Desktop\ArchLoader\NL\build-final\ArchLoader.vcxproj]
+  Widgets.cpp
+  Scroll.cpp
+  BlurImGui.cpp
+  Blur.cpp
+PS C:\Users\1\Desktop\ArchLoader\NL>
 
 
 
 
-Если ты в нем что то изменял в файлах - откати
+
+
+
+Во вторых - Когда мы сделаем лоадер полсонтью, я смогу просто заливать новые файлы на гитхаб и изменять в гитхабе манифест и ничо не менять в лоадере для обнов?
