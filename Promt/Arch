@@ -1,1 +1,31 @@
-У меня почему-то есть подозрения что скачка обрывается где то или вообще не начинается, отображай внизу надписи download assets мегабайты типо 1/600 шобы я понимал 
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\1\Desktop\ArchLoader\Pouch> Remove-Item ".\build\libs\*" -Force -ErrorAction SilentlyContinue
+PS C:\Users\1\Desktop\ArchLoader\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"                                                                
+PS C:\Users\1\Desktop\ArchLoader\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"                                                            
+PS C:\Users\1\Desktop\ArchLoader\Pouch> .\gradlew.bat clean packagePouchRuntime
+Starting a Gradle Daemon, 2 incompatible and 2 stopped Daemons could not be reused, use --status for details
+> Task :packagePouchRuntime FAILED
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'C:\Users\1\Desktop\ArchLoader\Pouch\build.gradle' line: 190
+
+* What went wrong:
+Execution failed for task ':packagePouchRuntime'.
+> No such property: relativePath for class: java.io.File
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 13s
+2 actionable tasks: 1 executed, 1 up-to-date
+PS C:\Users\1\Desktop\ArchLoader\Pouch> 
+
+
+
