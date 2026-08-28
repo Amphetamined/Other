@@ -1,54 +1,14 @@
-Во первых - 
-**********************************************************************
-** Visual Studio 2026 Developer PowerShell v18.9.2
-** Copyright (c) 2026 Microsoft Corporation
-**********************************************************************
-PS C:\Program Files\Microsoft Visual Studio\18\Community> cd C:\Users\1\Desktop\ArchLoader\NL
-PS C:\Users\1\Desktop\ArchLoader\NL> cmake -S . -B build-final -G "Visual Studio 18 2026" -A x64 -T v145 -DNL_BUILD_APP=ON -DNL_BUILD_TESTS=OFF
--- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
--- The CXX compiler identification is MSVC 19.51.36256.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- NL: Inter (default)
--- Configuring done (4.4s)
--- Generating done (0.1s)
--- Build files have been written to: C:/Users/1/Desktop/ArchLoader/NL/build-final
-PS C:\Users\1\Desktop\ArchLoader\NL> cmake --build build-final --config Release
-Версия MSBuild 18.9.1+a81b43525 для .NET Framework
-
-  1>Checking Build System
-  Building Custom Rule C:/Users/1/Desktop/ArchLoader/NL/CMakeLists.txt
-  main.cpp
-  App.cpp
-  AppWindow.cpp
-  AppDevice.cpp
-  AppFrame.cpp
-  Log.cpp
-  ArchLoaderRuntime.cpp
-  Paths.cpp
-  Cheats.cpp
-  Texture.cpp
-  FontsFree.cpp
-  Embedded.cpp
-  Dashboard.cpp
-  GameModal.cpp
-C:\Users\1\Desktop\ArchLoader\NL\src\ui\Dashboard.cpp(245,33): error C2220: следующее предупреждение рассматривается ка
-к ошибка [C:\Users\1\Desktop\ArchLoader\NL\build-final\ArchLoader.vcxproj]
-  Textures.cpp
-C:\Users\1\Desktop\ArchLoader\NL\src\ui\Dashboard.cpp(245,33): warning C4996: 'getenv': This function or variable may b
-e unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for de
-tails. [C:\Users\1\Desktop\ArchLoader\NL\build-final\ArchLoader.vcxproj]
-  Widgets.cpp
-  Scroll.cpp
-  BlurImGui.cpp
-  Blur.cpp
-PS C:\Users\1\Desktop\ArchLoader\NL>
-
-
-
-
-
-Во вторых - Что с паучем там? Готовы сурсы? Начинать билдить?
+Вместо AL пусть будет <3
+Coming Soon поменяется местами с Update
+Почему Update открывает https://raw.githubusercontent.com/Amphetamined/ArchLoader/main/manifest.json в браузере? Информация и обновления должны происходить в лоадере.
+На месте где были ветки Release Beta Nightly осталась какая-то уебанская стрелочка возле Load, убери ее.
+Сделай что бы из меню информации клиента ( Где Load и тп ) Можно было вернутся в основное меню с помощью ESC.
+Под надписью Available clients напиши Release Lifetime.
+Напиши новый Manifest что бы не было дельты той.
+Учти что я сейчас переименую все в гитхабе под себя
+Гитхаб Release изменения - 
+ArchOther.zip - PouchAsset.zip
+Catlavan-assets-1.16.5.zip - CatlavanAssets.zip
+Catlavan-runtime.zip - Catlavan.zip
+Pouch.jar остался без изменений
+Так же ответь, какие файлы в чате ты видишь ? Есть ли там папки .buda .cache и тп? Типо в твоем хранилище.
