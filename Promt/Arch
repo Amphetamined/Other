@@ -1,112 +1,48 @@
-Во первых - 
-*********************************************************************
-** Visual Studio 2026 Developer PowerShell v18.9.2
-** Copyright (c) 2026 Microsoft Corporation
-**********************************************************************
-PS C:\Program Files\Microsoft Visual Studio\18\Community> cd "C:\Users\1\Desktop\ArchLoader\NL"
-PS C:\Users\1\Desktop\ArchLoader\NL> cmake -S . -B build-final -G "Visual Studio 18 2026" -A x64 -T v145 -DNL_BUILD_APP=ON -DNL_BUILD_TESTS=OFF
--- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
--- The CXX compiler identification is MSVC 19.51.36256.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- NL: Inter (default)
--- Configuring done (3.0s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/1/Desktop/ArchLoader/NL/build-final
-PS C:\Users\1\Desktop\ArchLoader\NL> cmake --build build-final --config Release
-Версия MSBuild 18.9.1+a81b43525 для .NET Framework
-
-  1>Checking Build System
-  Building Custom Rule C:/Users/1/Desktop/ArchLoader/NL/CMakeLists.txt
-  main.cpp
-  App.cpp
-  AppWindow.cpp
-  AppDevice.cpp
-  AppFrame.cpp
-  Log.cpp
-  ArchLoaderRuntime.cpp
-  Paths.cpp
-  Cheats.cpp
-  Texture.cpp
-  FontsFree.cpp
-  Embedded.cpp
-  Dashboard.cpp
-  GameModal.cpp
-  Textures.cpp
-C:\Users\1\Desktop\ArchLoader\NL\src\ui\Dashboard.cpp(245,33): error C2220: следующее предупреждение рассматривается ка
-к ошибка [C:\Users\1\Desktop\ArchLoader\NL\build-final\ArchLoader.vcxproj]
-C:\Users\1\Desktop\ArchLoader\NL\src\ui\Dashboard.cpp(245,33): warning C4996: 'getenv': This function or variable may b
-e unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for de
-tails. [C:\Users\1\Desktop\ArchLoader\NL\build-final\ArchLoader.vcxproj]
-  Widgets.cpp
-  Scroll.cpp
-  BlurImGui.cpp
-  Blur.cpp
-PS C:\Users\1\Desktop\ArchLoader\NL>
-
-
-
-
-
-
-
-Во вторых - Когда мы сделаем лоадер полсонтью, я смогу просто заливать новые файлы на гитхаб и изменять в гитхабе манифест и ничо не менять в лоадере для обнов?
-
-
-В третьих - Windows PowerShell
+Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-PS C:\Users\1\Desktop\2\Pouch> .\gradlew.bat runClient                                                                                                  
- 
-ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 
- 
-Please set the JAVA_HOME variable in your environment to match the 
-location of your Java installation. 
-PS C:\Users\1\Desktop\2\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"                                                                           
-PS C:\Users\1\Desktop\2\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"                                                                               
-PS C:\Users\1\Desktop\2\Pouch> .\gradlew.bat runClient                       
-Starting a Gradle Daemon, 1 busy and 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+PS C:\Users\1\Desktop\Clients\Pouch> $env:JAVA_HOME = "C:\Users\1\.jdks\ms-21.0.12"
+PS C:\Users\1\Desktop\Clients\Pouch> $env:Path = "$env:JAVA_HOME\bin;$env:Path"    
+PS C:\Users\1\Desktop\Clients\Pouch> .\gradlew.bat runClient                       
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
 
 > Task :runClient
 java.exe : OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will lik
 ely be removed in a future release.
-C:\Users\1\Desktop\2\Pouch\run-client.ps1:375 я┐╜я┐╜я┐╜я┐╜:9
+C:\Users\1\Desktop\Clients\Pouch\run-client.ps1:375 я┐╜я┐╜я┐╜я┐╜:9
 +         & $Java @JavaArgs @args 2>&1 | Tee-Object -FilePath $LogFile
 +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : NotSpecified: (OpenJDK 64-Bit ...future release.:String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
  
-2026-08-28T13:45:40.551782800Z main WARN The use of package scanning to locate Log4j plugins is deprecated.
+2026-08-28T21:38:24.417066700Z main WARN The use of package scanning to locate Log4j plugins is deprecated.
 Please remove the `packages` attribute from your configuration file.
 See https://logging.apache.org/log4j/2.x/faq.html#package-scanning for details.
-[16:45:41] [main/INFO]: [OptiFine] (Reflector) Field not found: World.tileEntitiesToBeRemoved
-[16:45:41] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.eventbus.api.Event$Result
-[16:45:41] [main/INFO]: [OptiFine] (Reflector) Method not present: net.minecraftforge.common.extensions.IForgeBlockState.hasTileEntity
-[16:45:41] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.extensions.IForgeEntity
-[16:45:41] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.CrashReportExtender
-[16:45:41] [main/INFO]: [OptiFine] (Reflector) Method not present: lightning.product.N_1709_M.createOptional
-[16:45:44] [Render thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
-[16:45:44] [Render thread/INFO]: Environment: ElyEnvironment[name=ely,authHost=https://authserver.ely.by/auth,accountsHost=https://account.ely.by/api/mojang,sessionHost=https://account.ely.by/api/minecraft/session,servicesHost=<null>]
-[16:45:44] [Render thread/INFO]: Setting user: Player629
-[16:45:44] [Render thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.settings.KeyConflictContext
-[16:45:44] [Render thread/INFO]: Backend library: LWJGL version 3.2.1 build 12
+[00:38:24] [main/INFO]: [OptiFine] (Reflector) Field not found: World.tileEntitiesToBeRemoved
+[00:38:25] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.eventbus.api.Event$Result
+[00:38:25] [main/INFO]: [OptiFine] (Reflector) Method not present: net.minecraftforge.common.extensions.IForgeBlockState.hasTileEntity
+[00:38:25] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.extensions.IForgeEntity
+[00:38:25] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.CrashReportExtender
+[00:38:25] [main/INFO]: [OptiFine] (Reflector) Method not present: lightning.product.N_1709_M.createOptional
+[00:38:29] [Render thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
+[00:38:29] [Render thread/INFO]: Environment: ElyEnvironment[name=ely,authHost=https://authserver.ely.by/auth,accountsHost=https://account.ely.by/api/mojang,sessionHost=https://account.ely.by/api/minecraft/session,servicesHost=<null>]
+[00:38:29] [Render thread/INFO]: Setting user: Player539
+[00:38:29] [Render thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.settings.KeyConflictContext
+[00:38:29] [Render thread/INFO]: Backend library: LWJGL version 3.2.1 build 12
 #
 # A fatal error has been detected by the Java Runtime Environment:
 #
-#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000006fa141d8, pid=14380, tid=5188
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000006daa79c8, pid=16280, tid=18192
 #
 # JRE version: OpenJDK Runtime Environment Microsoft-14653896 (21.0.12+8) (build 21.0.12+8-LTS)
 # Java VM: OpenJDK 64-Bit Server VM Microsoft-14653896 (21.0.12+8-LTS, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
 # Problematic frame:
-# C  0x000000006fa141d8
+# C  0x000000006daa79c8
 #
 # No core dump will be written. Minidumps are not enabled by default on client versions of Windows
 #
 # An error report file with more information is saved as:
-# C:\Users\1\Desktop\2\Pouch\run\hs_err_pid14380.log
+# C:\Users\1\Desktop\Clients\Pouch\run\hs_err_pid16280.log
 #
 # If you would like to submit a bug report, please visit:
 #   https://github.com/microsoft/openjdk/issues
@@ -115,9 +51,11 @@ See https://logging.apache.org/log4j/2.x/faq.html#package-scanning for details.
 #
 runClient exited with code 1. Check run logs.
 
-BUILD SUCCESSFUL in 38s
+BUILD SUCCESSFUL in 36s
 1 actionable task: 1 executed
-PS C:\Users\1\Desktop\2\Pouch> 
+PS C:\Users\1\Desktop\Clients\Pouch> 
 
 
-В четвертых - можешь убрать замену ника в ватермарке на арч
+
+
+Жду фикс сурсы
