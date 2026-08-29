@@ -1,0 +1,24 @@
+OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+рту. 29, 2026 1:01:37 PM lightning.product.t_4864_b n_1700_B
+SEVERE: Failed to initialize ONNX Runtime environment
+java.lang.NoClassDefFoundError: ai/onnxruntime/OrtLoggingLevel
+	at lightning.product.t_4864_b.n_1700_B(lightningproduct:27)
+	at lightning.product.E_2115_e.n_1700_B(lightningproduct:18)
+	at lightning.product.r_3979_X.Q_2552_b(lightningproduct:1591)
+	at lightning.product.r_3979_X.<init>(lightningproduct:289)
+	at lightning.product.c_902_l.n_1700_B(lightningproduct:52)
+	at lightning.product.o_148_s.C_2741_M(lightningproduct:130)
+	at lightning.product.o_148_s.Y_259_p(lightningproduct:81)
+	at lightning.product.o_148_s.<init>(lightningproduct:74)
+	at lightning.product.c_1404_X.<init>(lightningproduct:435)
+	at net.minecraft.client.main.Main.main(lightningproduct:176)
+	at mcp.client.Start.main(lightningproduct:13)
+Caused by: java.lang.ClassNotFoundException: ai.onnxruntime.OrtLoggingLevel
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 11 more
+
